@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: solid 1px black;
+}
+
+.container {
+    display: grid;
+    grid-template: 
+                    "header1 search nav1 nav2 header2" 50px
+                    "space1 self post news space2" 100px
+                    "space1 self main news space2" 1.5fr
+                    "space1 company main most-viewed space2" 1fr
+                    "space1 recent main add-to-feed space2" 2fr /
+                    1fr 200px 350px 250px 1fr;
+
+    height: 100vh;
+    width: 100vw;
+}
+
+.header1 {
+    grid-area: header1;
+    background-color: orange;
+}
+
+.search {
+    grid-area: search;
+    background-color: blue;
+}
+
+.nav1 {
+    grid-area: nav1;
+    background-color: green;
+}
+
+.nav2 {
+    grid-area: nav2;
+    background-color: yellow;
+}
+
+.header2 {
+    grid-area: header2;
+    background-color: orange;
+}
+
+.space1 {
+    grid-area: space1;
+    background-color: lavender;
+}
+
+.self {
+    grid-area: self;
+    background-color: purple;
+}
+
+.post {
+    grid-area: post;
+    background-color: royalblue;
+}
+
+.news {
+    grid-area: news;
+    background-color: maroon;
+}
+
+.space2 {
+    grid-area: space2;
+    background-color: lavender;
+}
+
+.company {
+    grid-area: company;
+    background-color: turquoise;
+}
+
+.main {
+    grid-area: main;
+    background-color: darkgreen;
+}
+
+.most-viewed {
+    grid-area: most-viewed;
+    background-color: yellowgreen;
+}
+
+.recent {
+    grid-area: recent;
+    background-color: rosybrown;
+}
+
+.add-to-feed {
+    grid-area: add-to-feed;
+    background-color: red;
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        grid-template: 
+                        " search nav1 nav2 " 50px
+                        " self post news " 100px
+                        " self main news " 1.5fr
+                        " company main most-viewed " 1fr
+                        " recent main add-to-feed " 2fr /
+                         1fr 2fr 1fr ;
+}
+
+.header1 {
+    display: none;
+}
+
+.header2 {
+    display: none;
+}
+
+.space1 {
+    display: none;
+}
+
+.space2 {
+    display: none;
+}
+
+}
+
+@media screen and (max-width: 550px) {
+    .container {
+        grid-template: 
+                        " search nav1 nav2 " 50px
+                        " self post post " 100px
+                        " self main main " 1.5fr
+                        " company main main " 1fr
+                        " recent main main " 2fr /
+                         1fr 2fr 1fr ;
+}
+
+.news {
+    display: none;
+}
+
+.most-viewed {
+    display: none;
+}
+
+.add-to-feed {
+    display: none;
+}
+
+}
