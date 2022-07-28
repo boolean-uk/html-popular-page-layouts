@@ -47,18 +47,26 @@ body {
 @media only screen and (max-width: 800px) {
 
     .servers {
-        color: darkgoldenrod;
-        background-color: #F1DFDD;
+        color: white;
+        background-color: #1D1F21;
     }
 
     .channels {
-        color: darkgoldenrod;
-        background-color: #F4CDCA;
+        color: white;
+        background-color: #292B2F;
     }
 
     .chat {
-        color: darkgoldenrod;
-        background-color: lightblue;
+        color: white;
+        background-color: #2F3237;
+    }
+
+    .server {
+        width: 40px;
+        height: 40px;
+        background-color: lightgray;
+        margin: 8px auto;
+        border-radius: 22px;
     }
 
 }
