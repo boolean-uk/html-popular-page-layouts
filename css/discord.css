@@ -1,0 +1,64 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template:
+    "servers channels chat"
+    / 1fr 2fr 6fr;
+    height: 100vh;
+}
+
+.servers {
+    grid-area: servers;
+    background-color: #E3E5E8;
+}
+
+.server {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    margin: 12px auto;
+    border-radius: 28px;
+}
+
+.channels {
+    grid-area: channels;
+    background-color: #F2F3F5;
+}
+
+.chat {
+    grid-area: chat;
+    background-color: #FFF;
+}
+
+.pane-header {
+    height: 2em;
+    border-bottom: 1px solid lightgray;
+    padding: 1em 0.5em 0 1em;
+    font-size: small;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .servers {
+        color: darkgoldenrod;
+        background-color: #F1DFDD;
+    }
+
+    .channels {
+        color: darkgoldenrod;
+        background-color: #F4CDCA;
+    }
+
+    .chat {
+        color: darkgoldenrod;
+        background-color: lightblue;
+    }
+
+}
