@@ -6,20 +6,18 @@ body {
     overflow: hidden;
 }
 
+/* Grid container for the four main columns*/
+
 .container {
     display: grid;
     grid-template:
-    "folders mail-list mail-settings"
-    / 2fr 6fr 3fr;
+    "folders mail-list mail-settings tools"
+    / 2fr 6fr 3fr 1fr;
     height: 100vh;
 }
 
 .folders {
     grid-area: folders;
-}
-
-.folders section {
-    margin-top: 14px;
 }
 
 .mail-list {
@@ -30,6 +28,15 @@ body {
 
 .mail-settings {
     grid-area: mail-settings;
+    border-right: lightgray 1px solid;
+}
+
+.tools {
+    grid-area: tools;
+}
+
+.folders section {
+    margin-top: 14px;
 }
 
 .mail-settings section {
@@ -52,7 +59,7 @@ body {
     margin-bottom: 1em;
 }
 
-.compose {
+.compose-button {
     padding: 1.2em;
     border-radius: 2em;
     margin: 8px 12px 0 12px;
@@ -107,6 +114,14 @@ body {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.tool {
+    width: 30px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 6px;
+    margin: 20px auto;
 }
 
 /* Elements in the top navto approximate look of Gmail */
@@ -211,3 +226,33 @@ h1.gmail-logo {
     padding: 12px 0 6px 12px;
     border-radius: 4px;
  }
+
+ @media only screen and (max-width: 900px) {
+
+    .container {
+        grid-template:
+        "mail-list mail-settings"
+        / 4fr 2fr;
+    }
+
+    .folders {
+        display: none;
+    }
+
+    .tools {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        grid-template:
+        "mail-list"
+        / 1fr;
+    }
+
+    .mail-settings {
+        display: none;
+    }
+}
