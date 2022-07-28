@@ -5,6 +5,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     background-color: #F3F2EF;
+    overflow: hidden;
 }
 
 nav {
@@ -34,6 +35,7 @@ nav {
 
 .stream {
     grid-area: stream;
+    overflow-y: scroll;
 }
 
 .aside {
