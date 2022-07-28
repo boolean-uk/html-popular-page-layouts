@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: solid 1px black;
+}
+
+.container {
+            display: grid;
+            grid-template: 
+                            "home server-name current-chat-group" 60px
+                            "servers invite chat-log" 200px
+                            "servers chat-groups chat-log" 1fr
+                            "servers settings-bar text-box" 60px /
+                            90px 225px 1fr;
+            height: 100vh;
+            width: 100vw;
+}
+
+.home {
+    grid-area: home;
+    background-color: red;
+}
+
+.server-name {
+    grid-area: server-name;
+    background-color: yellow;
+}
+
+.current-chat-group{
+    grid-area: current-chat-group;
+    background-color: royalblue;
+}
+
+.servers {
+    grid-area: servers;
+    background-color: orange;
+}
+
+.invite {
+    grid-area: invite;
+    background-color: skyblue;
+}
+
+.chat-log {
+    grid-area: chat-log;
+    background-color: lavender;
+}
+
+.chat-groups {
+    grid-area: chat-groups;
+    background-color: green;
+}
+
+.settings-bar {
+    grid-area: settings-bar;
+    background-color: gold;
+}
+
+.text-box {
+    grid-area: text-box;
+    background-color: silver;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        grid-template: 
+                        "home server-name current-chat-group" 60px
+                        "servers chat-log chat-log" 200px
+                        "chat-groups chat-log chat-log" 1fr
+                        "settings-bar text-box text-box" 60px /
+                        150px 100px 1fr;
+}
+
+.invite {
+    display: none;
+}
+}

@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: solid 1px black;
+}
+
+.container {
+    display: grid;
+    grid-template: 
+                    "logo search header-buttons header-buttons" 80px
+                    "compose folder-buttons quick-settings nav-bar" 50px
+                    "compose main quick-settings nav-bar" 50px
+                    "folders main density nav-bar" 1fr
+                    "folders main theme nav-bar" 100px
+                    "meet main inbox-type nav-bar" 100px
+                    "chat main inbox-type nav-bar" 1fr
+                    "chat-bar main inbox-type nav-bar" 45px /
+                    1fr 2fr 1fr 70px;
+    height: 100vh;
+    width: 100vw;
+}
+
+.logo {
+    grid-area: logo;
+    background-color: red;
+}
+
+.search {
+    grid-area: search;
+    background-color: yellow;
+}
+
+.header-buttons {
+    grid-area: header-buttons;
+    background-color: orange;
+}
+
+.compose {
+    grid-area: compose;
+    background-color: blue;
+}
+
+.folder-buttons {
+    grid-area: folder-buttons;
+    background-color: purple;
+}
+
+.quick-settings {
+    grid-area: quick-settings;
+    background-color: pink;
+}
+
+.nav-bar {
+    grid-area: nav-bar;
+    background-color: maroon;
+}
+
+.folders {
+    grid-area: folders;
+    background-color: lavender;
+}
+
+.main {
+    grid-area: main;
+    background-color: greenyellow;
+}
+
+.density {
+    grid-area: density;
+    background-color: orchid;
+}
+
+.theme {
+    grid-area: theme;
+    background-color: skyblue;
+}
+
+.meet {
+    grid-area: meet;
+    background-color: gray;
+}
+
+.inbox-type {
+    grid-area: inbox-type;
+    background-color: gold;
+}
+
+.chat {
+    grid-area: chat;
+    background-color: sienna;
+}
+
+.chat-bar {
+    grid-area: chat-bar;
+    background-color: aqua;
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        grid-template: 
+                        "logo search header-buttons " 80px
+                        "compose folder-buttons quick-settings " 50px
+                        "compose main quick-settings " 50px
+                        "folders main density " 1fr
+                        "folders main theme " 100px
+                        "meet main inbox-type " 100px
+                        "chat main inbox-type " 1fr
+                        "chat-bar main inbox-type " 45px /
+                        1fr 2fr 1.5fr ;
+}
+
+.nav-bar {
+    display: none;
+}
+}
+
+@media screen and (max-width: 550px) {
+    .container {
+        grid-template: 
+                        "logo search header-buttons " 80px
+                        "compose folder-buttons header-buttons " 50px
+                        "compose main header-buttons " 50px
+                        "folders main header-buttons " 1fr
+                        "folders main header-buttons " 100px
+                        "meet main header-buttons " 100px
+                        "chat main header-buttons " 1fr
+                        "chat-bar main header-buttons " 45px /
+                        1fr 2fr 70px ;
+}
+
+.quick-settings {
+    display: none;
+}
+
+.density {
+    display: none;
+}
+
+.theme {
+    display: none;
+}
+
+.inbox-type {
+    display: none;
+}
+}
