@@ -1,0 +1,120 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background-color: #F3F2EF;
+    overflow: hidden;
+}
+
+nav {
+    height: 3em;
+    background-color: white;
+    border-bottom: 1px lightgray solid;
+}
+
+.nav-centered {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container {
+    margin: 2em auto;
+    display: grid;
+    grid-template:
+    "user-options stream aside"
+    / 1fr 3fr 1fr;
+    height: 100vh;
+    width: 80%;
+}
+
+.user-options {
+    grid-area: user-options;
+}
+
+.stream {
+    grid-area: stream;
+    overflow-y: scroll;
+}
+
+.aside {
+    grid-area: aside;
+}
+
+.panel {
+    background-color: white;
+    border-radius: 8px;
+    min-height: 3em;
+    box-shadow: darkgray 0px 1px 2px;
+    margin: 8px;
+    border: 1px lightgray solid;
+    padding: 1em;
+}
+
+.post-field {
+    border: lightgray 1px solid;
+    border-radius: 18px;
+    min-height: 32px;
+    color: lightgray;
+    padding: 1em 1em 0 1em;
+}
+
+hr {
+    width: 95%;
+    border: 1px lightgray dotted;
+}
+
+/* Decorative nav elements to approximate the look of Linkedin */
+
+.linkedin-blue {
+    height: 30px;
+    width: 30px;
+    border-radius: 6px;
+    background-color: #2A66BC;
+    margin: 8px 0 8px 8px;
+    float: left;
+}
+
+.searchfield {
+    color: lightgray;
+    background-color: #EFF3F7;
+    height: 18px;
+    width: 200px;
+    margin: 8px 0 8px 8px;
+    float: left;
+    padding: 6px;
+    border-radius: 4px;;
+ }
+
+@media only screen and (max-width: 960px) {
+
+    .container {
+        width: 100%;
+    }
+
+    .nav-centered {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+
+    .container {
+        grid-template:
+        "stream"
+        / 1fr;
+        width: 100%;
+    }
+
+
+    .user-options {
+        display: none;
+    }
+    
+    .aside {
+        display: none;
+    }
+
+}

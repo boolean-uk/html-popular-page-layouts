@@ -1,0 +1,260 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* Grid container for the four main columns*/
+
+.container {
+    display: grid;
+    grid-template:
+    "folders mail-list mail-settings tools"
+    / 2fr 6fr 3fr 1fr;
+}
+
+.folders {
+    grid-area: folders;
+}
+
+.mail-list {
+    grid-area: mail-list;
+    border-right: lightgray 1px solid;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+.mail-settings {
+    grid-area: mail-settings;
+    border-right: lightgray 1px solid;
+}
+
+.tools {
+    grid-area: tools;
+}
+
+.folders section {
+    margin-top: 14px;
+}
+
+.mail-settings section {
+    padding: 1em;
+    color: gray;
+    border-bottom: lightgray 1px solid;
+}
+
+.mail-setting h3 {
+    font-weight: lighter;
+}
+
+.mail-setting h4 {
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.mail-setting {
+    margin-bottom: 1em;
+}
+
+.compose-button {
+    padding: 1.2em;
+    border-radius: 2em;
+    margin: 8px 12px 0 12px;
+    box-shadow: lightgray 0 2px 4px;
+    color:  gray;
+    font-weight: bold;
+}
+
+.folders section {
+    border-bottom: 1px lightgray solid;
+}
+
+.folder {
+    padding: 12px;
+    color: gray;
+}
+
+.mail-sorting, .mail-item {
+    padding: 1em;
+    border-bottom: lightgray 1px solid;
+}
+
+.mail-item {
+    display: grid;
+    grid-template:
+    "email-selectbox email-participant email-subjectline email-datetime"
+    / 1fr 4fr 6fr 1fr;
+}
+
+.mail-item.unread {
+    font-weight: bold;
+}
+
+.email-selectbox {
+    grid-area: email-selectbox;
+}
+
+.email-participant {
+    grid-area: email-participant;
+}
+
+.email-subjectline {
+    grid-area: email-subjectline;
+}
+
+.email-datetime {
+    grid-area: email-datetime;
+    text-align: right;
+}
+
+.email-participant, .email-subjectline {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tool {
+    width: 30px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 6px;
+    margin: 20px auto;
+}
+
+/* Elements in the top navto approximate look of Gmail */
+
+nav {
+    height: 4em;
+    background-color: white;
+    border-bottom: 1px lightgray solid;
+    display: grid;
+    grid-template:
+    "logo-section searchbar-section settings-section"
+    / 2fr 6fr 3fr;
+}
+
+.logo-section {
+    grid-area: logo-section;
+    display: grid;
+    grid-template:
+    "hamburger-menu approximate-gmail-image-logo gmail-logo"
+    / 1fr 1fr 1fr;
+}
+
+.searchbar-section {
+    grid-area: searchbar-section;
+}
+
+.settings-section {
+    grid-area: settings-section;
+    display: grid;
+    grid-template:
+    "settings-menu current-user"
+    / 1fr 1fr;
+}
+
+.approximate-gmail-image-logo {
+    grid-area: approximate-gmail-image-logo;
+    width: 40px;
+    height: 30px;
+    background-color: #E2E2E2;
+    border-left: 6px solid #D1554B;
+    border-right: 6px solid #D1554B;
+    border-radius: 4px;
+    float: left;
+    margin: 12px 5px;
+}
+
+h1.gmail-logo {
+    grid-area: gmail-logo;
+    color: gray;
+    font-size: 24px;
+    padding: 14px;
+    margin: 0;
+    font-weight: lighter;
+}
+
+.hamburger-menu {
+    grid-area: hamburger-menu;
+    margin: 16px 4px 0 18px;
+    width: 18px;
+    padding: 4px;
+}
+
+.line {
+    background-color: gray;
+    height: 2px;
+    width: 100%;
+    margin-bottom: 3px;
+    padding: 0;
+}
+
+.settings-menu {
+    grid-area: settings-menu;
+    margin: 16px 4px 0 18px;
+    width: 18px;
+    padding: 4px;
+}
+
+.dot {
+    background-color: gray;
+    height: 3px;
+    width: 3px;
+    margin: 0 2px 2px 0;
+    padding: 0;
+    float: left;
+}
+
+.current-user {
+    grid-area: current-user;
+    margin: 8px 12px 8px 8px;
+    padding: 10px 12px 14px 12px;
+    border-radius: 4px;
+    border: lightgray solid 1px;
+    color: lightgray;
+    width: 60%;
+    text-align: center;
+}
+
+.searchbar {
+    color: #aaa;
+    background-color: #F1F3F4;
+    height: 1.7em;
+    margin: 8px 0 8px 0;
+    padding: 12px 0 6px 12px;
+    border-radius: 4px;
+ }
+
+ @media only screen and (max-width: 900px) {
+
+    .container {
+        grid-template:
+        "mail-list mail-settings"
+        / 4fr 2fr;
+    }
+
+    .folders {
+        display: none;
+    }
+
+    .tools {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        grid-template:
+        "mail-list"
+        / 1fr;
+    }
+
+    .mail-settings {
+        display: none;
+    }
+}
