@@ -4,6 +4,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     overflow: hidden;
+    box-sizing: border-box;
 }
 
 /* Grid container for the four main columns*/
@@ -13,7 +14,6 @@ body {
     grid-template:
     "folders mail-list mail-settings tools"
     / 2fr 6fr 3fr 1fr;
-    height: 100vh;
 }
 
 .folders {
@@ -24,6 +24,7 @@ body {
     grid-area: mail-list;
     border-right: lightgray 1px solid;
     overflow-y: scroll;
+    height: 100vh;
 }
 
 .mail-settings {
@@ -163,6 +164,7 @@ nav {
     background-color: #E2E2E2;
     border-left: 6px solid #D1554B;
     border-right: 6px solid #D1554B;
+    border-radius: 4px;
     float: left;
     margin: 12px 5px;
 }
