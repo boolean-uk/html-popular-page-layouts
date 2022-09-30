@@ -2,8 +2,13 @@
   height: 100vh;
   display: grid;
   grid-template:
+<<<<<<< HEAD
     "serverlist server-channels main-header" 50px
     "serverlist server-channels main" 1fr /
+=======
+    'serverlist server-channels main-header' 50px
+    'serverlist server-channels main' 1fr /
+>>>>>>> c3ced8189ba0b90b9d0fb5fce8a458fbe57cc62f
     60px 1fr 5fr;
 }
 
