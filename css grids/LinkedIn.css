@@ -1,16 +1,16 @@
-/* body {
-  background: silver;
-} */
+* {
+  margin: 0;
+}
 .container {
   gap: 2px;
   height: 100vh;
   /* width: 100vh; */
   display: grid;
   grid-template:
-    'header header header header header' 50px
-    'whitespace profile postbar linknews whitespace1' 1fr
-    'whitespace analytics news-feed reccomended-courses whitespace1' 2fr
-    'whitespace recent news-feed friend-suggestion whitespace1' 100px /
+    "header header header header header" 50px
+    "whitespace profile postbar linknews whitespace1" 1fr
+    "whitespace analytics news-feed reccomended-courses whitespace1" 2fr
+    "whitespace recent news-feed friend-suggestion whitespace1" 100px /
     1fr 100px 2fr 100px 1fr;
 }
 
@@ -67,13 +67,15 @@
     /* width: 100vh; */
     display: grid;
     grid-template:
-      'header header header header ' 50px
-      'whitespace profile postbar  whitespace1' 1fr
-      'whitespace analytics news-feed  whitespace1' 2fr
-      'whitespace recent news-feed  whitespace1' 100px /
-      1fr 100px 2fr 1fr;
+      "header header header header " 50px
+      "whitespace profile postbar  whitespace1" 1fr
+      "whitespace analytics news-feed  whitespace1" 2fr
+      "whitespace recent news-feed  whitespace1" 100px /
+      2fr 1fr 4fr 2fr;
   }
-  .linknews .friend-suggestion .reccomended-courses {
+  .linknews,
+  .friend-suggestion,
+  .reccomended-courses {
     display: none;
   }
 }
@@ -85,20 +87,20 @@
     /* width: 100vh; */
     display: grid;
     grid-template:
-      'header  ' 50px
-      '  postbar  ' 1fr
-      '  news-feed  ' 2fr
-      'news-feed  ' 100px /
+      "header" 50px
+      "postbar" 1fr
+      "news-feed" 2fr
+      "news-feed " 2fr /
       1fr;
   }
-  .linknews
-    .friend-suggestion
-    .reccomended-courses
-    .whitespace
-    .whitespace1
-    .recent
-    .profile
-    .analytics {
+  .linknews,
+  .friend-suggestion,
+  .reccomended-courses,
+  .whitespace,
+  .whitespace1,
+  .recent,
+  .profile,
+  .analytics {
     display: none;
   }
 }
