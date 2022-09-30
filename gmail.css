@@ -56,7 +56,7 @@ body {
         grid-template: 
         "header header header header header" 0.5fr
     "left-SB subject date right right-SB" 5fr
-    "footer footer footer footer footer"0.5/
+    "footer footer footer footer footer" 0.5fr/
     1fr 3fr 1fr 2fr 0.5fr
 
     }
@@ -91,7 +91,7 @@ body {
         "header header header" 0.5fr
     "left-SB subject date" 7fr
     "footer footer footer " 0.5fr /
-    1fr 3fr 1fr 2fr
+    1fr 3fr 1fr 
 
     }
     .right-SB {
