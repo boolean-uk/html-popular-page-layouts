@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    gap: 3px;
+    text-align: center;
+    color: white;
+
+    display: grid;
+    grid-template:
+        "server-icons rooms status-bar status-bar" 50px
+        "server-icons rooms main right-bar" 1fr /
+        70px 200px 1fr 200px
+}
+
+.server-icons {
+    grid-area: server-icons;
+    background-color: rgb(77, 77, 77);
+}
+
+.rooms {
+    grid-area: rooms;
+    background-color: rgb(77, 77, 77);
+}
+
+.status-bar {
+    grid-area: status-bar;
+    background-color: rgb(77, 77, 77);
+}
+
+.main {
+    grid-area: main;
+    background-color: rgb(77, 77, 77);
+}
+
+.right-bar {
+    grid-area: right-bar;
+    background-color: rgb(77, 77, 77);
+}
+
