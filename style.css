@@ -55,3 +55,15 @@ body {
     color:chocolate;
     justify-self: center;
 }
+
+@media screen and (max-width: 1000px) {
+    .panel {
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .panel {
+        width: 80vw;
+    }
+}
