@@ -1,0 +1,105 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 60px 1fr;
+
+    height: 100vh;
+}
+
+.navigation-bar {
+    background-color:mediumspringgreen;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+.navigation-bar a {
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    padding: 8px 16px;
+    background-color:cadetblue;
+    margin-right: 100px;
+}
+.navigation-bar h1 {
+    font-size: large;
+}
+
+.main-content { /* ALIGNS THE CONTENT */
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+}
+.main-content .grid-content {
+    display: grid;
+    grid-template-columns: 250px 600px 300px;
+}
+.grid-content .left-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: orange;
+
+    font-size: x-large;
+    font-weight: bolder;
+
+}
+.grid-content .mid-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color:darkcyan;
+
+    color: white;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+.grid-content .right-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color:violet;
+
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 1300px) {
+    .main-content .grid-content {
+        grid-template-columns: 225px 600px 270px;  
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .main-content .grid-content {
+        grid-template-columns: 150px 500px 200px;  
+    }
+    .left-block, .right-block {
+        writing-mode: vertical-lr;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .main-content .grid-content {
+        grid-template-columns: 50px 100vw;  
+    }
+    .grid-content .right-block {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main-content .grid-content {
+        grid-template-columns: 100vw;  
+    }
+    .grid-content .left-block {
+        display: none;
+    }
+}
