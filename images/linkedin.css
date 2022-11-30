@@ -1,0 +1,162 @@
+.header {
+    background-color: white;
+    border: solid black 5px;
+    display: grid;
+    grid-template-columns: 0.75fr 3fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
+    grid-template-rows: 50px;
+    grid-template-areas:
+    "l1 l2 . l3 l4 l5 l6 l7 l8 . l9 l10";
+    gap: 2px;
+    padding: 2px;
+
+}
+
+.logo {
+    grid-area: l1;
+    border: black dotted 2px;
+}
+
+.search_bar {
+    grid-area: l2;
+    border: black dotted 2px;
+    background-color: lightgray;
+    padding: 2px;
+}
+
+.home {
+    grid-area: l3;
+    border: black dotted 2px;
+}
+
+.my_network {
+    grid-area: l4;
+    border: black dotted 2px;
+}
+
+.jobs {
+    grid-area: l5;
+    border: black dotted 2px;
+}
+
+.messages {
+    grid-area: l6;
+    border: black dotted 2px;
+}
+
+.notifications {
+    grid-area: l7;
+    border: black dotted 2px;
+}
+
+.profile {
+    grid-area: l8;
+    border: black dotted 2px;
+    border-right: lightgray solid 2px;
+}
+
+.work {
+    grid-area: l9;
+    border: black dotted 2px;
+}
+
+.post_a_job{
+    grid-area: l10;
+    border: black dotted 2px
+    
+}
+
+.main{
+    display: grid;
+    background-color: lightgray;
+    border: solid black 5px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 800px;
+    grid-template-areas:
+    "left middle right";
+    gap: 2px;
+    margin-top: 10px;
+    padding: 2px;
+
+}
+
+.left {
+    grid-area: left;
+    border: red solid 2px;
+    padding: 2px;
+    display: grid;
+    border: palevioletred solid 2px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5fr 1fr 1.5fr;
+    grid-template-areas:
+    "lefttop"
+    "leftmiddle"
+    "leftbottom"
+}
+
+.left > .left_top{
+    grid-area:left top;
+    border: yellow solid 2px;
+}
+
+.left > .left_middle{
+    grid-area: leftmiddle;
+    border: purple solid 2px;
+}
+
+.left > .left_bottom{
+    grid-area: leftbottom;
+    border: orange solid 2px;
+}
+
+.middle {
+    grid-area: middle;
+    display: grid;
+    border: red solid 2px;
+    background-color: white;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 4fr;
+    grid-template-areas:
+    "create"
+    "feed" ;
+    gap: 2px;
+    padding: 2px;
+}
+
+.right {
+    grid-area: right;
+    border: red solid 2px;
+    padding: 2px;
+}
+
+.middle > .create{
+    grid-area: create;
+    background-color: aqua;
+    border: blue solid 2px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "1 2 3 4"
+    "5 6 7 8"
+    ;
+}
+
+.display_pic {
+    grid-area: 1;
+    border: black solid 2px
+}
+.type_box {
+    grid-area: 3;
+    border: black solid 2px
+}
+.post_options{
+    grid-area: 5;
+    border: black solid 2px
+}
+
+.main > .middle > .feed {
+    grid-area: feed;
+    border: blue solid 2px;
+    
+}
