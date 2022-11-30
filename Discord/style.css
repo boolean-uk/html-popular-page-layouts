@@ -39,17 +39,35 @@
 
 .selectedserver {
     grid-area: activeserver;
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "invitewindow"
+    "channellist"
+    "userinfo";
+    grid-template-rows: auto min-content 1fr auto;
+    grid-template-columns: 1fr;
     background-color: burlywood;
     min-width: 137px;
 }
 
 .chat {
     grid-area: chat;
+    display: grid;
+    grid-template-areas:
+    "chatname"
+    "chatwindow"
+    "chatinput";
+    grid-template-rows: auto 1fr auto;
     background-color: gray;
     min-width: 468px;
 }
 
 .selectedserver .servername {
+    grid-area: name;
+}
+
+.selectedserver .servername h3 {
     margin: 15px;
 }
 
@@ -60,6 +78,7 @@
 }
 
 .selectedserver .invitewindow {
+    grid-area: invitewindow;
     padding: 15px;
     text-align: center;
 }
@@ -84,6 +103,10 @@
     padding: 10px 20px;
 }
 
+.selectedserver .channellist {
+    grid-area: channellist;
+}
+
 .selectedserver .channelgroup {
     text-transform: uppercase;
     font-size: 14px;
@@ -103,20 +126,30 @@
     list-style: circle;
 }
 
-.chat .chatname {
-    display: flex;
-    margin: 15px;
-    margin-right: auto;
+.selectedserver .userinfo {
+    grid-area: userinfo;
+    padding: 15px;
+    border: dashed 2px black;
+    border-radius: 5px;
 }
 
-.chat .chatname .chaticons {
+.chat .chatname {
+    grid-area: chatname;
+    min-width: 482px;
+}
+
+.chat .chatnamecontent {
+    display: flex;
+    margin: 15px;
+}
+
+.chat .chatnamecontent .chaticons {
     display: flex;
     align-items: center;
-    justify-self: right;
     margin-left: auto;
 }
 
-.chat .chatname .chaticon {
+.chat .chatnamecontent .chaticon {
     border: dashed 1px black;
     border-radius: 5px;
     width: 21px;
@@ -124,7 +157,7 @@
     margin: 0px 5px;
 }
 
-.chat .chatname input {
+.chat .chatnamecontent input {
     background-color: darkgrey;
     border: none;
     border-radius: 3px;
@@ -136,4 +169,32 @@
     border: none;
     height: 2px;
     background-color: darkgrey;
+}
+
+.chatinputarea {
+    grid-area: chatinput;
+}
+
+.chatinputarea .chatinput {
+    display: flex;
+    align-content: center;
+    margin: 15px;
+    padding: 5px 10px;
+    background-color: darkgrey;
+    border-radius: 15px;
+}
+
+.chatinput .icon {
+    border: dashed 2px black;
+    border-radius: 5px;
+    width: 22px;
+    height: 22px;
+    margin: 0px 5px;
+}
+
+.chatinputarea .chatinput input {
+    border: none;
+    background-color: grey;
+    color: whitesmoke;
+    /* Find a way to dynamicly set the width */
 }
