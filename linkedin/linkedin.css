@@ -1,0 +1,221 @@
+div{
+    border: solid 2px grey;
+    border-radius: 10px;
+    background-color: rgb(236, 229, 219);
+    font-family: sans-serif;
+    
+}
+.mydiv {
+    display: grid;
+    grid-template:
+    "top-bar     top-bar   top-bar" 50px
+    "left-menu   header    right-menu" 75px
+    "left-menu    main     right-menu" 400px
+    "left-menu    main     right-menu" 100px/
+       200px      1fr           200px;
+    gap: 15px;
+}
+.top-bar {
+    grid-area: top-bar;
+    background-color: white;
+    font-size: 10px;
+    display: grid;
+    border: 2px black solid;
+    grid-template-columns: 50px 1fr 25px 25px 25px 25px 25px 25px 30px 30px  ;
+    
+}
+.top-bar .logo {
+    background-color: white;
+    display: grid;
+    border: dashed 2px black;
+    margin: 2px 3px 3px 3px;
+}
+.top-bar .search-bar {
+    background-color: white;
+    display: grid;
+    border: dashed 2px black;
+    margin: 2px 100px 3px 10px;
+
+}
+.top-bar .home, .mynetwork, .jobs, .messages, .notifications, .profile {
+    background-color: white;
+    display: grid;
+    border: dashed 2px black;
+    margin: 0px 5px 0px 0px;
+   
+}
+.top-bar .work, .postAjob {
+    background-color: white;
+    display: grid;
+    border: dashed 2px black;
+}
+
+
+.left-menu{
+    grid-area: left-menu;
+    background-color: rgb(236, 229, 219);
+    border: grey solid 2px;
+    padding: 5px;
+     display: grid;
+
+}
+.left-menu .top-left, .mid-left, .bottom-left {
+    background-color: white;
+    display: grid;
+    border: grey dashed 2px;
+    margin: 2px;
+
+}
+
+
+.header {
+    grid-area: header;
+    background-color: white;
+    border: grey solid 2px;
+    display: grid;
+    
+}
+
+.header .post, .option {
+    background-color: white;
+    border: grey dashed 2px;
+    margin: 3px;
+
+}
+.header .post img{
+    padding: 7px 0px 0px 7px;
+}
+
+.header .post p{
+    display: inline;
+    padding: 5px 70px 0px 5px;
+    border: solid grey 1px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.header >.option  {
+    grid-template-columns: 50px 50px 50px 50px;
+    display: grid;
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 10px;
+}
+.header > .option >.photo, .video, .document, .write-article {
+    margin: 0px 10px 0px 0px;
+
+}
+
+.main {
+    grid-area: main;
+    background-color: rgb(236, 229, 219);
+    display: grid;
+    padding: 5px;
+    border: solid grey 2px;
+}
+.main > .top-main, .bottom-main {
+   border: grey 2px dashed;
+   background-color: white;
+   margin: 2px;
+}
+
+
+
+
+.right-menu {
+    grid-area: right-menu;
+    background-color: rgb(236, 229, 219);
+    display: grid;
+}
+.right-menu >.news, .viewed , .feed {
+   background-color: white;
+   border: dashed grey 2px;
+   margin: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*.top-bar {
+    grid-area: top-bar;
+    background-color: white;
+}
+.top-bar > h3 {
+    background-color: rgb(95, 143, 238);
+    color: white;
+    display: inline-flex;
+    font-size: 30px;
+    text-align: center;
+    margin: 5px 0px 0px 10px ;
+    border-radius: 5px;
+    padding: 0px 5px 0px 5px;
+}
+
+.top-bar > p {
+    display: inline;
+    background-color: rgb(235, 243, 243);
+    border-radius: 4px;
+    font-size: 15px;
+    margin: 0px 0px 0px 10px;
+    padding: 10px 100px 0px 20px;
+    text-align: left;
+    display: inline-flex;
+}
+
+.top-bar >p >img {
+    margin: 0px 15px 5px 0px;
+}
+
+.header {
+    grid-area: header;
+    background-color: white
+    
+}
+.header p {
+    display: inline-flex;
+    border-radius: 20px;
+    border: solid grey 1px;
+    margin: 0px 0px 0px 50px ;
+    margin-top: 0px;
+    padding: 5px 100px 5px 10px;
+    font-size: 15px;
+}
+.header  ul {
+    display: inline-flex;
+    list-style-type: none;
+    margin: 10px 10px 0px 0px;
+    padding: 0px 0px 0px 10px ;
+}
+
+
+
+
+.left-menu{
+    grid-area: left-menu;
+    background-color: white;
+}
+
+
+
+.main {
+    grid-area: main;
+    background-color: white;
+}
+
+
+
+
+
+
+.right-menu {
+    grid-area: right-menu;
+    background-color: white;
+}*/
+

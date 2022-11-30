@@ -1,0 +1,75 @@
+.mydiv{
+    font-family: sans-serif;
+    background-color: rgb(236, 229, 219);
+    
+}
+.mydiv {
+    display: grid;
+    grid-template:
+    "top-bar     top-bar   top-bar      top-bar" 100px
+    "left-menu   header    right-menu   shortcuts" 100px
+    "left-menu    main     right-menu   shortcuts" 400px
+    "left-menu    main     right-menu   shortcuts" 1fr/
+       200px      1fr        200px          100px;
+    gap: 10px;
+}
+
+.top-bar {
+    grid-area: top-bar;
+    border: 2px black solid;
+}
+
+.top-bar .logo {
+    display: grid;
+    grid-template-columns: 50px 50px 80px;
+    border: 2px black solid;
+    gap: 5px;
+}
+
+.top-bar .logo .menuicon {
+    border: 2px dashed black;
+    margin: 5px;
+}
+
+.top-bar .logo .mailicon {
+    border: 2px dashed black;
+    margin: 5px;
+}
+.top-bar .logo .gmail {
+    border: 2px dashed black;
+    margin: 5px;
+}
+
+
+
+
+
+
+
+.header {
+    grid-area: header;
+    border: 2px black solid;
+}
+
+.left-menu {
+    grid-area: left-menu;
+    border: 2px black solid;
+}
+
+.main {
+    grid-area: main;
+    border: 2px black solid;
+}
+
+
+
+.right-menu {
+    grid-area: right-menu;
+    border: 2px black solid;
+}
+
+
+.shortcuts {
+    grid-area: shortcuts;
+    border: 2px black solid;
+}
