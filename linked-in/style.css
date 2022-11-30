@@ -10,16 +10,18 @@
 }
 
 .header {
+    padding: 5px;
     grid-area: header;
     background-color: rgba(255, 0, 0, 0.461);
     border: dashed 1px black;
-
+    
     display: grid;
     grid-template-columns: 300px 1fr 100px;
-    grid-template-rows: 70px ;
+    grid-template-rows: 65px ;
     grid-template-areas: 
     "logosearch navigation nav2"
     ;
+    gap: 5px;
 }
 .leftMenu {
     grid-area: leftMenu;
@@ -48,9 +50,21 @@
     grid-area: navigation;
     background-color: rgba(0, 128, 0, 0.546);
     border: dashed 1px black;
+    display: grid;
+    grid-template-columns:  50px 50px 50px 50px 50px 50px;
+    gap: 5px;
+    padding: 5px;
+    justify-content: right;
 }
 .nav2 {
     grid-area: nav2;
     background-color: rgba(255, 255, 0, 0.553);
     border: dashed 1px black;
+}
+.navbuttons {
+    border: dashed 1px black; 
+    width: 50px;
+    height: 50px;
+    
+        
 }
