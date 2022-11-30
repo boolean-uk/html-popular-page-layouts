@@ -82,22 +82,14 @@ body{
     grid-template-rows: 50px 1fr 100px 150px;
     
 }
-.left-menu .compose{
-    border: 1px dashed black;
-    margin: 5px;
-}
-.left-menu .Inbox{
-    border: 1px dashed black;
-    margin: 5px;
-}
-.left-menu .Meet{
-    border: 1px dashed black;
-    margin: 5px;
-}
+.left-menu .compose,
+.left-menu .Inbox,
+.left-menu .Meet,
 .left-menu .chat{
     border: 1px dashed black;
     margin: 5px;
 }
+
 /* main */
 .main {
     grid-area: main;
@@ -116,26 +108,14 @@ body{
 
 }
 /* main inside mails grid */
-.main .mail1 .mail1-1 {
-    border: 1px dashed black;
-    margin: 3px;
-
-}
-.main .mail1 .mail1-2 {
-    border: 1px dashed black;
-    margin: 3px;
-
-}
-.main .mail1 .mail1-3 {
-    border: 1px dashed black;
-    margin: 3px;
-
-}
+.main .mail1 .mail1-1,
+.main .mail1 .mail1-2,
+.main .mail1 .mail1-3,
 .main .mail1 .mail1-4 {
     border: 1px dashed black;
     margin: 3px;
-
 }
+
 /* mail 2 */
 .main .mail2{
     border: 1px dashed black;
@@ -143,26 +123,15 @@ body{
     grid-template-columns: 20px 20px 1fr 20px;
 
 }
-.main .mail2 .mail2-1 {
+.main .mail2 .mail2-1,
+.main .mail2 .mail2-2,
+.main .mail2 .mail2-3,
+.main .mail2 .mail2-4{
     border: 1px dashed black;
     margin: 3px;
 
 }
-.main .mail2 .mail2-2 {
-    border: 1px dashed black;
-    margin: 3px;
-
-}
-.main .mail2 .mail2-3 {
-    border: 1px dashed black;
-    margin: 3px;
-
-}
-.main .mail2 .mail2-4 {
-    border: 1px dashed black;
-    margin: 3px;
-
-}
+ 
 /* mail 3 */
 .main .mail3{
     border: 1px dashed black;
@@ -170,26 +139,14 @@ body{
     grid-template-columns: 20px 20px 1fr 20px;
 
 }
-.main .mail3 .mail3-1 {
-    border: 1px dashed black;
-    margin: 3px;
-
-}
-.main .mail3 .mail3-2 {
-    border: 1px dashed black;
-    margin: 3px;
-
-}
-.main .mail3 .mail3-3 {
-    border: 1px dashed black;
-    margin: 3px;
-
-}
+.main .mail3 .mail3-1,
+.main .mail3 .mail3-2,
+.main .mail3 .mail3-3,
 .main .mail3 .mail3-4 {
     border: 1px dashed black;
     margin: 3px;
-
 }
+
 /* mail 4 */
 .main .mail4{
     border: 1px dashed black;
@@ -197,28 +154,13 @@ body{
     grid-template-columns: 20px 20px 1fr 20px;
 
 }
-.main .mail4 .mail4-1 {
-    border: 1px dashed black;
-    margin: 3px;
-
-}
-.main .mail4 .mail4-2 {
-    border: 1px dashed black;
-    margin: 3px;
-
-}
-.main .mail4 .mail4-3 {
-    border: 1px dashed black;
-    margin: 3px;
-
-}
+.main .mail4 .mail4-1,
+.main .mail4 .mail4-2,
+.main .mail4 .mail4-3,
 .main .mail4 .mail4-4 {
     border: 1px dashed black;
     margin: 3px;
-
 }
-
-
 
 /* rigth menu */
 .right-menu {
@@ -229,22 +171,14 @@ body{
     grid-template-rows: 80px 1fr 230px 150px;
 }
 
-.right-menu .quick-settings {
-    border: 1px dashed black;
-    margin: 5px;
-}
-.right-menu .Density {
-    border: 1px dashed black;
-    margin: 5px;
-}
-.right-menu .Theme {
-    border: 1px dashed black;
-    margin: 5px;
-}
+.right-menu .quick-settings,
+.right-menu .Density,
+.right-menu .Theme,
 .right-menu .Inbox-type {
     border: 1px dashed black;
     margin: 5px;
 }
+
 /* shortcuts */
 .shortcuts {
     grid-area: shortcuts;
@@ -255,24 +189,12 @@ body{
     grid-gap: 20px
 }
 
-.shortcuts .calender {
+.shortcuts .calender,
+.shortcuts .note,
+.shortcuts .pen,
+.shortcuts .add-symbol  {
     border: 1px dashed black;
     margin: 5px;
 
 }
-.shortcuts .note {
-    border: 1px dashed black;
-    margin: 5px;
-
-}
-.shortcuts .pen {
-    border: 1px dashed black;
-    margin: 5px;
-
-}
-.shortcuts .add-symbol {
-    border: 1px dashed black;
-    margin: 5px;
-    
-
-}
+ 
