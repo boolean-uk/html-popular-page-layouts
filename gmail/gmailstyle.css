@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    height: 100vh;
+  
+    display: grid;
+    grid-template:
+      "header header header header" 50px
+      "left main right far-right" 1fr /
+      220px 1fr 240px 40px;
+  }
+  /* TOP BAR */
+  .header {
+    grid-area: header;
+    background-color: #ffee0050;
+  
+    display: grid;
+    grid-template-columns: 220px 1fr 280px;
+    grid-gap: 5px;
+  }
+  
+  /* TOP BAR LOGO SECTION */
+  
+  .header .logo {
+    border: 1px dashed black;
+  
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    padding: 5px;
+    grid-gap: 5px;
+  }
+  
+  .header .logo .menu-icon {
+    border: 1px dashed black;
+  }
+  
+  .header .logo .gmail-logo {
+    border: 1px dashed black;
+  }
+  
+  /* TOP BAR SEARCH SECTION */
+  
+  .header .search {
+    border: 1px dashed black;
+  
+    display: grid;
+    padding: 5px;
+    grid-gap: 5px;
+  }
+  
+  .header .search-bar {
+    border: 1px dashed black;
+  }
+  
+  /* TOP BAR MENU SECTION */
+  
+  .header .menu {
+    border: 1px dashed black;
+  
+    display: grid;
+    grid-template-columns: 40px 40px 40px 100px;
+    justify-content: right;
+    padding: 5px;
+    grid-gap: 5px;
+  }
+  
+  .header .menu .help,
+  .header .menu .gear,
+  .header .menu .options,
+  .header .menu .avatar {
+    border: 1px dashed black;
+  }
+  
+  /* LEFT MENU */
+  .left {
+    grid-area: left;
+    background-color: #1eff0050;
+  
+    display: grid;
+    grid-template-rows: 50px 2fr 80px 1fr;
+    padding: 5px;
+    grid-gap: 5px;
+  }
+  
+  .left .compose,
+  .left .folders,
+  .left .meet,
+  .left .chat {
+    border: 1px dashed black;
+  }
+  
+  .left .folders ul {
+    display: grid;
+    grid-auto-rows: 30px;
+    /* padding: 5px; */
+    grid-gap: 1px;
+  }
+  
+  .left .folders li {
+    border: 1px dashed black;
+    display: grid;
+    align-items: center;
+    padding: 5px;
+    grid-gap: 5px;
+  
+    grid-template-columns: 30px 1fr 20px;
+  }
+  
+  .left .folders li div {
+    border: 1px dashed black;
+  }
+  
+  /* EMAILS */
+  .main {
+    grid-area: main;
+    background-color: #ff000050;
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    padding: 5px;
+    grid-gap: 5px;
+  }
+  
+  .main .email-menu-bar {
+    border: 1px dashed black;
+  
+    display: grid;
+    padding: 5px;
+    grid-gap: 5px;
+    grid-template-columns: 30px 30px 30px 1fr 20px 20px;
+  }
+  
+  .main .email-menu-bar .tickbox,
+  .main .email-menu-bar .refresh,
+  .main .email-menu-bar .threedots,
+  .main .email-menu-bar .page-counter,
+  .main .email-menu-bar .left-arrow,
+  .main .email-menu-bar .right-arrow {
+    border: 1px dashed black;
+  }
+  
+  .main .emails {
+    border: 1px dashed black;
+    display: grid;
+    padding: 5px;
+    grid-gap: 5px;
+    grid-auto-rows: 40px;
+  }
+  
+  .main .emails .each-email {
+    border: 1px dashed black;
+    display: grid;
+    padding: 5px;
+    grid-gap: 5px;
+    grid-template-columns: 30px 30px 1fr 2fr 60px;
+  }
+  
+  .main .emails .each-email .email-tick,
+  .main .emails .each-email .email-star,
+  .main .emails .each-email .email-title,
+  .main .emails .each-email .email-preview,
+  .main .emails .each-email .email-date {
+    border: 1px dashed black;
+  }
+  
+  /* SETTINGS */
+  .right {
+    grid-area: right;
+    background-color: #002fff50;
+    border: 1px dashed black;
+  
+    display: grid;
+    grid-template-rows: 120px 200px 150px 1fr;
+  
+    padding: 5px;
+    grid-gap: 5px;
+  }
+  
+  .right .quick-settings,
+  .right .density,
+  .right .theme,
+  .right .inbox-type {
+    border: 1px dashed black;
+  }
+  
+  /* SHORTCUTS */
+  .far-right {
+    grid-area: far-right;
+    background-color: #50005050;
+  
+    display: grid;
+    grid-template-rows: 50px 50px 50px 50px;
+  
+    padding: 5px;
+    grid-gap: 20px;
+  }
+  
+  .far-right .calendar,
+  .far-right .bulb,
+  .far-right .tick,
+  .far-right .plus {
+    border: 1px dashed black;
+  }
+  
+/* Responsive Screen Size Stuff */
+
+  @media screen and (max-width: 1000px) {
+    .container {
+      grid-template:
+        "header header header" 50px
+        "left main far-right" 1fr /
+        175px 1fr 50px;
+    }
+  
+    .right {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 800px) {
+    .container {
+      grid-template:
+        "header header" 50px
+        "left main" 1fr /
+        175px 1fr;
+    }
+  
+    .far-right {
+      display: none;
+    }
+  }
+  
+  /* @media screen and (max-width: 600px) {
+    .container {
+      grid-template:
+        "header header" 50px
+        "left main" 1fr /
+        75px 1fr;
+    }
+  } */
+  
+  @media screen and (max-width: 450px) {
+    .container {
+      grid-template:
+        "header" 50px
+        "main" 1fr
+        "left" 50px /
+        1fr;
+    }
+  }
+  
