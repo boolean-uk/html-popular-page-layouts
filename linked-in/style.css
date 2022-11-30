@@ -1,27 +1,56 @@
 .mainContainer {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr ;
-    grid-template-rows: 100px 100vh;  
+    grid-template-rows: 75px 100vh;  
     grid-template-areas:
     "header header header"
     "leftMenu main rightMenu"
     ;
-
+    gap: 20px;
 }
 
 .header {
     grid-area: header;
     background-color: rgba(255, 0, 0, 0.461);
+    border: dashed 1px black;
+
+    display: grid;
+    grid-template-columns: 300px 1fr 100px;
+    grid-template-rows: 70px ;
+    grid-template-areas: 
+    "logosearch navigation nav2"
+    ;
 }
 .leftMenu {
     grid-area: leftMenu;
     background-color: rgba(0, 0, 255, 0.555);
+    border: dashed 1px black;
+
 }
 .main {
     grid-area: main;
     background-color: rgba(0, 128, 0, 0.607);
+    border: dashed 1px black;
+
 }
 .rightMenu {
     grid-area: rightMenu;
     background-color: rgba(255, 255, 0, 0.498);
+    border: dashed 1px black;
+
+}
+.logosearch {
+    grid-area: logosearch;
+    background-color: rgba(0, 0, 255, 0.534);
+    border: dashed 1px black;
+}
+.navigation {
+    grid-area: navigation;
+    background-color: rgba(0, 128, 0, 0.546);
+    border: dashed 1px black;
+}
+.nav2 {
+    grid-area: nav2;
+    background-color: rgba(255, 255, 0, 0.553);
+    border: dashed 1px black;
 }
