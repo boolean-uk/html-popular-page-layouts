@@ -104,3 +104,61 @@
     border: dashed 1px black;
     height: 500px;
 }
+
+@media screen and (max-width: 850px) {
+
+    .mainContainer {
+        grid-template-columns: 1fr 2fr ;
+        grid-template-rows: 75px 100vh;  
+        grid-template-areas:
+        "header header"
+        "leftMenu main"
+        ;
+    }
+    
+    .rightMenu {
+        display: none;
+    }
+    .header {
+        grid-template-columns: 300px 1fr;
+        grid-template-rows: 65px ;
+        grid-template-areas: 
+        "logosearch navigation"
+        ;
+    }
+    .nav2 {
+        display: none;
+    }
+}
+
+@media screen  and (max-width: 700px) {
+    
+    .mainContainer {
+        grid-template-columns: 1fr ;
+        grid-template-rows: 75px 100vh;  
+        grid-template-areas:
+        "header"
+        "main"
+        ;
+    }
+    
+    .rightMenu {
+        display: none;
+    }
+    .header {
+        grid-template-columns: 1fr;
+        grid-template-rows: 65px ;
+        grid-template-areas: 
+        "navigation"
+        ;
+    }
+    .nav2 {
+        display: none;
+    }
+    .leftMenu {
+        display: none;
+    }
+    .logosearch {
+        display: none;
+    }
+}
