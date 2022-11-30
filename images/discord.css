@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .container{
+    
+        display: grid;
+        grid-template: 
+        "left main right" 800px/
+        50px 200px 500px;
+        gap: 10px
+       }
+  
+       .left{
+        grid-area: left;
+        background-color: rgba(55, 0, 255, 0.598);
+       }
+       .main{
+        grid-area:main;
+        background-color: rgba(0, 0, 255, 0.314);
+        grid-template: 
+        "invite"40px,
+        "genral" 40px,
+        "class"40px,
+        "lobby"40px,
+        "staff"40px/
+        300px;
+        gap:20px
+       }
+       .invite{
+        grid-area:invite;
+       }
+       .genral{
+        grid-area: genral;
+       }
+       .class{
+        grid-area: class;
+       }
+       .lobby{
+        grid-area: lobby;
+       }
+       .staff{
+        grid-area:staff
+       }
+       .right{
+        grid-area:right;
+        background-color:white;
+        grid-template: 
+        "class1"1fr,
+        "welcome"2fr,
+        "message"1fr/
+        800px;
+       }

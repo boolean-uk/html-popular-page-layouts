@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+
+  grid-template:
+    "serch serch serch" 50px
+    "left main right" 1fr / 300px 
+    500px 1fr;
+  height: 100vh;
+  gap: 10px;
+  border-radius: solid 2px;
+  border-color: black;
+}
+.serch {
+  grid-area: serch;
+  background-color: rgba(210, 7, 31, 0.39);
+}
+.left {
+  grid-area: left;
+  background-color: azure;
+  grid-template:
+    "inbox" 1fr
+    "meet" 1fr
+    "chat" 1fr / 500px;
+  border-radius: solid 2px;
+  border-color: black;
+}
+.inbox {
+  grid-area: inbox;
+  background-color: rgba(206, 20, 45, 0.221);
+  border-radius: solid 30px;
+}
+.meet {
+  grid-area: meet;
+  background-color: rgba(210, 9, 9, 0.295);
+  border-radius: solid 30px;
+}
+.chat {
+  grid-area: meet;
+  background-color: rgba(236, 11, 60, 0.325);
+  border-radius: solid 30px;
+}
+.main {
+  grid-area: main;
+  border-radius: solid 30px;
+}
+.right {
+  grid-area: right;
+  background-color: rgba(255, 0, 0, 0.535);
+  grid-template: 
+  "allsetting" 200px,
+    "density" 600px 
+    "theme" 800px 
+    "type" 1fr / 500px;
+  border-radius: solid 30px;
+}
+.allsetting {
+  grid-area: allsetting;
+  background-color: rgba(226, 43, 73, 0.438);
+  border-radius: solid 30px;
+}
+.density {
+  grid-area: density;
+  background-color: rgba(234, 14, 14, 0.214);
+  border-radius: solid 30px;
+}
+
+.theme {
+  grid-area: theme;
+  background-color: black;
+  border-radius: solid 30px;
+}
+.type {
+  grid-area: type;
+  background-color: beige;
+  border-radius: solid 30px;
+}
