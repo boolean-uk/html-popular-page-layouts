@@ -63,10 +63,10 @@
         "serverDropdown header" 50px
         "channels textArea" 1fr /
         240px 1fr;
+    }
 
-        .leftMenu {
-            display: none
-        }
+    .leftMenu {
+        display: none
     }
     
 }
@@ -77,18 +77,18 @@
         "header" 50px
         "textArea" 1fr /
         1fr;
+    }
 
-        .leftMenu {
-            display: none
-        }
+    .leftMenu {
+        display: none
+    }
 
-        .serverDropdown {
-            display: none;
-        }
+    .serverDropdown {
+        display: none;
+    }
 
-        .channels {
-            display: none;
-        }
+    .channels {
+        display: none;
     }
     
 }
