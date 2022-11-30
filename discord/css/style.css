@@ -1,0 +1,44 @@
+div
+{
+   border: 2px solid;
+}
+
+.main-container
+{
+    display: grid;
+    grid-template-columns: 100px 180px 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "server-menu rooms-list main";
+    height: 800px;
+}
+
+.server-menu
+{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 1fr;
+}
+
+.rooms-list
+{
+    display: grid;
+    grid-template-rows: 50px 150px 1fr 25px;
+}
+
+.main
+{
+    display: grid;
+    grid-template-rows: 50px 1fr;
+}
+
+.top-row
+{
+    display: grid;
+    grid-template-columns: 1fr 40px 40px 40px 120px 40px 40px;
+}
+.main-row
+{
+    display: grid;
+    grid-template-rows: 1fr 50px;
+}
