@@ -7,6 +7,32 @@
  gap: 10px;
  background-color: beige;
 }
+.middle {
+    grid-area: feed;
+    background-color: whitesmoke;
+}
+.topfeed{
+
+}
+#options-etc{
+    display: grid;
+    grid-template: 1fr / 1fr 1fr  1fr 1fr;
+}
+.profiles{
+    display: grid;
+    grid-template: 300px  100px / 1fr;
+}
+
+#firstprofile{
+    grid-area: feed;
+    border: solid 1px red;
+
+
+}
+#secondprofile{
+    grid-area: feed;
+    border: solid 1px red;
+}
 
 .header {
     grid-area: searchBar;
@@ -18,11 +44,6 @@
     background-color: whitesmoke;
 }
 
-.middle {
-    grid-area: feed;
-    background-color: whitesmoke;
-    
-}
 
 .right {
     grid-area: news;
