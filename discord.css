@@ -1,0 +1,31 @@
+.container {
+ display: grid;
+ grid-template:
+ "left areas header" 30px
+ "left areas main"  300px
+ "left areas main" 300px/
+ 75px  160px  450px
+ ; 
+}
+
+.left {
+    grid-area: left;
+    background-color: pink;
+}
+
+.h1 {
+    grid-area: header;
+    background-color: blue;
+
+}
+
+.areas {
+    grid-area: areas;
+    background-color: brown;
+
+}
+.main {
+    grid-area: main;
+    background-color: green;
+
+}
