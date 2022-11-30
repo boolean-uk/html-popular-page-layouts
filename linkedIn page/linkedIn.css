@@ -43,8 +43,8 @@ body{
     border: 1px dashed black;
     display:grid;
     grid-template-columns: 50px 50px 50px 50px 50px 50px;
-    gap: 5px;
-    padding-left: 530px;
+    gap: 50px;
+    padding-left: 300px;
 }
 .topbar .symbols .home {
     border: 1px dashed black;
