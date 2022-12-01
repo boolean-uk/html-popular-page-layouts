@@ -1,31 +1,69 @@
 .container {
- display: grid;
- grid-template:
- "left areas header" 30px
- "left areas main"  300px
- "left areas main" 300px/
- 75px  160px  450px
- ; 
+  padding: 8px;
+  border: 2px dotted lightblue;
 }
 
-.left {
-    grid-area: left;
-    background-color: pink;
+.outer-box {
+  min-width: 40px;
+  min-height: 40px;
+  padding: 4px;
+  border: 2px dotted lightcoral;
 }
 
-.h1 {
-    grid-area: header;
-    background-color: blue;
-
+.inner-box {
+  min-width: 40px;
+  min-height: 40px;
+  border: 2px dotted lightgreen;
 }
 
-.areas {
-    grid-area: areas;
-    background-color: brown;
-
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  background-color: rgba(128, 128, 128, 0.191);
 }
+
+.box {
+  display: grid;
+  grid-template:
+    "channels menu main" /
+    75px 400px 1fr;
+    gap: 2px;
+  background-color: beige;
+}
+
+div.outer-box {
+  display: grid;
+  /* background-color: aquamarine; */
+}
+
+.channels {
+  grid-area: channels;
+  display: grid;
+  grid-template-columns: 75px;
+  background-color: blanchedalmond;
+}
+.channels > .inner-box {
+  display: grid;
+  grid-template-rows: 20px 100px 10px;
+}
+
+.menu {
+  grid-area: menu;
+  display: grid;
+}
+
+.menu > .inner-box{
+  display: grid;
+  grid-template-rows: 20px 50px 1fr 20px;
+}
+
 .main {
-    grid-area: main;
-    background-color: green;
+  grid-area: main;
+  display: grid;
+}
 
+.main > .inner-box {
+  display: grid;
+grid-template-rows: 20px auto 20px;
 }
