@@ -9,11 +9,11 @@
 
   grid-template:
     "serch serch serch" 50px
-    "left main right" 1fr / 300px 
-    500px 1fr;
+    "left main right" 1fr /
+    300px 1fr 1fr;
   height: 100vh;
   gap: 10px;
-  border-radius: solid 2px;
+
   border-color: black;
 }
 .serch {
@@ -21,62 +21,56 @@
   background-color: rgba(210, 7, 31, 0.39);
 }
 .left {
+  display: grid;
   grid-area: left;
   background-color: azure;
   grid-template:
     "inbox" 1fr
     "meet" 1fr
     "chat" 1fr / 500px;
-  border-radius: solid 2px;
+
   border-color: black;
 }
 .inbox {
   grid-area: inbox;
   background-color: rgba(206, 20, 45, 0.221);
-  border-radius: solid 30px;
 }
 .meet {
   grid-area: meet;
   background-color: rgba(210, 9, 9, 0.295);
-  border-radius: solid 30px;
 }
 .chat {
-  grid-area: meet;
+  grid-area: chat;
   background-color: rgba(236, 11, 60, 0.325);
-  border-radius: solid 30px;
 }
 .main {
   grid-area: main;
-  border-radius: solid 30px;
 }
 .right {
+  display: grid;
   grid-area: right;
   background-color: rgba(255, 0, 0, 0.535);
-  grid-template: 
-  "allsetting" 200px,
-    "density" 600px 
-    "theme" 800px 
-    "type" 1fr / 500px;
-  border-radius: solid 30px;
+  grid-template:
+    "allsetting" 1fr
+    "density" 2fr
+    "theme" 1fr
+    "type" 1fr / 
+    1fr;
 }
 .allsetting {
   grid-area: allsetting;
   background-color: rgba(226, 43, 73, 0.438);
-  border-radius: solid 30px;
 }
 .density {
   grid-area: density;
   background-color: rgba(234, 14, 14, 0.214);
-  border-radius: solid 30px;
 }
 
 .theme {
   grid-area: theme;
   background-color: black;
-  border-radius: solid 30px;
 }
 .type {
   grid-area: type;
   background-color: beige;
-  border-radius: solid 30px;
 }
