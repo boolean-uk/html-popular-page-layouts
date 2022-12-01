@@ -23,18 +23,19 @@
     1fr 1fr 1fr 1fr 1fr; 
   }
   .left{
+    display: grid;
     grid-area: left;
     background-color: rgba(151, 248, 159, 0.428);
     grid-template: 
-    "profile" 3fr, 
-    "visitor" 2fr,
+    "profile" 3fr
+    "visitor" 2fr
     "recent" 2fr/ 
     1fr;
 
   }
   .profile{
     grid-area: profile;
-    background-color: white;
+    background-color: rgba(49, 234, 21, 0.681);
   }
 
   .visitor{
@@ -50,10 +51,11 @@
     background-color: rgba(38, 255, 0, 0.566);
   }
   .right{
+    display: grid;
     grid-area: right;
     background-color: rgba(85, 255, 0, 0.43);
     grid-template: 
-    "news" 2fr,
+    "news" 2fr
     "mostviews" 2fr 
     "feed" 2fr/
     1fr;
@@ -71,12 +73,13 @@
     background-color: blanchedalmond;
   }
   .main{
+    display: grid;
     grid-area: main;
     background-color: rgba(134, 232, 15, 0.551);
     grid-template:
-    "feeds" 1fr , 
-    "post" 2fr/
-    1000px;
+    "feeds" 1fr  
+    "post" 1fr/
+    1fr;
   }
   .feeds{
     grid-area: feeds;
