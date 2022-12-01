@@ -43,6 +43,7 @@ div.outer-box {
   grid-template-columns: 75px;
   background-color: blanchedalmond;
 }
+
 .channels > .inner-box {
   display: grid;
   grid-template-rows: 20px 100px 10px;
