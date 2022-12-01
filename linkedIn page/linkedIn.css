@@ -9,8 +9,8 @@ body{
     "left-menu  header  right-menu" 80px
     "left-menu  main  right-menu" 300px
     "left-menu  main  right-menu" 300px/
-       250px    1fr      300px;
-    gap:10px;
+       350px    1fr      400px;
+    gap:5px;
 } 
 /* topbar */
 .topbar {
@@ -31,61 +31,34 @@ body{
     gap: 5px;
 
 }
-.topbar .logo .l-logo {
+.topbar .logo .l-logo, .search-bar {
     border: 1px dashed black;
     margin: 5px
 }
-.topbar .logo .search-bar {
-    border: 1px dashed black;
-    margin: 5px 6px 5px 5px
-}
+
 .topbar .symbols{
     border: 1px dashed black;
     display:grid;
     grid-template-columns: 50px 50px 50px 50px 50px 50px;
     gap: 50px;
-    padding-left: 300px;
+    padding-left: 400px;
 }
-.topbar .symbols .home {
+.topbar .symbols .home,.Network, .Jobs, .messaging,
+.notifi, .me {
     border: 1px dashed black;
     margin: 5px
 }
-.topbar .symbols .Network {
-    border: 1px dashed black;
-    margin: 5px
-}
-.topbar .symbols .Jobs {
-    border: 1px dashed black;
-    margin: 5px
-}
-.topbar .symbols .messaging {
-    border: 1px dashed black;
-    margin: 5px
-}
-.topbar .symbols .notifi {
-    border: 1px dashed black;
-    margin: 5px
-}
-.topbar .symbols .me {
-    border: 1px dashed black;
-    margin: 5px
-}
-
-
 .topbar .options {
     border: 1px dashed black;
     display:grid;
     grid-template-columns: 40px 40px;
     gap: 5px;
 }
-.topbar .options .work {
+.topbar .options .work,.post-job {
     border: 1px dashed black;
     margin: 5px
 }
-.topbar .options .post-job {
-    border: 1px dashed black;
-    margin: 5px
-}
+
 
 /* left-menu */
 .left-menu {
@@ -93,26 +66,18 @@ body{
     background-color: rgb(163, 216, 154);
     border: solid 2px rgb(109, 109, 241);
     border-radius: 15px;
+    margin-left: 80px;
 
     display:grid;
     grid-template-rows: 250px 1fr 250px;
     gap: 5px;
 }
 
-.left-menu .details {
+.left-menu .details, .visitors,.recent {
     border: 1px dashed black;
     border-radius: 10px;
 }
 
-.left-menu .visitors {
-    border: 1px dashed black;
-    border-radius: 10px;
-}
-
-.left-menu .recent {
-    border: 1px dashed black;
-    border-radius: 10px;
-}
 /* header */
 .header {
     grid-area: header; 
@@ -151,19 +116,7 @@ body{
     justify-content: center;
 }
 
-.header .image .photo{
-    border: 1px dashed black;
-    margin: 5px
-}
-.header .image .video{
-    border: 1px dashed black;
-    margin: 5px
-}
-.header .image .document{
-    border: 1px dashed black;
-    margin: 5px
-}
-.header .image .article{
+.header .image .photo, .video, .document, .article{
     border: 1px dashed black;
     margin: 5px
 }
@@ -178,13 +131,7 @@ body{
     grid-template-rows: 400px 200px;
     gap: 5px;
 }
-.main .post1 {
-    border: 1px dashed black;
-    border-radius: 10px;
-    margin: 5px
-}
-
-.main .post2 {
+.main .post1,.post2  {
     border: 1px dashed black;
     border-radius: 10px;
     margin: 5px
@@ -200,18 +147,10 @@ body{
     display:grid;
     grid-template-rows: 250px 1fr 250px;
     gap: 5px;
+    margin-right: 80px
 }
-.right-menu .News {
+.right-menu .News, .viewed, .feed {
     border: 1px dashed black;
     border-radius: 10px;
 }
 
-.right-menu .viewed {
-    border: 1px dashed black;
-    border-radius: 10px;
-}
-
-.right-menu .feed {
-    border: 1px dashed black;
-    border-radius: 10px;
-}
