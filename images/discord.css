@@ -18,13 +18,14 @@
         background-color: rgba(55, 0, 255, 0.598);
        }
        .main{
+        display: grid;
         grid-area:main;
         background-color: rgba(0, 0, 255, 0.314);
         grid-template: 
-        "invite"40px,
-        "genral" 40px,
-        "class"40px,
-        "lobby"40px,
+        "invite"40px
+        "genral" 40px
+        "class"40px
+        "lobby"40px
         "staff"40px/
         300px;
         gap:20px
@@ -45,11 +46,12 @@
         grid-area:staff
        }
        .right{
+        display: grid;
         grid-area:right;
         background-color:white;
         grid-template: 
-        "class1"1fr,
-        "welcome"2fr,
+        "class1"1fr
+        "welcome"2fr
         "message"1fr/
         800px;
        }
