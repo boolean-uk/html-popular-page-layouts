@@ -29,7 +29,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 70px 1500%;
+  grid-template-rows: 70px 1000%;
   grid-template-columns: 250px 3fr 250px 40px;
   grid-template-areas:
     "header    header    header    header"

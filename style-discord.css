@@ -1,0 +1,33 @@
+.body {
+  margin: 0%;
+}
+.header {
+  grid-area: header;
+  background-color: bisque;
+}
+.left-nav {
+  grid-area: left-nav;
+  background-color: aqua;
+}
+.left-menu {
+  grid-area: left-menu;
+  background-color: cornflowerblue;
+}
+.bottom-settings {
+  grid-area: bottom-settings;
+  background-color: blueviolet;
+}
+.main {
+  grid-area: main;
+  background-color: coral;
+}
+.container {
+  margin: 0%;
+  display: grid;
+  grid-template-rows: 45px 600% 50px;
+  grid-template-columns: 50px 200px 1fr;
+  grid-template-areas:
+    "left-nav           header              header"
+    "left-nav           left-menu           main"
+    "bottom-settings    bottom-settings     main";
+}
