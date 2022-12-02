@@ -1,0 +1,55 @@
+div
+{
+   border: 2px dotted;
+   padding: 5px;
+}
+
+body
+{
+    place-items: center;
+}
+
+.container
+{
+    display: grid;
+    gap: 5px;
+}
+
+.main-container
+{
+    grid-template: 
+        "top top top top top" 75px
+        "empty left center right empty2" 1fr /
+        1fr 2fr 2fr 2fr 1fr;
+    height: 900px;
+}
+
+
+#topBar
+{
+    background-color: aqua;
+    grid-area: top;
+    grid-template-columns: 50px 1fr 1fr;
+}
+
+#leftSection
+{
+    background-color: chartreuse;
+    grid-area: left;
+    grid-template-rows:
+    minmax(2fr, 200px) minmax(50px, 100px) minmax(2fr, 200px);
+}
+
+#mainSection
+{
+    background-color: brown;
+    grid-area: center;
+    grid-template-rows: 100px 1fr;
+}
+
+#rightSection
+{
+    background-color: coral;
+    grid-area: right;
+    grid-template-rows: 2fr 1fr 2fr;
+}
