@@ -1,0 +1,38 @@
+body {
+  margin: 0%;
+}
+.header {
+  grid-area: header;
+  background-color: rgb(207, 88, 88);
+  border: dotted black 2px;
+}
+.main {
+  grid-area: main;
+  background-color: aquamarine;
+  border: dotted rgb(0, 0, 0) 2px;
+}
+.left-side {
+  grid-area: left-side;
+  background-color: rgb(64, 64, 183);
+  border: dotted rgb(87, 130, 108) 2px;
+}
+.right-side {
+  grid-area: right-side;
+  background-color: chartreuse;
+  border: dotted rgb(144, 165, 8) 2px;
+}
+.quick-settings {
+  grid-area: quick-settings;
+  background-color: rgb(132, 79, 181);
+  border: dotted rgb(131, 1, 146) 2px;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 70px 1000%;
+  grid-template-columns: 250px 3fr 250px 40px;
+  grid-template-areas:
+    "header    header    header    header"
+    "left-side   main   quick-settings   right-side";
+  /* gap: 5px; */
+}
