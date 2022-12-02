@@ -17,6 +17,10 @@
   grid-area: bottom-settings;
   background-color: blueviolet;
 }
+.message {
+  grid-area: message;
+  background-color: dodgerblue;
+}
 .main {
   grid-area: main;
   background-color: coral;
@@ -29,5 +33,5 @@
   grid-template-areas:
     "left-nav           header              header"
     "left-nav           left-menu           main"
-    "bottom-settings    bottom-settings     main";
+    "left-nav           bottom-settings     message";
 }
