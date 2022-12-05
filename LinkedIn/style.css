@@ -14,10 +14,10 @@ body {
 .gridcontainer {
     display: grid;
     grid-template-areas: 
-    "headerleftspace header header header header headerrightspace"
-    "mainleftspace mainleftmenu mainfeed mainfeed mainrightmenu mainrightspace";
+    "headerleftspace header header  header headerrightspace"
+    "mainleftspace mainleftmenu  mainfeed mainrightmenu mainrightspace";
     grid-template-rows: 75px 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-columns: 1fr minmax(250px, 1fr) minmax(500px, 2fr) minmax(250px, 1fr) 1fr ;
 }
 
 /* Header */
@@ -84,11 +84,6 @@ header {
 .mainfeed {
     grid-area: mainfeed;
     background-color: pink;
-    display: grid;
-    grid-template-areas: 
-    "compose"
-    "feedposts";
-    grid-template-rows: 100px 1fr;
 }
 
 .mainrightmenu {

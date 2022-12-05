@@ -12,7 +12,7 @@
     display: grid;
     grid-template-areas: 
     "serverlist activeserver chat";
-    grid-template-columns: 102px 1fr 5fr;
+    grid-template-columns: 102px 200px 1fr;
     grid-template-rows: 100vh;
 }
 
@@ -59,8 +59,8 @@
     "chatwindow"
     "chatinput";
     grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
     background-color: gray;
-    min-width: 468px;
 }
 
 .selectedserver .servername {
@@ -135,7 +135,6 @@
 
 .chat .chatname {
     grid-area: chatname;
-    min-width: 482px;
 }
 
 .chat .chatnamecontent {
@@ -192,9 +191,23 @@
     margin: 0px 5px;
 }
 
-.chatinputarea .chatinput input {
+.chatinputarea .chatinput {
+    align-items: center;
+}
+
+.chatinputarea .chatinput .inputdiv input {
     border: none;
-    background-color: grey;
+    background-color: darkgrey;
     color: whitesmoke;
     /* Find a way to dynamicly set the width */
+}
+
+.chatinputarea .chatinput .inputdiv input,textarea{
+    width: 100%;
+    display: block;
+}
+
+.chatinputarea .chatinput ::placeholder {
+    color: white;
+    opacity: 1;
 }
