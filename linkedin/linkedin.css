@@ -1,123 +1,119 @@
 div{
     border: solid 2px grey;
     border-radius: 10px;
-    background-color: rgb(236, 229, 219);
+    background-color: rgba(246, 245, 239, 0.859);
     font-family: sans-serif;
+    
     
 }
 .mydiv {
     display: grid;
     grid-template:
-    "top-bar     top-bar   top-bar" 50px
-    "left-menu   header    right-menu" 75px
-    "left-menu    main     right-menu" 400px
-    "left-menu    main     right-menu" 100px/
-       200px      1fr           200px;
+    "top-bar   top-bar     top-bar    top-bar     top-bar" 100px
+    "   .      left-menu    main     right-menu     ." 400px
+    "   .      left-menu    main     right-menu     ." 400px/
+       200px     1fr         3fr       1.2fr        200px;
     gap: 15px;
 }
 .top-bar {
     grid-area: top-bar;
     background-color: white;
     font-size: 10px;
+    gap: 20px;
     display: grid;
     border: 2px black solid;
-    grid-template-columns: 50px 1fr 25px 25px 25px 25px 25px 25px 30px 30px  ;
-    
+    grid-template-columns: 100px 1fr 1fr;   
 }
+
 .top-bar .logo {
     background-color: white;
     display: grid;
     border: dashed 2px black;
-    margin: 2px 3px 3px 3px;
+    place-items: center;
+    width: 100px;
+    height: 90px;
+    margin-left: 5px;
 }
 .top-bar .search-bar {
-    background-color: white;
+    background-color: rgb(240, 239, 239);
     display: grid;
     border: dashed 2px black;
-    margin: 2px 100px 3px 10px;
-
+    margin-left:50px;
+    height: 90px;
 }
-.top-bar .home, .mynetwork, .jobs, .messages, .notifications, .profile {
+.top-bar .options {
     background-color: white;
-    display: grid;
     border: dashed 2px black;
-    margin: 0px 5px 0px 0px;
-   
-}
-.top-bar .work, .postAjob {
-    background-color: white;
     display: grid;
-    border: dashed 2px black;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 5px;
+    height: 50px;
+    margin-top: 15px;
 }
-
 
 .left-menu{
     grid-area: left-menu;
-    background-color: rgb(236, 229, 219);
+    background-color: rgba(246, 245, 239, 0.859);
     border: grey solid 2px;
     padding: 5px;
-     display: grid;
+    display: grid;
+    grid-template-rows: 2fr 1fr 2fr;
+    gap: 15px;
 
 }
 .left-menu .top-left, .mid-left, .bottom-left {
     background-color: white;
     display: grid;
-    border: grey dashed 2px;
+    border: grey dashed 3px;
     margin: 2px;
+} 
 
-}
-
-
-.header {
-    grid-area: header;
-    background-color: white;
-    border: grey solid 2px;
+.left-menu .top-left {
+    background-color: palegreen;
     display: grid;
-    
+    grid-template-rows: 3fr 1fr 1fr 1fr;
+    gap: 5px;
+    border: 3px solid black;
 }
 
-.header .post, .option {
-    background-color: white;
-    border: grey dashed 2px;
-    margin: 3px;
-
-}
-.header .post img{
-    padding: 7px 0px 0px 7px;
-}
-
-.header .post p{
-    display: inline;
-    padding: 5px 70px 0px 5px;
-    border: solid grey 1px;
-    border-radius: 10px;
-    font-size: 15px;
-}
-
-.header >.option  {
-    grid-template-columns: 50px 50px 50px 50px;
+.left-menu .mid-left {
+    background-color: sandybrown;
     display: grid;
-    margin: 5px 5px 5px 5px;
-    padding: 5px 5px 5px 10px;
+    grid-template-rows: 3fr 1fr;
+    gap: 5px;
 }
-.header > .option >.photo, .video, .document, .write-article {
-    margin: 0px 10px 0px 0px;
+
+.left-menu .bottom-left {
+    background-color: lightblue;
+    display: grid;
 
 }
+
+
+
+
+
 
 .main {
     grid-area: main;
-    background-color: rgb(236, 229, 219);
+    background-color: rgba(246, 245, 239, 0.859);
     display: grid;
-    padding: 5px;
     border: solid grey 2px;
+    grid-template-rows: 1fr 5fr 2fr;
+    gap: 5px;
 }
-.main > .top-main, .bottom-main {
+.main > .header, .top-main, .bottom-main {
    border: grey 2px dashed;
    background-color: white;
    margin: 2px;
 }
+.main .header {
+    display: grid;
+    grid-template-rows: 1.5fr 1fr;
+    gap: 5px;
+    background-color: blueviolet;
 
+}
 
 
 
@@ -127,7 +123,7 @@ div{
     display: grid;
 }
 .right-menu >.news, .viewed , .feed {
-   background-color: white;
+   background-color: rgba(237, 184, 201, 0.645);
    border: dashed grey 2px;
    margin: 2px;
 }
