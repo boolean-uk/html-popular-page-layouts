@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+  
+    display: grid;
+    grid-template:
+      "top top top top" 60px
+      "left-menu emails settings other" 1fr/
+      1fr minmax(390px, 2fr) 1fr 55px;
+  }
+  
+  .top {
+    grid-area: top;
+    background-color: rgba(210, 105, 30, 0.468);
+  }
+  
+  .left-menu {
+    grid-area: left-menu;
+    background-color: rgba(255, 0, 0, 0.348);
+  }
+  
+  .emails {
+    grid-area: emails;
+    background-color: rgba(255, 166, 0, 0.437);
+  }
+  
+  .settings {
+    grid-area: settings;
+    background-color: rgba(255, 255, 0, 0.408);
+  }
+  
+  .other {
+    grid-area: other;
+    background-color: rgba(0, 128, 0, 0.469);
+  }
