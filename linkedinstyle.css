@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid {
+    margin: auto;
+    min-height: 600px;
+    width: 60%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template:
+    "top   top     top"     50px
+    "left  center  right"   1fr/
+    100px  1fr     100px;
+}
+
+.nav-bar {
+    grid-area: top;
+    background-color: red;
+}
+
+.left-menu {
+    grid-area: left;
+    background-color: green;
+
+}
+
+.main {
+    grid-area: center;
+    background-color: blue;
+
+}
+
+.right-menu {
+    grid-area: right;
+    background-color: yellow;
+
+}
