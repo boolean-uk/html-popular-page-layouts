@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+}
+
+.grid {
+    row-gap: 20px;
+    column-gap: 10px;
+    height: 100vh;
+    display: grid;
+    grid-template: 
+    "header header header" 40px
+    "left   main   right"  1fr /
+    200px   1fr    300px;
+}
+.header {
+    grid-area: header;
+    background-color: white;
+}
+.left {
+    grid-area: left;
+    background-color: white;
+}
+.main {
+    grid-area: main;
+    background-color: white;
+}
+.articles {
+    grid-area: right;
+    background-color: white;
+}
+.headergrid {
+    gap: 1vh;
+    display: grid;
+    grid-template:
+    "search nav misc" 50px /
+    300px   1fr  100px;
+}
+.searchbar {
+    grid-area: search;
+    background-color: darkred;
+}
+.navbar {
+    grid-area: nav;
+    background-color: rgb(190, 120, 28);
+}
+.misc {
+    grid-area: misc;
+    background-color: mediumslateblue;
+}
+.artgrid {
+    gap: 5px;
+    height: 100%;
+    display: grid;
+    grid-template: 
+    "news"  3fr
+    "views" 2fr
+    "feed"  3fr;
+}
+.news {
+    grid-area: news;
+    background-color: blue;
+}
+.views {
+    grid-area: views;
+    background-color: chartreuse;
+}
+.feed {
+    grid-area: feed;
+    background-color: darkgray;
+}
+.leftgrid {
+    gap: 5px;
+    height: 100%;
+    display: grid;
+    grid-template: 
+    "prof"  3fr
+    "boo" 2fr
+    "rec"  3fr;
+}
+.profile {
+    grid-area: prof;
+    background-color: aqua;
+}
+.boolean {
+    grid-area: boo;
+    background-color: black;
+}
+.recent {
+    grid-area: rec;
+    background-color: brown;
+}
+.maingrid {
+    gap: 5px;
+    height: 100%;
+    display: grid;
+    grid-template:
+    "create" 50px
+    "posts"  1fr;
+}
+.create {
+    grid-area: create;
+    background-color: rgb(176, 155, 72);
+}
+.posts {
+    grid-area: posts;
+    background-color: bisque;
+}
+@media screen and (max-width: 700px) {
+    .grid {
+    grid-template: 
+    "header header" 40px
+    "left   main"  1fr /
+    200px   1fr;
+    }
+
+    .articles {
+        display: none;
+    }
+}
+@media screen and (max-width: 600px) {
+    .grid {
+    grid-template: 
+    "header header" 40px
+    "left   main"  1fr /
+    200px   1fr;
+    }
+    .headergrid {
+        gap: 1vh;
+        display: grid;
+        grid-template:
+        "search nav" 50px /
+        250px   1fr;
+    }
+    .misc {
+        display: none;
+    }
+    .articles {
+        display: none;
+    }
+}
+@media screen and (max-width: 500px) {
+    .grid {
+    grid-template: 
+    "header" 40px
+    "main"  1fr /
+    1fr;
+    }
+    .misc {
+        display: none;
+    }
+    .articles {
+        display: none;
+    }
+    .left {
+        display: none;
+    }
+}
