@@ -1,0 +1,117 @@
+.grid {
+display: grid;
+grid-template: 
+"header    header   header" 3fr
+"left      main     right" 750px /
+1fr         3fr       2fr
+}
+
+
+.header {
+display: grid;
+grid-area: header;
+background-color: blue;
+grid-template-columns: 0.5fr 0.5fr 1fr;
+grid-template-areas: 
+"Logo Search Icons";
+}
+
+
+.left-sidebar {
+display: grid;
+grid-area: left;
+background-color: blueviolet;
+grid-template-rows: 2fr 1fr 2fr;
+grid-template-areas:
+"Username"
+"Boolean"
+"Recent";
+}
+
+.main {
+display: grid;
+grid-area: main;
+background-color: darkgreen;
+grid-template-rows: 1fr 3fr 5fr 0.75fr;
+grid-template-areas:
+"Start_a_post" 
+"Feed"
+"Post"
+"Bloomberg";
+}
+
+.right-sidebar {
+display: grid;
+grid-area: right;
+background-color: indigo;
+grid-template-rows: 2fr 1fr 2fr;
+grid-template-areas:
+"Linkedin_News"
+"Todays_most_viewed_courses"
+"Add_to_your_feed";
+}
+
+.Username {
+    grid-area: Username;
+    border: 1px dashed black;
+}
+
+.Boolean {
+    grid-area: Boolean;
+    border: 1px dashed black;
+}
+
+.Recent {
+    grid-area: Recent;
+    border: 1px dashed black;
+}
+
+.LinkedIn_News {
+    grid-area: Linkedin_News;
+    border: 1px dashed black;
+}
+
+.Todays_most_viewed_courses {
+    grid-area: Todays_most_viewed_courses;
+    border: 1px dashed black;
+}
+
+.Add_to_your_feed {
+    grid-area: Add_to_your_feed;
+    border: 1px dashed black;
+}
+
+.Logo {
+grid-area: Logo;
+border: 1px dashed black;
+}
+
+.Search {
+grid-area: Search;
+border: 1px dashed black;
+}
+
+.Icons {
+grid-area: Icons;
+border: 1px dashed black;
+}
+
+.Start_a_post { 
+grid-area: Start_a_post;
+border: 1px dashed black;
+}
+
+.Feed {
+grid-area: Feed;
+border: 1px dashed black;
+}
+
+.Post {
+grid-area: Post;
+border: 1px dashed black;
+}
+
+.Bloomberg {
+grid-area: Bloomberg;
+border: 1px dashed black;
+}
