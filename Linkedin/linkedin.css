@@ -1,5 +1,5 @@
 .header {
-    background-color: grey;
+    background-color: #FFFFFF;
     grid-area: header;
 }
 
@@ -25,7 +25,7 @@
     grid-template:
         "header header header header header" 50px
         ".left main right." 100vh/
-        1fr 1fr 2fr 1fr 1fr
+        200px 1fr 2fr 1fr 200px
 }
 
 .leftcard1{
@@ -94,6 +94,26 @@
 
 img{
     height: 45px;
-    margin-left: 310px;
+    margin-left: 220px;
+    border-radius: 20%;
+}
 
+* {
+   
+    margin: 0;
+    background-color: #F3F2EF;
+ 
+}
+
+input {
+ position: absolute;
+
+ justify-items: center;
+ align-items: center;
+ margin-top: 4px;
+ margin-left: 20px;
+ width: 200px;
+
+ height: 30px;
+ 
 }
