@@ -28,6 +28,39 @@
         200px 1fr 2fr 1fr 200px
 }
 
+@media screen and (max-width: 800px) {
+    .grid {
+      grid-template-columns: 1fr 1fr 2fr;
+      grid-template-rows: 50px 100vh;
+      grid-template-areas:
+      "header header header"
+      ".left main ";
+    }
+
+    .right-side {
+      display: none;
+    }
+  }
+
+
+  @media screen and (max-width: 400px) {
+    .grid {
+      grid-template-columns: 2fr;
+      grid-template-rows: 50px 100vh;
+      grid-template-areas:
+      "header"
+      "main ";
+    }
+
+    .right-side {
+      display: none;
+    }
+
+    .left-side {
+        display: none;
+      }
+  }
+
 .leftcard1{
     background-color: white;
     border-radius: 8px;
