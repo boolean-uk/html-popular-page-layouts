@@ -27,3 +27,73 @@
         ".left main right." 100vh/
         1fr 1fr 2fr 1fr 1fr
 }
+
+.leftcard1{
+    background-color: white;
+    border-radius: 8px;
+    height: 60px;
+    margin: 5px;
+    place-items:center;
+}
+
+.leftcard2{
+    background-color: white;
+    border-radius: 8px;
+    height: 60px;
+    margin: 5px;
+    place-items:center;
+}
+
+.leftcard3{
+    background-color: white;
+    border-radius: 8px;
+    height: 60px;
+    margin: 5px;
+    place-items:center;
+}
+
+.maincard1{
+    background-color: white;
+    border-radius: 8px;
+    height:30px;
+    margin: 5px;
+    place-items:center;
+}
+
+.maincard2{
+    background-color: white;
+    border-radius: 8px;
+    height:250px;
+    margin: 5px;
+    place-items:center;
+}
+
+.rightcard1{
+    background-color: white;
+    border-radius: 8px;
+    height:150px;
+    margin: 5px;
+    place-items:center;
+}
+
+.rightcard2{
+    background-color: white;
+    border-radius: 8px;
+    height:150px;
+    margin: 5px;
+    place-items:center;
+}
+
+.rightcard3{
+    background-color: white;
+    border-radius: 8px;
+    height:150px;
+    margin: 5px;
+    place-items:center;
+}
+
+img{
+    height: 45px;
+    margin-left: 310px;
+
+}
