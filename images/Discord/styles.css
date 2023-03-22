@@ -1,0 +1,25 @@
+.grid {
+    display:grid;
+    grid-template-columns: 100px 400px 1fr;
+    grid-template-rows: 100vh;
+    grid-template-areas: 
+    "icons rooms chat";
+}
+
+.icons {
+    display:inline-block ;
+    grid-area: icons;
+    background-color: magenta;
+}
+
+.rooms {
+    display:inline-block ;
+    grid-area: rooms;
+    background-color: cyan;
+}
+
+.chat {
+    display:inline-block ;
+    grid-area: chat;
+    background-color: yellow;
+}
