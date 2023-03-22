@@ -1,0 +1,42 @@
+.grid {
+    display: grid;
+    grid-template:
+        "header header header header" 50px
+        "left main right super" 100vh
+        "footer main right super" 50px/
+        1fr 2fr 1fr 0.25fr
+}
+
+.header {
+    grid-area: header;
+    background-color: grey;
+}
+
+.left {
+    grid-area: left;
+    background-color: lightpink;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: lightblue;
+}
+
+.main {
+    grid-area: main;
+    background-color: lightgreen;
+}
+
+.right {
+    grid-area: right;
+    background-color: rgb(219, 219, 183);
+}
+
+.super-right {
+    grid-area: super;
+    background-color: rgb(157, 195, 81);
+}
+
+img {
+    height: 50px;
+}
