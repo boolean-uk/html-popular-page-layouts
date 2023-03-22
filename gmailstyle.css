@@ -1,0 +1,115 @@
+.grid{
+    display: grid;
+    grid-template-rows: 50px 80vh;
+    grid-template-columns: 200px 2fr 200px 50px;
+    grid-template-areas: 
+    "header header header header"
+    "menu mail settings nav";
+}
+.header{
+    grid-area: header;
+    background-color: bisque;
+    display: grid;
+    grid-template-columns: 200px 2fr 250px;
+    grid-template-areas:
+    "icon search account";
+
+}
+.icon{
+    grid-area: icon;
+    border: solid 1px black;
+}
+.search{
+    grid-area: search;
+    border: solid 1px black;
+}
+.account{
+    grid-area: account;
+    border: solid 1px black;
+}
+.menu{
+    grid-area: menu;
+    background-color: burlywood;
+    display: grid;
+    grid-template-rows: 50px 2fr 100px 150px 50px;
+    grid-template-areas: 
+    "compose"
+    "folders"
+    "meet"
+    "chat"
+    "actions";
+}
+.compose{
+    grid-area: compose;
+    border: solid 1px black;
+}
+.folders{
+    grid-area: folders;
+    border: solid 1px black;
+}
+.meet{
+    grid-area: meet;
+    border: solid 1px black;
+}
+.chat{
+    grid-area: chat;
+    border: solid 1px black;
+}
+.actions{
+    grid-area: actions;
+    border: solid 1px black;
+}
+
+.mail{
+    grid-area: mail;
+    background-color: lightcoral;
+    display: grid;
+    grid-template-rows: 30px 1fr;
+    grid-template-areas: 
+    "options"
+    "inbox";
+}
+.options{
+    grid-area: options;
+    border: solid 1px black;
+}
+.inbox{
+    grid-area: inbox;
+    border: solid 1px black;
+}
+.settings{
+    grid-area: settings;
+    background-color: lightsalmon;
+    display: grid;
+    grid-template-rows: 50px 200px 150px 1fr;
+    grid-template-areas: 
+    "quicksettings"
+    "density"
+    "theme"
+    "type";
+}
+.quicksettings{
+    grid-area: quicksettings;
+    border: solid 1px black;
+}
+.density{
+    grid-area: density;
+    border: solid 1px black;
+}
+.theme{
+    grid-area: theme;
+    border: solid 1px black;
+}
+.type{
+    grid-area: type;
+    border: solid 1px black;
+}
+.nav{
+    grid-area: nav;
+    background-color: peachpuff;
+}
+@media screen and (max-width:800px){
+    .grid{
+        grid-template-columns: 50px 2fr 50px 0px;
+    }
+}
