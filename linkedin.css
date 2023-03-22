@@ -1,0 +1,29 @@
+.header {
+    background-color: grey;
+    grid-area: header;
+}
+
+.left-side {
+    background-color: pink;
+    grid-area: left;
+}
+
+.main {
+    background-color: lightblue;
+    grid-area: main;
+}
+
+.right-side {
+    background-color: lightsalmon;
+    grid-area: right;
+}
+
+.grid {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+    grid-template:
+        "header header header header header" 50px
+        ".left main right." 100vh/
+        1fr 1fr 2fr 1fr 1fr
+}
