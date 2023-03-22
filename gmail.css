@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 300px 1fr 350px 50px;
+    grid-template-rows: 70px 95vh ;
+    grid-template-areas:
+       "header header header header"
+       "left  main  right rightextra"
+}
+
+
+.header {
+    grid-area: header;
+    background-color: rgb(255, 255, 255);
+    margin: 15px;
+    padding-top: 12px;
+    font-size: 20px;
+}
+
+.left-sidebar {
+    grid-area: left;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    border-top: solid 2px black;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 200px 350px 25px ;
+    grid-template-areas:
+       "compose"
+       "meet"
+       "chat"
+       "buttons"
+}
+
+.main {
+    grid-area: main;
+    background-color: rgb(255, 255, 255);
+    border: solid 2px black;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr ;
+    grid-template-areas:
+       "misc"
+       "emails"
+}
+
+.right-sidebar {
+    grid-area: right;
+    background-color: rgb(255, 255, 255);
+    border-right: solid 2px black;
+    border-top: solid 2px black;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 300px 1fr 300px ;
+    grid-template-areas:
+       "settings"
+       "density"
+       "theme"
+       "index"
+}
+
+
+.right-extrasidebar {
+    border-top: solid 2px black;
+    text-align: center;
+    vertical-align: middle;
+
+
+}
+
+.misc {
+    height:50px ;
+    border-top: solid 2px rgb(208, 208, 208);
+    border-bottom: solid 2px rgb(208, 208, 208);
+    padding-top: 15px;
+}
+
+.mainemails {
+    grid-area: emailsheader;
+    height: 50px;
+    padding-top: 15px;
+
+}
+
+.quickone {
+    grid-area: settings;
+    padding: 45px
+
+}
+
+.quicktwo {
+    grid-area: density;
+    border-top: solid 2px rgb(208, 208, 208);
+}
+
+.quickthree {
+    grid-area: theme;
+    border-top: solid 2px rgb(208, 208, 208);
+}
+
+.quickfour {
+    grid-area: index;
+    border-top: solid 2px rgb(208, 208, 208);
+    border-bottom: solid 2px black;
+}
+
+.leftone {
+    grid-area: compose;
+    padding: 15px;
+}
+
+.lefttwo {
+    grid-area: meet;
+    border-top: solid 2px rgb(208, 208, 208);
+    padding-top: 15px;
+}
+
+.leftthree {
+    grid-area: chat;
+    border-top: solid 2px rgb(208, 208, 208);
+    padding-top: 15px;
+}
+
+.leftfour {
+    grid-area: buttons;
+    border-top: solid 2px rgb(208, 208, 208);
+    border-bottom: solid 2px black;
+}
