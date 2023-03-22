@@ -1,0 +1,62 @@
+.grid{
+    display: grid;
+    grid-template-columns: 100px 300px 1fr;
+    grid-template-rows: 50px 100vh;
+    grid-template-areas: 
+    "left channel search"
+    "left channel main";
+
+}
+
+
+.left-bar{
+    grid-area: left;
+    background-color: yellow;
+}
+
+.channel-bar{
+    grid-area: channel;
+    background-color: blue;
+    display: grid;
+    grid-template-rows: 50px 1fr 50px;
+    grid-template-areas: 
+    "channel-title"
+    "channel-section"
+    "channel-settings";
+}
+
+.main-menu{
+    display: grid;
+    grid-area: main;
+    background-color: red;
+    grid-template-rows: 1fr 50px;
+    grid-template-areas: 
+    "main"
+    "messages";
+  
+}
+
+.search-menu{
+    grid-area: search;
+    background-color: green;
+}
+
+.channel-title{
+    grid-area: channel-title;
+    background-color: purple;
+}
+
+.channel-section{
+    grid-area: channel-section;
+    background-color: orange;
+}
+
+.channel-settings{
+    grid-area: channel-settings;
+    background-color: pink;
+}
+
+.messages{
+    grid-area: messages;
+    background-color: chocolate;
+}
