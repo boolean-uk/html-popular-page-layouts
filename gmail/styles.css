@@ -17,55 +17,55 @@
     background-color: lightblue;
 }
 
-.headergrid {
-    display: grid;
-    grid-template: 
-    "home  search  icons" 50px /
-     20%   50%     30%;
+    .headergrid {
+        display: grid;
+        grid-template: 
+        "home  search  icons" 50px /
+        20%   50%     30%;
+    }
+
+        .home {
+            grid-area: home;
+            background-color: aqua;
+        }
+        .search {
+            grid-area: search;
+            background-color: teal;
+        }
+        .icons {
+            grid-area: icons;
+            background-color: aquamarine;
+        }
+
+.main {
+    grid-area: main;
+    background-color: lightcoral;
 }
 
-    .home {
-        grid-area: home;
-        background-color: aqua;
-    }
-    .search {
-        grid-area: search;
-        background-color: teal;
-    }
-    .icons {
-        grid-area: icons;
-        background-color: aquamarine;
+    .maingrid {
+        display: grid;
+        height: 100%;
+        grid-template-columns: 20% 50% 20% 10%;
+        grid-template-areas: 
+        "folders mail settings apps";
     }
 
-    .main {
-        grid-area: main;
-        background-color: lightcoral;
-    }
-
-.maingrid {
-    display: grid;
-    height: 100%;
-    grid-template-columns: 20% 50% 20% 10%;
-    grid-template-areas: 
-    "folders mail settings apps";
-}
-
-    .folders {
-        grid-area: folders;
-        background-color: crimson;
-    }
-    .mail {
-        grid-area: mail;
-        background-color:maroon;
-    }
-    .settings {
-        grid-area: settings;
-        background-color:palevioletred;
-    }
-    .apps {
-        grid-area: apps;
-        background-color:firebrick;
-    }
+        .folders {
+            grid-area: folders;
+            background-color: crimson;
+        }
+        .mail {
+            grid-area: mail;
+            background-color:maroon;
+        }
+        .settings {
+            grid-area: settings;
+            background-color:palevioletred;
+        }
+        .apps {
+            grid-area: apps;
+            background-color:firebrick;
+        }
 
 @media screen and (max-width: 500px) {
     .headergrid {
