@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+.page {
+  height: 100vh;
+}
+
+.grid {
+  display: grid;
+}
+
+.page {
+  grid-template:
+  'server-bar main' 1fr /
+  80px 1fr;
+}
+
+.page > .server-bar {
+  grid-area: server-bar;
+  background-color: blue;
+}
+
+.page > .main {
+  grid-area: main;
+  grid-template: 
+  'title-bar header' 50px
+  'channel-list main-content' 1fr /
+  265px 1fr;
+  background-color: red;
+}
+
+.page > .main > .title-bar {
+  grid-area: title-bar;
+  background-color: green;
+}
+
+.page > .main > .header {
+  grid-area: header;
+  background-color: orange;
+}
+
+.page > .main > .channel-list {
+  grid-area: channel-list;
+  grid-template: 
+  'invite-people' 225px
+  'channels' 1fr
+  'profile' 60px /
+  1fr;
+  background-color: yellow;
+}
+
+.page > .main > .channel-list > .invite-people {
+  grid-area: invite-people;
+  background-color: purple;
+}
+
+.page > .main > .channel-list > .channels {
+  grid-area: channels;
+  background-color: aquamarine;
+}
+
+.page > .main > .channel-list > .profile {
+  grid-area: profile;
+  background-color: black;
+}
+
+.page > .main > .main-content {
+  grid-area: main-content;
+  background-color: white;
+}
