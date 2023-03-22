@@ -1,0 +1,42 @@
+.grid {
+    display: grid;
+    grid-template:
+        "left center header" 20px
+        "left center right" 100vh
+        "left footer right" 20px/
+        60px 130px 1fr;
+}
+
+.left {
+    grid-area: left;
+    background-color: #E3E5E8;
+}
+
+.header {
+    grid-area: header;
+    background-color: #FFFFFF;
+}
+
+.center {
+    grid-area: center;
+    background-color: #F2F3F5;
+}
+
+.right {
+    grid-area: right;
+    background-color: #FFFFFF;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: #EBEDEF;
+}
+
+img{
+    height: 45px;
+}
+
+.message{
+    background-color: #EBEDEF;
+    margin-top: 970px;
+}
