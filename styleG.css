@@ -1,0 +1,47 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns: 1300px 498px 125px 2fr;
+    grid-template-rows: 30px 200px 200px;
+    grid-template-areas: 
+        "header header header header"
+        "coulum1 coulum2 coulum3 maintext"
+        "coulum1 coulum2 coulum3 maintext";
+}
+
+.header{
+        grid-area: header;
+        background-color: red;
+       
+        
+}
+
+.coulum1{
+    grid-area: coulum1;
+    background-color: blue;
+    height: 100vh;
+}
+
+.coulum2{
+    grid-area: coulum2;
+    background-color: green;
+    height: 100vh;
+}
+
+
+.coulum3{
+    grid-area: coulum3;
+    background-color: rgb(0, 255, 183);
+    height: 100vh;
+}
+
+.maintext{
+    grid-area: maintext;
+    background-color: purple;
+    height: 100vh;
+}

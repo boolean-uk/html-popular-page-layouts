@@ -1,0 +1,39 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns: 30px 100px 2fr;
+    grid-template-rows: 30px 200px 200px;
+    grid-template-areas: 
+        "coulum1 coulum2 header"
+        "coulum1 coulum2 maintext";
+}
+
+.header{
+        grid-area: header;
+        background-color: red;
+       
+        
+}
+
+.coulum1{
+    grid-area: coulum1;
+    background-color: blue;
+    height: 100vh;
+}
+
+.coulum2{
+    grid-area: coulum2;
+    background-color: green;
+    height: 100vh;
+}
+
+.maintext{
+    grid-area: maintext;
+    background-color: purple;
+    height: 100vh;
+}

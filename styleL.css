@@ -1,0 +1,81 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns: 150px 200px 150px;
+    grid-template-rows: 30px 200px 200px;
+    column-gap: 15px;
+    row-gap: 5px;
+    grid-template-areas: 
+        "header header header"
+        "sidebar1 sidebar3 sidebar2"
+        "sidebar4 main sidebar5"
+        "sidebar6 main sidebar7";
+        justify-content: center;
+        
+
+}
+
+.header{
+ grid-area: header;
+ background-color: rgb(119, 119, 32);
+ border-radius: 20px;
+}
+.main{
+    grid-area: main;
+    background-color: rgb(219, 157, 75);
+   height:100px;
+
+}
+
+.sidebar1{
+grid-area: sidebar1;
+background-color: rgb(46, 104, 104);
+;
+height:100px;
+}
+
+.sidebar2{
+    grid-area: sidebar2;
+    background-color: rgba(85, 138, 75, 0.705);
+
+}
+.sidebar3{
+    grid-area: sidebar3;
+    background-color: rgba(226, 132, 229, 0.705);
+    height: 60px
+
+}
+.sidebar4{
+    grid-area: sidebar4;
+    background-color: rgba(85, 138, 75, 0.705);
+    
+}
+.sidebar5{
+    grid-area: sidebar5;
+    background-color: rgba(85, 138, 75, 0.705);
+
+}
+.sidebar6{
+    grid-area: sidebar6;
+    background-color: rgba(85, 138, 75, 0.705);
+    height: 30px;
+
+}
+.sidebar7{
+    grid-area: sidebar7;
+    background-color: rgba(85, 138, 75, 0.705);
+
+}
+
+@media screen and (min-width: 900px) {
+    .sdiebar7{
+        display: grid;
+        grid-template-columns: 0;
+        
+    }
+  }
