@@ -82,3 +82,15 @@
     grid-area: server;
     background-color: lime;
 }
+
+@media screen and (max-width: 500px) {
+    .grid {
+        grid-template-columns: 50px 1fr;
+        grid-template-areas: 
+    "icons chat";
+    }
+
+    .rooms {
+    display: none;
+    }
+}
