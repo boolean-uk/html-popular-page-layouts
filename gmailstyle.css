@@ -11,19 +11,93 @@ font-family: Arial, Helvetica, sans-serif;
 .grid {
     margin: auto;
     min-height: 100vh;
-    width: 60%;
+    width: 95%;
     display: grid;
-    grid-gap: 20px;
     grid-template:
-    "top   top     top     top"   50px
-    "left  center  right  far-right "   1fr/
-    200px  1fr     240px    200px;
+    "nav   nav     nav      nav"   50px
+    "left  emails  right    quickaccess"   1fr/
+    200px  1fr     240px    40px;
 }
 
 .nav-bar {
+    grid-area: nav;
+    border: solid 2px black;
+}
+
+.left-menu {
+    display: grid;
+    grid-area: left;
+    grid-template-areas: 
+    "compose"
+    "folders"
+    "meet"
+    "chat";
+    grid-template-rows: 50px 3fr 1fr 2fr;
+}
+
+.main {
+    grid-area: emails;
+    border: solid 2px black;
+}
+
+.right-menu {
+    display: grid;
+    grid-area: right;
+    grid-template-areas:
+    "settings"
+    "theme"
+    "type";
+    grid-template-rows: 2fr 1fr 2fr;
+}
+
+.quick-settings {
+    grid-area: settings;
+    border: solid 2px black;
+}
+
+.theme {
+    grid-area: theme;
+    border: solid 2px black;
+}
+
+.inbox-type {
+    grid-area: type;
+    border: solid 2px black;
+}
+
+.compose {
+    grid-area: compose;
+    border: solid 2px black;
+}
+
+.folders {
+    grid-area: folders;
+    border: solid 2px black;
+}
+
+.meet {
+    grid-area: meet;
+    border: solid 2px black;
+}
+
+.chat {
+    grid-area: chat;
+    border: solid 2px black;
+}
+
+.quick-access {
+    grid-area: quickaccess;
+    border: solid 2px black;
+}
+
+.quick-access p {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+
+/* .nav-bar {
     grid-area: top;
-    border: solid 2px;
-    
+    border: solid 2px;    
 }
 
 .left-menu {
@@ -34,48 +108,44 @@ grid-template-areas:
 "gmail-options"
 "meet"
 "chat";
-grid-template-rows: 
-2fr
-0.5fr
-0.5fr
-1fr
+grid-template-rows:2fr  0.5fr   0.5fr   1fr
+}
 
+.main {
+    grid-area: center;
+    display: grid;
+    grid-template-areas: 
+    "emails";
 }
 
 .compose {
-display: grid;
-border: solid 1px;
+    grid-area: compose;
+    border: solid 1px;
 }
 
 .gmail-options {
-display: grid;
-border: solid 1px;
-
+    grid-area: gmail-options;
+    border: solid 1px;
 }
 
 .meet {
-display: grid;
-border: solid 1px;
-
-}
-
-.emails {
-display: grid;
-border: solid 1px;
-
+    grid-area: meet;
+    border: solid 1px;
 }
 
 .chat {
-display: grid;
-border: solid 1px;
+    grid-area: chat;
+    border: solid 1px;
+}
 
+.emails {
+    grid-area: emails;
+    border: solid 1px;
 }
-.main {
-grid-area: center;
-display: grid;
-grid-template-areas: 
-"emails";
-}
+
+
+
+
 
 .emails {
 display: grid;
@@ -108,12 +178,6 @@ border: solid 1px;
 
 }
 
-.extra-right-menu {
-grid-area: far-right;
-
-}
-
-.icons {
-    display: grid;
-    border: solid 1px;
-}
+.quick-access {
+    display:
+} */
