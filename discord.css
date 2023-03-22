@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template:
+    "side-menu logo header" 5vh
+    "side-menu menu-display main-body" 95vh /
+    75px 200px 1fr;
+}
+
+.header {
+  grid-area: header;
+  background-color: rgb(206, 216, 189);
+}
+
+.side-menu {
+  grid-area: side-menu;
+  background-color: rgb(182, 236, 236);
+}
+
+.menu-display {
+  grid-area: menu-display;
+  background-color: rgb(181, 181, 231);
+}
+
+.main-body {
+  grid-area: main-body;
+  background-color: rgb(240, 199, 184);
+}
+
+.log {
+  background-color: rgb(198, 240, 240);
+  grid-area: logo;
+}
