@@ -18,6 +18,25 @@
 .icon{
     grid-area: icon;
     border: solid 1px black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-areas: 
+    "more envelope gmail";
+}
+.moreimg {
+    height: 60px;
+    width: 30px;
+    padding-left: 12px;
+ }
+
+.envelope{
+    padding-top: 6px;
+}
+.gmail{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 25px;
+    font-weight: bold;
 }
 .search{
     grid-area: search;
@@ -31,7 +50,7 @@
     grid-area: menu;
     background-color: burlywood;
     display: grid;
-    grid-template-rows: 50px 2fr 100px 150px 50px;
+    grid-template-rows: 62px 2fr 100px 150px 50px;
     grid-template-areas: 
     "compose"
     "folders"
@@ -42,14 +61,37 @@
 .compose{
     grid-area: compose;
     border: solid 1px black;
+    padding-top: 6px;
+}
+.composebutton{
+    padding: none;
+    height: 50px;
+    width: 180px;
+    border-radius: 50px;
+    background-color: white;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.composebutton > span{
+    font-size: 40px;
+    text-align: left;
+    line-height: 20px;
 }
 .folders{
     grid-area: folders;
     border: solid 1px black;
+
 }
 .meet{
     grid-area: meet;
     border: solid 1px black;
+    padding-left: 15px;
+    display: grid;
+    grid-template-rows: 20px 20px 20px;
+    grid-template-areas:
+    "meet1"
+    "meet2"
+    "meet3";
 }
 .chat{
     grid-area: chat;
@@ -111,5 +153,8 @@
 @media screen and (max-width:800px){
     .grid{
         grid-template-columns: 50px 2fr 50px 0px;
+    }
+    .compose{
+        display: none;
     }
 }
