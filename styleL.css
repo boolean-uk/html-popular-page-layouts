@@ -73,7 +73,9 @@ height:100px;
 }
 
 @media screen and (min-width: 900px) {
-    .sidebar7{
-        display:inline;
+    .sdiebar7{
+        display: grid;
+        grid-template-columns: 0;
+        
     }
-}
+  }
