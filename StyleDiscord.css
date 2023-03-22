@@ -1,7 +1,7 @@
 .grid{
     display: grid;
     grid-template-columns: 100px 300px 1fr;
-    grid-template-rows: 50px 100vh;
+    grid-template-rows: 50px 90vh;
     grid-template-areas: 
     "left channel search"
     "left channel main";
@@ -31,10 +31,18 @@
     background-color: red;
     grid-template-rows: 1fr 50px;
     grid-template-areas: 
-    "main"
+    "paragraph"
     "messages";
+    
   
 }
+
+/* @media screen and (max-width: 714px) {
+    .grid{
+        grid-template-columns: 100px 300px 298px;
+        grid-template-rows: 50px 795px;
+    }
+} */
 
 .search-menu{
     grid-area: search;
@@ -59,4 +67,19 @@
 .messages{
     grid-area: messages;
     background-color: chocolate;
+}
+
+.paragraph{
+    grid-area: paragraph;
+    background-color: bisque;
+    overflow-y: scroll;
+}
+
+@media screen and (min-width: 880px) {
+    .grid {
+      grid-template:
+        "left channel search" 50px
+        "left channel main" 90vh /
+        100px 200px  1fr;
+    }
 }
