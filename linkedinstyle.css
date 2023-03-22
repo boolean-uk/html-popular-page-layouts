@@ -1,3 +1,6 @@
+body {
+    background-color: #f3f2ef;
+}
 * {
     margin: 0;
     padding: 0;
@@ -18,23 +21,50 @@
 
 .nav-bar {
     grid-area: top;
-    background-color: red;
+    border: solid 5px;
+    
 }
 
 .left-menu {
+    display: grid;
     grid-area: left;
-    background-color: green;
-
+    border: solid 5px;
+    grid-template-areas: 
+   "profile"   
+   "boolean"   
+   "recent"; 
+grid-template-rows: 
+2fr 
+1fr 
+2fr;
 }
 
 .main {
     grid-area: center;
-    background-color: blue;
+    border: solid 5px;
+    
 
 }
 
 .right-menu {
     grid-area: right;
-    background-color: yellow;
+    border: solid 5px;
+}
+
+.profile{
+    grid-area: profile; 
+     border: solid 5px;
+
+}
+
+.boolean {
+    grid-area: boolean; 
+    border: solid 5px;
+
+}
+
+.recent {
+    grid-area: recent; 
+    border: solid 5px;
 
 }
