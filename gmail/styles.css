@@ -50,19 +50,44 @@
     "folders mail settings apps";
 }
 
-.folders {
-    grid-area: folders;
-    background-color: crimson;
-}
-.mail {
-    grid-area: mail;
-    background-color:maroon;
-}
-.settings {
-    grid-area: settings;
-    background-color:palevioletred;
-}
-.apps {
-    grid-area: apps;
-    background-color:firebrick;
+    .folders {
+        grid-area: folders;
+        background-color: crimson;
+    }
+    .mail {
+        grid-area: mail;
+        background-color:maroon;
+    }
+    .settings {
+        grid-area: settings;
+        background-color:palevioletred;
+    }
+    .apps {
+        grid-area: apps;
+        background-color:firebrick;
+    }
+
+@media screen and (max-width: 500px) {
+    .headergrid {
+        display: grid;
+        grid-template: 
+        "home  icons" 50px /
+         30%   70%;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .maingrid {
+        display: grid;
+        grid-template-columns: 20% 70% 10%;
+        grid-template-areas: 
+        "folders mail apps";
+    }
+
+    .settings {
+        display: none;
+    }
+
 }
