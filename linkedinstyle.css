@@ -9,26 +9,26 @@ body {
 
 .grid {
     margin: auto;
-    min-height: 600px;
+    min-height: 100vh;
     width: 60%;
     display: grid;
     grid-gap: 20px;
     grid-template:
     "top   top     top"     50px
     "left  center  right"   1fr/
-    100px  1fr     100px;
+    200px  1fr     240px;
 }
 
 .nav-bar {
     grid-area: top;
-    border: solid 5px;
+    border: solid 2px;
     
 }
 
 .left-menu {
     display: grid;
     grid-area: left;
-    border: solid 5px;
+    row-gap: 10px;
     grid-template-areas: 
    "profile"   
    "boolean"   
@@ -41,30 +41,69 @@ grid-template-rows:
 
 .main {
     grid-area: center;
-    border: solid 5px;
-    
-
+    display: grid;
+    grid-template-areas: 
+    "newpost"
+    "feed";
+    grid-template-rows: 100px 1fr;
+    row-gap: 10px;
 }
 
 .right-menu {
     grid-area: right;
-    border: solid 5px;
+    display: grid;
+    grid-template-areas: 
+    "news"
+    "viewed"
+    "addfeed";
+    grid-template-rows: 1.6fr 1.4fr 2fr;
+    row-gap: 10px;
 }
 
 .profile{
     grid-area: profile; 
-     border: solid 5px;
+     border: solid 2px;
 
 }
 
 .boolean {
     grid-area: boolean; 
-    border: solid 5px;
+    border: solid 2px;
 
 }
 
 .recent {
     grid-area: recent; 
-    border: solid 5px;
+    border: solid 2px;
+
+}
+
+.new-post {
+    grid-area: newpost; 
+    border: solid 2px;
+
+}
+
+.feed {
+    grid-area: feed; 
+    border: solid 2px;
+
+}
+
+.news {
+    grid-area: news; 
+    border: solid 2px;
+
+}
+
+.most-viewed {
+    grid-area: viewed; 
+    border: solid 2px;
+
+}
+
+.add-to-feed {
+    grid-area: addfeed; 
+    border: solid 2px;
 
 }
