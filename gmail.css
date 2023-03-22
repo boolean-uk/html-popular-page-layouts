@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+/* PROJECT WRAPPER */
+.wrapper {
+  display: grid;
+  height: 100%;
+  grid-template:
+    "top-container" 7vh
+    "bottom-container" 93vh;
+}
+
+/* TOP SECTION */
+.top-container {
+  display: grid;
+  align-items: center;
+  background-color: #ffffff;
+  border-bottom: 1px solid rgb(240, 238, 238);
+}
+
+.navigation {
+  margin-left: 25px;
+}
+
+/* BOTTOM SECTION */
+
+.bottom-container {
+  display: grid;
+  grid-template-columns: 3fr 9fr 3fr 0.5fr;
+}
+
+.left-section {
+  display: grid;
+  grid-template-rows: 5fr 2fr 3fr;
+}
+
+/* .sections {
+  display: grid;
+} */
+
+.scroll {
+  overflow-y: scroll;
+}
+
+.inbox-top,
+.meet {
+  border-bottom: 1px solid rgb(240, 238, 238);
+}
+
+.inbox-area {
+  display: grid;
+  row-gap: 23px;
+  margin: 25px;
+}
+
+.inbox-top {
+  background-color: #ffffff;
+}
+
+.email-list {
+  font-size: 19px;
+  margin: 25px 0 0 25px;
+  display: grid;
+  grid-template-columns: 3fr 7fr 1fr;
+  border-bottom: 1px solid rgb(240, 238, 238);
+  padding-bottom: 7px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.quick-settings {
+  margin: 25px 0 0 25px;
+  border-right: 1px solid rgb(231, 230, 230);
+}
+
+.all {
+  height: 40px;
+  width: 85%;
+  border-radius: 7px;
+  border: 1.5px solid rgb(230, 230, 230);
+  text-align: center;
+  margin: 25px 0;
+  padding: 10px;
+  color: rgb(28, 124, 214);
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.density {
+  font-size: 13px;
+  color: gray;
+  font-weight: bold;
+  margin: 25px 0;
+}
+
+.right-card {
+  display: grid;
+  grid-template-columns: 1fr 2fr 3fr;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.card {
+  height: 40px;
+  width: 65px;
+  border-radius: 7px;
+  text-align: center;
+  font-size: 17px;
+  background-color: tomato;
+}
+
+.theme-text {
+  font-size: 13px;
+  color: gray;
+  font-weight: bold;
+  margin: 25px 0;
+}
+
+.theme {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 15px;
+  column-gap: 5px;
+}
