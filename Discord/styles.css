@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+}
+.grid {
+    display:grid;
+    grid-template-columns: 50px 200px 1fr;
+    grid-template-rows: 100vh;
+    grid-template-areas: 
+    "icons rooms chat";
+}
+.roomgrid {
+    height: 100%;
+    display: grid;
+    grid-template:
+    "server"  50px
+    "invite"  200px
+    "general" 1fr
+    "classes" 1fr
+    "lobby"   1fr
+    "staff"   1fr
+    "user"    50px;
+}
+.chatgrid {
+    height: 100%;
+    display: grid;
+    grid-template:
+    "search" 50px
+    "convo"  1fr
+    "holla"  50px;
+}
+.search {
+    grid-area: search;
+    background-color: rgb(132, 81, 19);
+}
+.convo {
+    grid-area: convo;
+    background-color: rgb(30, 107, 10);
+}
+.hollerin {
+    grid-area: holla;
+    background-color: rebeccapurple;
+}
+.invite {
+    grid-area: invite;
+    background-color: bisque;
+}
+.icons {
+    grid-area: icons;
+    background-color: magenta;
+}
+
+.rooms {
+    grid-area: rooms;
+    background-color: cyan;
+}
+
+.chat {
+    grid-area: chat;
+    background-color: yellow;
+}
+.general {
+    grid-area: general;
+    background-color: aqua;
+}
+.classes {
+    grid-area: classes;
+    background-color: burlywood;
+}
+.lobby {
+    grid-area: lobby;
+    background-color: lightseagreen;
+}
+.staff {
+    grid-area: staff;
+    background-color: teal;
+}
+.user {
+    grid-area: user;
+    background-color: olive;
+}
+.server {
+    grid-area: server;
+    background-color: lime;
+}
+
+@media screen and (max-width: 500px) {
+    .grid {
+        grid-template-columns: 50px 1fr;
+        grid-template-areas: 
+    "icons chat";
+    }
+
+    .rooms {
+    display: none;
+    }
+}

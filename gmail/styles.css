@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+}
+.grid {
+    height: 100vh;
+    display: grid;
+    grid-template:
+    "head head head head" 50px
+    "nav  main set  icon" 1fr /
+    250px 1fr 250px 50px;
+}
+.header {
+    grid-area: head;
+    background-color: bisque;
+}
+    .headgrid {
+        display: grid;
+        grid-template:
+        "logo bar prof" 50px /
+        250px 1fr 300px;
+    }
+        .logo {
+            grid-area: logo;
+            background-color: black;
+        }
+        .searchbar {
+            grid-area: bar;
+            background-color: bisque;
+        }
+        .profile {
+            grid-area: prof;
+            background-color: aqua;
+        }
+.nav {
+    grid-area: nav;
+    background-color: blue;
+}
+    .navgrid {
+        display: grid;
+        height: 100%;
+        grid-template:
+        "comp" 50px
+        "navs" 1fr
+        "meet" 120px
+        "chat" 200px
+        "butt" 40px;
+    }
+        .compose {
+            grid-area: comp;
+            background-color: aliceblue;
+        }
+        .navigation {
+            grid-area: navs;
+            background-color: burlywood;
+        }
+        .meet {
+            grid-area: meet;
+            background-color: chartreuse;
+        }
+        .chat {
+            grid-area: chat;
+            background-color: darkorchid;
+        }
+        .buttons {
+            grid-area: butt;
+            background-color: lightcoral;
+        }
+.main {
+    grid-area: main;
+    background-color: cadetblue;
+}
+    .maingrid {
+        display: grid;
+        height: 100%;
+        grid-template:
+        "pages"  40px
+        "emails" 1fr;
+    }
+        .pages {
+            grid-area: pages;
+            background-color: crimson;
+        }
+        .emails {
+            grid-area: emails;
+            background-color: rgb(98, 92, 16);
+        }
+.settings {
+    grid-area: set;
+    background-color: darkorange;
+}
+    .setgrid {
+        display: grid;
+        height: 100%;
+        grid-template:
+        "quick" 80px
+        "den"   3fr
+        "theme" 2fr
+        "inbox" 3fr;
+    }
+        .quick {
+            grid-area: quick;
+            background-color: bisque;
+        }
+        .density {
+            grid-area: den;
+            background-color: chartreuse;
+        }
+        .theme {
+            grid-area: theme;
+            background-color: cornflowerblue;
+        }
+        .inbox {
+            grid-area: inbox;
+            background-color: chocolate;
+        }
+.icons {
+    grid-area: icon;
+    background-color: purple;
+}
+    .icongrid {
+        display: grid;
+        height: 100%;
+        grid-template:
+        "iconss" 150px
+        "plus"  1fr;
+    }
+        .iconss {
+            grid-area: iconss;
+            background-color: fuchsia;
+        }
+        .plus {
+            grid-area: plus;
+            background-color: pink;
+        }
+@media screen and (max-width: 1000px) {
+    .grid {
+        height: 100vh;
+        display: grid;
+        grid-template:
+        "head head head" 50px
+        "nav  main set" 1fr /
+        250px 1fr 250px;
+    }
+    .icons {
+        display: none;
+    }
+    .headgrid {
+        display: grid;
+        grid-template:
+        "logo bar prof" 50px /
+        250px 1fr 250px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .grid {
+        height: 100vh;
+        display: grid;
+        grid-template:
+        "head head head" 50px
+        "nav  main set" 1fr /
+        250px 1fr 50px;
+    }
+    .headgrid {
+        display: grid;
+        grid-template:
+        "logo bar prof" 50px /
+        250px 1fr 100px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .grid {
+        height: 100vh;
+        display: grid;
+        grid-template:
+        "head head head" 50px
+        "nav  main set" 1fr /
+        50px 1fr 50px;
+    }
+    .headgrid {
+        display: grid;
+        grid-template:
+        "logo bar prof" 50px /
+        50px 1fr 50px;
+    }
+}
