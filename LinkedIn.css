@@ -1,0 +1,71 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 80px 600px;
+    grid-template-areas: 
+    "top top top"
+    "left mid right";
+}
+.top {
+    grid-area: top;
+    background-color: purple;
+}
+.left {
+    grid-area: left;
+    background-color: aqua;
+}
+.mid {
+    grid-area: mid;
+    background-color: brown;
+}
+.right {
+    grid-area: right;
+    background-color: blueviolet;
+}
+.top {
+    display: grid;
+    grid-template-columns: 100px 1fr 100px 
+    50px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 100px;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    ". one two . three four five six seven eight nine ten .";
+}
+.one {
+    grid-area: one;
+    background-color: azure;
+}
+.two {
+    grid-area: two;
+    background-color: azure;
+}
+.three {
+    grid-area: three;
+    background-color: azure;
+}
+.four {
+    grid-area: four;
+    background-color: azure;
+}
+.five {
+    grid-area: five;
+    background-color: azure;
+}
+.six {
+    grid-area: six;
+    background-color: azure;
+}
+.seven {
+    grid-area: seven;
+    background-color: azure;
+}
+.eight {
+    grid-area: eight;
+    background-color: azure;
+}.nine {
+    grid-area: nine;
+    background-color: azure;
+}
+.ten {
+    grid-area: ten;
+    background-color: azure;
+}
