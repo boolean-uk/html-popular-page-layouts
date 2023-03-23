@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.page {
+    height: 100vh;
+    display: grid;
+    grid-template: 
+    "top-search-menu" 20px 
+    "main-area" 1fr /
+     1000px
+}
+
+.top-search-menu {
+    grid-area: top-search-menu;
+    background-color: aquamarine;
+
+}
+
+.main-area {
+    grid-area: main-area;
+    background-color: blue;
+    display: grid;
+    grid-template: "left-column post right-column" 40px
+                   "left-column main-feed right-column" 1fr /
+                    60px 1fr 80px
+}
+
+.post {
+    grid-area: post;
+    background-color: greenyellow;
+
+}
+.main-feed {
+    grid-area: main-feed;
+    background-color: pink;
+
+}
+.left-column {
+    grid-area: left-column;
+    background-color: grey;
+
+}
+
+.right-column {
+    grid-area: right-column;
+    background-color: orange;
+
+}
