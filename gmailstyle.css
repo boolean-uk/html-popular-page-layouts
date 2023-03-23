@@ -9,7 +9,7 @@
   grid-template: 
   "header header header header" 100px
   "nav main settings icons" 100% /
-  24vw 47vw 20vw 7vw;
+  26vw 47vw 20vw 7vw;
   /* grid-template-columns: 2fr 4fr 2fr 1fr;  */
   /* grid-template-rows: 100px 300px 100px 50px */
 }
@@ -29,14 +29,52 @@
 .main {
   grid-area: main;
   background-color: orange;
+  display: grid;
+  grid-template-rows: 30px repeat(auto-fit, 50px)
+}
+
+.main > div {
+  border: 3px solid black;
+  margin: 3px;
+  border-radius: 8px;
 }
 
 .settings {
   grid-area: settings;
   background-color: blue;
+  display: grid;
+  grid-template-rows: 80px repeat(auto-fit, 250px)
+}
+
+.settings > div {
+  border: 3px solid black;
+  margin: 3px;
+  border-radius: 8px;
 }
 
 .icons {
   grid-area: icons;
   background-color: green;
+}
+
+@media screen and (max-width: 1200px) {
+  .grid {
+    grid-template: 
+    "header header" 100px
+    "nav main" 100% /
+    30vw 70vw;
+  }
+  
+  .icons, .settings {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .grid {
+    grid-template: 
+    "header header" 100px
+    "nav main" 100% /
+    100px 100%;
+  }
 }

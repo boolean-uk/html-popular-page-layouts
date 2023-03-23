@@ -32,3 +32,29 @@
     grid-area: news;
     background-color: rgb(201, 136, 23);
 }
+
+@media screen and (max-width: 1200px) {
+  .grid {
+      grid-template-columns: 1fr 3fr 1fr;
+      grid-template-areas:
+      "header    header    header"
+      "profile   main      news" ;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .grid {
+      grid-template-columns: 3fr;
+      grid-template-areas:
+      "header"
+      "main" ;
+  }
+
+  .profile {
+    display: none;
+  }
+
+  .news {
+    display: none;
+  }
+}

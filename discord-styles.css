@@ -50,3 +50,21 @@
 
 }
 
+@media screen and (max-width: 1200px) {
+  .grid {
+    grid-template-columns: 100vw;
+    grid-template-areas: 
+    "messaging"
+    ;
+    box-sizing: border-box;
+    justify-content:center;
+  }
+
+  .channel-rooms {
+    display: none;
+  }
+  
+  .channels {
+    display: none;
+  }
+}
