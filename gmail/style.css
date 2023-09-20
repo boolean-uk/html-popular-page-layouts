@@ -4,15 +4,17 @@
   box-sizing: border-box;
 }
 
-html, body, .container {
+html,
+body,
+.container {
   height: 100vh;
 }
 
 .container {
   display: grid;
-  grid-template-areas: 
-  "header header header header"
-  "mail-boxes email-list settings nav-bar";
+  grid-template-areas:
+    "header header header header"
+    "mail-boxes email-list settings nav-bar";
   grid-template-columns: 350px 1fr 350px 75px;
   grid-template-rows: 80px 1fr;
 }
@@ -22,15 +24,32 @@ header {
   display: grid;
 
   grid-template-columns: 350px 1fr 425px;
+  gap: 10px;
+
+  background-color: rgb(242, 242, 242);
 }
 
 header > .left-header {
   display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: min-content;
 
-
+  margin-left: 25px;
+  gap: 25px;
+}
+header > .left-header > .hamburger-menu {
+  display: grid;
+  align-items: center;
 }
 
+header > .left-header > .hamburger-menu > img {
+  height: 20px
+}
 
+header > .left-header > .logo,
+header > .left-header > .logo > img {
+  height: 80px;
+}
 
 .mail-boxes {
   grid-area: mail-boxes;
@@ -39,16 +58,15 @@ header > .left-header {
 
 .email-list {
   grid-area: email-list;
-  background-color:azure;
+  background-color: azure;
 }
 
 .settings {
   grid-area: settings;
-  background-color:cadetblue;
+  background-color: cadetblue;
 }
 
 .nav-bar {
   grid-area: nav-bar;
-  background-color:darkkhaki;
+  background-color: darkkhaki;
 }
-
