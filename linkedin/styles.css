@@ -23,6 +23,16 @@ grid-area: left-bar;
 background-color: antiquewhite;
 }
 
+
+.profile,
+.boolean,
+.recent{
+  display: block;
+  padding: 10px;
+  border: solid 2px black;
+  margin-bottom: 20px;
+}
+
 .right-bar{
   grid-area: right-bar;
   background-color: burlywood;
