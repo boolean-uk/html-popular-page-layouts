@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+}
+
+.container{
+    display: grid;
+    grid-template:
+    "nav    nav    nav  nav nav" 50px
+    ".      aside  main right-side   ." 400px
+    ".      aside  main right-side   ." 400px /
+     50px   150px  1fr  150px  50px; 
+    gap: 10px;
+    background-color: antiquewhite;
+}
+.nav{
+    grid-area: nav;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 50px 150px ;
+}
+
+.aside{
+    grid-area: aside;
+    background-color: pink;
+}
+
+.profile {
+    display: block;
+    height: 20px;
+    width: 80%;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-sizing: content-box;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.main{
+    grid-area: main;
+    background-color: lightblue;
+}
+
+.right-side{
+    grid-area: right-side;
+    background-color: orange;
+}
+
+.news {
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.main > :nth-child(1) {
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #fff;
+
+}
+
+.main > :nth-child(2) {
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+/*
+center the image with the search bar
+*/
+img{    
+    width: 20px;
+    height: 20px;
+    padding: 10px;    
+}
+input{
+    height: 15px;
+    margin-top: 10px;
+}
+
