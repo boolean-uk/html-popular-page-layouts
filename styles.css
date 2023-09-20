@@ -1,27 +1,57 @@
-body {
+.biggerbody {
     display: grid;
     grid-template: 
-    ""
-    ""
-    "";
+    "header header header "
+    "left-menu1 main1 right-menu1"
+    "left-menu2 main2 right-menu2 "
+    "left-menu3 main2 right-menu3";
 
 }
 header {
   grid-area: header;
   background-color: blue; 
 }
-main {
+
+.left-menu1{
+  grid-area: left-menu1;
+  background-color: burlywood;
+}
+.left-menu2{
+  grid-area: left-menu2;
+  background-color: burlywood;
+}
+.left-menu3{
+  grid-area: left-menu3;
+  background-color: burlywood;
+}
+
+.search {
   grid-area: main;
   background-color: pink;
 }
-.left-menu {
-  grid-area: left-menu;
+.main1{
+  grid-area: main1;
   background-color: yellow;
 }
-.right-menu {
-  grid-area: right-menu;
+
+.main2 {
+  grid-area: main2;
+  background-color: yellow;
+}
+
+
+.right-menu1{
+  grid-area: right-menu1;
   background-color: green;
 }
+.right-menu2{
+  grid-area: right-menu2;
+  background-color: green;
+}.right-menu3{
+  grid-area: right-menu3;
+  background-color: green;
+}
+
 footer {
   grid-area: footer;
 background-color: purple;
