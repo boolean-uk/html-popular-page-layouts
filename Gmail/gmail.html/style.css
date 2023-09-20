@@ -3,6 +3,28 @@ body{
     grid-template: "header header header header" 
                    "left-menu main right-menu that-menu";
 }
+
+header {
+    grid-area: header;
+background-color: orange;
+}
+
+.main {
+    grid-area: main;
+background-color: orangered;
+}
+
 .left-menu{
-    color: red;
+    grid-area: left-menu;
+background-color: red;
+}
+
+.right-menu {
+    grid-area: right-menu;
+background-color: brown;
+}
+
+.that-menu {
+    grid-area: that-menu;
+background-color: green;
 }
