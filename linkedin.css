@@ -2,14 +2,17 @@
     border: 1px solid blue;
     display: grid;
     grid-template:
-    "nav    nav    nav" 100px
-    "aside  main right-side" 400px
-    "aside  main right-side" 400px /
-     100px  200px  100px; 
+    "nav    nav    nav  nav nav" 50px
+    ".      aside  main right-side   ." 400px
+    ".      aside  main right-side   ." 400px /
+     50px   150px  1fr  150px  50px; 
+    gap: 10px;
 }
 .nav{
     grid-area: nav;
     border: 5px solid lightgreen;
+    display: grid;
+    grid-template-columns: 50px 150px ;
 }
 
 .aside{
@@ -20,9 +23,11 @@
 .profile {
     display: block;
     height: 20px;
-    width: 90px;
-    border: 1px solid red;
-    box-sizing: border-box;
+    width: 80%;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-sizing: content-box;
+    padding: 10px;
 }
 
 .main{
@@ -34,3 +39,38 @@
     grid-area: right-side;
     border: 5px solid yellow;
 }
+
+.news {
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.main > :nth-child(1) {
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+
+}
+
+.main > :nth-child(2) {
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+/*
+center the image with the search bar
+*/
+img{    
+    width: 20px;
+    height: 20px;
+    padding: 10px;    
+}
+input{
+    height: 15px;
+    margin-top: 10px;
+}
+
