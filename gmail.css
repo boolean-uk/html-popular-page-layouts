@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-weight: 400;
+}
+
+.container-gmail {
+  display: grid;
+  grid-template-columns: 300px 1fr 350px 50px;
+  grid-template-rows: 70px 100vh;
+  grid-template-areas:
+    "header header header header"
+    "left  main  right rightextra";
+}
+
+.header {
+  grid-area: header;
+  background-color: white;
+  margin: 15px;
+  padding-top: 12px;
+  font-size: 20px;
+}
+.left-sidebar {
+  grid-area: left;
+  background-color: white;
+  text-align: center;
+  border-top: solid 2px black;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 200px 350px 25px;
+  grid-template-areas:
+    "Allinboxes"
+    "Primary"
+    "Social"
+    "Promotions";
+}
+
+.main {
+  grid-area: main;
+  background-color: white;
+  border: solid 2px black;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 1fr;
+  grid-template-areas:
+    "mail"
+    "emails";
+}
+
+.right-sidebar {
+  grid-area: right;
+  background-color: white;
+  border-right: solid 2px black;
+  border-top: solid 2px black;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 300px 1fr 300px;
+  grid-template-areas:
+    "settings"
+    "density"
+    "theme"
+    "index";
+}
+
+.right-extrasidebar {
+  border-top: solid 2px black;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.mail {
+  height: 50px;
+  border-top: solid 2px rgb(208, 208, 208);
+  border-bottom: solid 2px rgb(208, 208, 208);
+  padding-top: 15px;
+}
+
+.setting {
+  grid-area: settings;
+  padding: 45px;
+}
+
+.density {
+  grid-area: density;
+  border-top: solid 2px rgb(208, 208, 208);
+}
+
+.theme {
+  grid-area: theme;
+  border-top: solid 2px rgb(208, 208, 208);
+}
+
+.index {
+  grid-area: index;
+  border-top: solid 2px rgb(208, 208, 208);
+  border-bottom: solid 2px black;
+}
+
+.left-one {
+  grid-area: Allinboxes;
+  padding: 15px;
+}
+
+.left-two {
+  grid-area: Primary;
+  border-top: solid 2px rgb(208, 208, 208);
+  padding-top: 15px;
+}

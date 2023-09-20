@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.linkedtemp {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 300px 1fr 400px;
+  grid-template-rows: 50px 1fr 40px;
+  grid-template-areas:
+    "header header header"
+    "left   main   right"
+    "footer footer footer";
+}
+
+.header {
+  grid-area: header;
+  background-color: white;
+  border: 1px solid wheat;
+}
+.left-sidebar {
+  grid-area: left;
+  background-color: rgb(232, 231, 220);
+  display: grid;
+  grid-template-rows: 200px 100px 1fr;
+  grid-template-areas:
+    "left-one"
+    "left-two"
+    "left-three";
+}
+
+.left-one {
+  grid-area: left-one;
+  margin: 10px 10px 10px 30px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid wheat;
+}
+
+.left-two {
+  grid-area: left-two;
+  margin: 10px 10px 10px 30px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid wheat;
+}
+
+.left-three {
+  grid-area: left-three;
+  margin: 10px 10px 10px 30px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid wheat;
+}
+
+.main {
+  grid-area: main;
+  background-color: greenyellow;
+  display: grid;
+  grid-template-rows: 100px 400px 1fr;
+  grid-template-areas:
+    "main-one"
+    "main-two"
+    "main-three";
+}
+
+.main-one {
+  grid-area: main-one;
+  margin: 10px;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.main-two {
+  grid-area: main-two;
+  margin: 10px;
+  background-color: #ffffff;
+  border: 1px solid wheat;
+  border-radius: 5px;
+}
+
+.main-three {
+  grid-area: main-three;
+  margin: 10px;
+  background-color: #ffffff;
+  border: 1px solid wheat;
+  border-radius: 5px;
+}
+
+.right-sidebar {
+  grid-area: right;
+  background: gainsboro;
+  display: grid;
+  grid-template-rows: 1fr 300px 1fr;
+  grid-template-areas:
+    "right-one"
+    "right-two"
+    "right-three";
+}
+
+.right-one {
+  grid-area: right-one;
+  margin: 10px 50px 10px 10px;
+  background-color: #ffffff;
+  border: 1px solid wheat;
+  border-radius: 5px;
+}
+.right-two {
+  grid-area: right-two;
+  margin: 10px 50px 10px 10px;
+  background-color: #ffffff;
+  border: solid 1px wheat;
+  border-radius: 10px;
+}
+.right-three {
+  grid-area: right-three;
+  margin: 10px 50px 10px 10px;
+  background-color: #ffffff;
+  border: solid 1px wheat;
+  border-radius: 10px;
+}
+
+.footer {
+  grid-area: footer;
+  height: 40px;
+}
