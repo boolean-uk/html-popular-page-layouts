@@ -15,6 +15,29 @@
         250px        1fr         300px         100px;
 }
 
+@media screen and (max-width: 900px) {
+    .container {
+        grid-template: 
+        "logo          search-bar   other-links  other-links" 50px
+        "left-sidebar     main       settings    related-apps" 1fr
+        "social           main       settings    related-apps" 100px/
+            100px          1fr         150px         50px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        grid-template: 
+        "logo          search-bar   other-links" 50px
+        "left-sidebar     main       settings" 1fr
+        "social           main       settings" 100px/
+            100px          1fr         150px;
+    }
+    .related-apps {
+        display: none;
+    }
+}
+
 .logo {
     grid-area: logo;
     background-color: red;
@@ -52,6 +75,7 @@
     display: grid;
     grid-template-rows: auto;
 }
+
 
 .emails {
     display: grid;
