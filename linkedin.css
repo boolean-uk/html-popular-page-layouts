@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f3f2ef;
+}
+
+.grid {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 300px 1fr 350px;
+    grid-template-rows: 50px 1fr 20px;
+    grid-template-areas:
+        "header header header"
+        "left   main   right"
+        "footer footer footer";
+}
+
+.header {
+    grid-area: header;
+    background-color: #ffffff;
+    border: solid 1px rgb(207, 207, 207);
+}
+
+.left-sidebar {
+    grid-area: left;
+    background-color: blanchedalmond;
+    display: grid;
+    grid-template-rows: 200px 100px 1fr;
+    grid-template-areas:
+    "left-one"
+    "left-two"
+    "left-three"
+}
+
+.left-one {
+    grid-area: left-one;
+    margin: 10px 10px 10px 50px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: solid 1px rgb(207, 207, 207);
+}
+
+.left-two {
+    grid-area: left-two;
+    margin: 10px 10px 10px 50px;
+    background-color: #ffffff;
+    border: solid 1px rgb(207, 207, 207);
+    border-radius: 10px;
+}
+
+.left-three {
+    grid-area: left-three;
+    margin: 10px 10px 10px 50px;
+    background-color: #ffffff;
+    border: solid 1px rgb(207, 207, 207);
+    border-radius: 10px;
+}
+
+.main {
+    grid-area: main;
+    background-color: aquamarine;
+    display: grid;
+    grid-template-rows: 100px 400px 1fr;
+    grid-template-areas:
+    "main-one"
+    "main-two"
+    "main-three"
+}
+
+.main-one {
+    grid-area: main-one;
+    margin: 10px;
+    background-color: #ffffff;
+    border: solid 1px rgb(207, 207, 207);
+    border-radius: 10px;
+}
+
+.main-two {
+    grid-area: main-two;
+    margin: 10px;
+    background-color: #ffffff;
+    border: solid 1px rgb(207, 207, 207);
+    border-radius: 10px;
+}
+
+.main-three {
+    grid-area: main-three;
+    margin: 10px;
+    background-color: #ffffff;
+    border: solid 1px rgb(207, 207, 207);
+    border-radius: 10px;
+}
+
+.right-sidebar {
+    grid-area: right;
+    background: gainsboro;
+    display: grid;
+    grid-template-rows: 1fr 300px 1fr;
+    grid-template-areas:
+    "right-one"
+    "right-two"
+    "right-three"
+}
+
+.right-one {
+    grid-area: right-one;
+    margin: 10px 50px 10px 10px;
+    background-color: #ffffff;
+    border: solid 1px rgb(207, 207, 207);
+    border-radius: 10px;
+}
+.right-two {
+    grid-area: right-two;
+    margin: 10px 50px 10px 10px;
+    background-color: #ffffff;
+    border: solid 1px rgb(207, 207, 207);
+    border-radius: 10px;
+}
+.right-three {
+    grid-area: right-three;
+    margin: 10px 50px 10px 10px;
+    background-color: #ffffff;
+    border: solid 1px rgb(207, 207, 207);
+    border-radius: 10px;
+}
+
+.footer {
+    grid-area: footer;
+    height: 20px;
+}
