@@ -3,7 +3,8 @@ body{
     margin: auto;
     display: grid;
     grid-template: "header header header header" 1fr 
-                   "left-menu main right-menu that-menu" 10fr;
+                   "left-menu main right-menu that-menu" 10fr /
+                   5fr 10fr 5fr 1fr;
 }
 
 header {
