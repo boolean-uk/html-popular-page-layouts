@@ -36,7 +36,11 @@ main {
     gap: 0.5px;
 }
 
-.mail, .folders, .mail, .settings, .apps {
+.folders h2, .mail h2, .settings h2, .apps > h2{
+    border-bottom: 1px solid rgb(128, 126, 126);
+}
+
+.folders, .mail, .settings, .apps {
     border: 1px solid rgb(128, 126, 126);
     border-radius: 4px;
 }
@@ -49,6 +53,7 @@ main {
     display: grid;
     grid-template: 2rem repeat(10, 1.2rem) / 1fr ;
     grid-area: mail;
+    min-width: 220px;
 }
 
 .mail h2 {
@@ -95,6 +100,32 @@ main {
     }
 
     .apps {
+        display: none;
+    }
+}
+
+@media screen and (max-width:700px) {
+    main {
+        display: grid;
+        grid-template: 
+        "mail mail mail mail" 75rem /
+        1fr
+        ;
+    }
+
+    .mail {
+        grid-area: mail;
+    }
+
+    .settings {
+        display: none;
+    }
+
+    .apps {
+        display: none;
+    }
+
+    .folders {
         display: none;
     }
 }
