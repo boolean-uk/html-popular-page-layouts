@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 .container {
     height: 100%;
     width: 100%;
@@ -12,7 +13,7 @@
 
     "header     header         header        header" 100px
     "left-menu  main-content   right-menu    right-extra" 1fr/
-    200px       500px           200px         100px;
+    200px       1fr           200px         150px;
 }
 
 
