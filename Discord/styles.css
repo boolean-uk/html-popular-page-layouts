@@ -1,0 +1,131 @@
+body {
+    background-color: lightblue;
+}
+
+/* container */
+/* display: grid */
+/* grid-template */
+/* "icon-bar    menu-bar    header-and-main" 800px/
+    60px        120px           1fr
+     */
+
+.container {
+    display: grid;
+    grid-template: 
+    "icon-bar   menu-bar header-and-main" 800px/
+        100px        120px    1fr ;
+
+     }
+
+ /* icon-bar */
+
+.icon-bar {
+    grid-area: icon-bar;
+    background-color: aquamarine;
+    border: 1px solid black;
+
+
+
+    display: grid;
+    grid-template: 
+    "icon-bar-1"
+    "icon-bar-2"
+    "icon-bar-3"
+    "icon-bar-4"
+    "icon-bar-5"
+    "icon-bar-6"
+    "icon-bar-7"    30px/
+    50px;
+
+   
+}
+
+.icon-bar-1 {
+grid-area: icon-bar-1;
+background-color: blue;
+border: 1px solid black;
+/* height: 40px; */
+margin-left: 5px;
+margin-top: 5px;
+}
+
+.icon-bar-2 {
+grid-area: icon-bar-2;
+background-color: blue;
+border: 1px solid black;
+/* height: 10px; */
+margin-left: 5px;
+margin-top: 5px;
+}
+
+.icon-bar-3 {
+    grid-area: icon-bar-3;
+    background-color: blue;
+    border: 1px solid black;
+    /* height: 40px; */
+    margin-left: 5px;
+    margin-top: 5px;
+    }
+    
+ .icon-bar-3 {
+        grid-area: icon-bar-3;
+        background-color: blue;
+        border: 1px solid black;
+        /* height: 40px; */
+        margin-left: 5px;
+        margin-top: 5px;
+        }
+
+.icon-bar-4 {
+            grid-area: icon-bar-4;
+            background-color: blue;
+            border: 1px solid black;
+            /* height: 40px; */
+            margin-left: 5px;
+            margin-top: 5px;
+            }
+
+.icon-bar-5 {
+                grid-area: icon-bar-5;
+                background-color: blue;
+                border: 1px solid black;
+                /* height: 40px; */
+                margin-left: 5px;
+                margin-top: 5px;
+                }
+
+.icon-bar-6 {
+                    grid-area: icon-bar-6;
+                    background-color: blue;
+                    border: 1px solid black;
+                    /* height: 40px; */
+                    margin-left: 5px;
+                    margin-top: 5px;
+                    }
+
+.icon-bar-7 {
+grid-area: icon-bar-7;
+background-color: blue;
+border: 1px solid black;
+/* height: 40px; */
+margin-left: 5px;
+margin-top: 5px;
+/* height: 60px; */
+                        }
+                        
+            
+
+/* menu-bar */
+
+.menu-bar {
+    grid-area: menu-bar;
+    background-color: rgb(255, 127, 212);
+    border: 1px solid black;
+}
+
+/* header-and-main */
+.header-and-main {
+    grid-area: header-and-main;
+    background-color: lightseagreen;
+    border: 1px solid black;
+}
