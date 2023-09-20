@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+html,
+body,
+.container {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "server-menu channel-menu header header"
+    "server-menu channel-menu chat-area users";
+
+  grid-template-columns: 75px 250px 1fr 250px;
+  grid-template-rows: 50px 1fr;
+}
+
+.header {
+  grid-area: header;
+  background-color: aqua;
+}
+
+.server-menu {
+  grid-area: server-menu;
+
+  background-color: blue;
+}
+
+.channel-menu {
+  grid-area: channel-menu;
+
+  background-color: burlywood;
+}
+
+.chat-area {
+  grid-area: chat-area;
+
+  background-color: chartreuse;
+}
+
+.users {
+  grid-area: users;
+
+  background-color: cornflowerblue;
+}
