@@ -1,0 +1,99 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.full-page{
+    display: grid;
+    grid-template: 
+    "header  header     header     header       header"     40px
+    ".       left-menu  main       right-menu   .     "     1fr /
+     1fr     1fr        2fr        1.3fr        1fr;
+}
+
+.header {
+    grid-area: header;
+    background-color: red;
+}
+
+.left-menu {
+    grid-area: left-menu;
+    background-color: blue;
+    height: 100vh;
+}
+
+.main {
+    grid-area: main;
+    background-color: green;
+}
+
+.right-menu {
+    grid-area: right-menu;
+    background-color: yellow;
+}
+
+.left-grid {
+    display: grid;
+    grid-template: 
+    "left-one"
+    "left-two" 
+    "left-three";
+}
+
+.left-one {
+    grid-area: left-one;
+    background-color: aqua;
+    margin: 5px;
+}
+
+.left-two {
+    grid-area: left-two;
+    background-color: rgb(255, 0, 191);
+    margin: 5px;
+}
+
+.left-three {
+    grid-area: left-three;
+    background-color: rgb(255, 102, 0);
+    margin: 5px;
+}
+
+.main-grid {
+    display: grid;
+    grid-template:
+    "main-one" 
+    "main-two"
+    "main-three";
+}
+
+.main-one {
+    grid-area: main-one;
+    background-color: blanchedalmond;
+    margin: 5px;
+}
+
+.main-two {
+    grid-area: main-two;
+    background-color: rgb(37, 174, 115);
+    margin: 5px;
+}
+
+.main-three {
+    grid-area: main-three;
+    background-color: rgb(110, 74, 19);
+    margin: 5px;
+}
+
+.right-menu {
+    display: grid;
+    grid-template:
+    "right-one"
+    "right-two"
+    "right-three";
+}
+
+.right-one {
+    grid-area: right-one;
+    background-color: rgb(126, 116, 116);
+    margin: 5px;
+}
