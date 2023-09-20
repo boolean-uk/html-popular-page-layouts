@@ -114,7 +114,7 @@
       grid-template:
         "header     header    header" 50px
         "left-menu  main      right-menu" 1fr/
-        100px 1fr 80px;
+        80px 1fr 80px;
   
       width: auto;
       height: 100vh;
