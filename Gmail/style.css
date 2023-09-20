@@ -1,0 +1,151 @@
+/*main*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    display: grid;
+    grid-template:
+      "header     header  header     header" 50px
+      "left-menu  main    settings   right-menu" 1fr/
+      200px 1fr 220px 50px;
+  
+    width: auto;
+    min-width: 300px;
+    height: 100vh;
+  }
+  
+  .header {
+    grid-area: header;
+    background-color: #ff00ff30;
+    display: grid;
+    grid-template-columns: 0.5fr repeat(6, 1fr);
+    place-items: center;
+    grid-gap: 3px;
+    padding: 2px;
+  }
+  .left-menu {
+    grid-area: left-menu;
+    background-color: #0000ff30;
+    display: grid;
+    grid-template-rows: 0.1fr 1fr 1fr 1fr 1fr;
+    vertical-align: center;
+    padding: 2px;
+  }
+  .inboxes {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    padding-bottom: 5px;
+  }
+  .labels {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    padding-bottom: 5px;
+  }
+  .meet {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+  }
+  .chat {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .chat-shortcuts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .main {
+    grid-area: main;
+    background-color: #ff000030;
+    display: grid;
+    grid-template-rows: repeat(15, 1fr);
+    padding: 2px;
+    min-width: 200px;
+  }
+  .email {
+    display: grid;
+    grid-template-columns: 0.2fr 0.2fr 1fr 1fr 0.2fr 0.3fr;
+  }
+  .settings {
+    grid-area: settings;
+    background-color: #ffff0030;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    padding: 4px;
+  }
+  .right-menu {
+    grid-area: right-menu;
+    background-color: #00ffff30;
+    display: grid;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr 1fr;
+    place-items: center;
+    padding: 1px;
+  }
+  
+  /*responsive*/
+  
+  @media screen and (max-width: 600px) {
+    .container {
+      display: grid;
+      grid-template:
+        "header     header    header    header" 50px
+        "left-menu  main      main      right-menu" 1fr/
+        400px 1fr 1fr 80px;
+  
+      width: auto;
+      height: 100vh;
+      header {
+        grid-area: header;
+        background-color: #ff00ff30;
+      }
+    }
+    .settings {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 200px) {
+    .container {
+      display: grid;
+      grid-template:
+        "header     header    header" 50px
+        "left-menu  main      right-menu" 1fr/
+        100px 1fr 80px;
+  
+      width: auto;
+      height: 100vh;
+      header {
+        grid-area: header;
+        background-color: #ff00ff30;
+      }
+      .settings {
+        visibility: hidden;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    .container {
+      display: grid;
+      grid-template:
+        "header      header" 50px
+        "left-menu   main" 1fr
+        "right-menu  right-menu" 50px /
+        80px 1fr;
+  
+      width: auto;
+      height: 100vh;
+      header {
+        grid-area: header;
+        background-color: #ff00ff30;
+      }
+      .settings {
+        visibility: hidden;
+      }
+    }
+  }
+  
