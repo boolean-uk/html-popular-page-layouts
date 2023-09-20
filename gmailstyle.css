@@ -1,0 +1,391 @@
+.grid{
+    display: grid;
+    grid-template-rows: 50px 80vh;
+    grid-template-columns: 200px 2fr 200px 50px;
+    grid-template-areas: 
+    "header header header header"
+    "menu mail settings nav";
+}
+.header{
+    grid-area: header;
+    /* background-color: bisque; */
+    display: grid;
+    grid-template-columns: 200px 2fr 250px;
+    grid-template-rows: 50px;
+    grid-template-areas:
+    "icon search account";
+
+}
+.icon{
+    grid-area: icon;
+    border: solid 1px black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-areas: 
+    "more envelope gmail";
+}
+.moreimg {
+    height: 60px;
+    width: 30px;
+    padding-left: 12px;
+ }
+
+.envelope{
+    padding-top: 6px;
+}
+.gmail{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.search{
+    grid-area: search;
+    border: solid 1px black;
+    
+}
+.search > input{
+    display: grid;
+    height: 42px;
+    width: 472px;
+    /* margin: 10px 10px 10px 30px; */
+    border-radius: 5px;
+}
+.account{
+    grid-area: account;
+    border: solid 1px black;
+    display: grid;
+    grid-template-columns:20px 40px 40px 40px 1fr ;
+    grid-template-areas: 
+    "empty bttn1 bttn2 bttn3 acc";
+
+}
+.acc{
+    grid-area: acc;
+    border-radius: 10px;
+    height: 48px;
+
+}
+.bttn3{
+    grid-area: bttn3;
+    margin: 0;
+    font-size: 35px;
+}
+.bttn2{
+    margin: 0;
+    padding-top: 5px;
+    grid-area: bttn2;
+    font-size: 35px;
+}
+.bttn1{
+
+    font-weight: bold;
+    grid-area: bttn1;
+    display: grid;
+
+    text-align: center;
+    border: solid 2px black;
+    border-radius: 55px;
+    width: 20px;
+}
+.menu{
+    padding: 0;
+    grid-area: menu;
+    /* background-color: burlywood; */
+    display: grid;
+    grid-template-rows: 62px 2fr 100px 150px 50px;
+    grid-template-areas: 
+    "compose"
+    "folders"
+    "meet"
+    "chat"
+    "actions";
+}
+.compose{
+    grid-area: compose;
+    border: solid 1px black;
+    padding-top: 6px;
+}
+.composebutton{
+    display: grid;
+    padding: none;
+    height: 50px;
+    width: 180px;
+    border-radius: 50px;
+    background-color: white;
+    
+    grid-template-columns: 50px 1fr;
+    grid-template-areas: 
+    "plus comp";
+    padding-bottom: 10px;
+}
+.composebutton > .plus{
+    font-size: 20px;
+    grid-area: plus;
+    align-content: center;
+    font-size: 40px;
+}
+.comp{
+    display: flex;
+    grid-area: comp;
+    font-size: 20px;
+    align-self: center;
+}
+.folders{
+    grid-area: folders;
+    border: solid 1px black;
+    overflow-x: scroll;
+    align-content: center;
+    grid-template-columns: 50px 1fr;
+    grid-template-areas:
+    "icons foldername" ;
+}
+.folders > div{
+    grid-area: folders;
+    border: solid 1px black;
+    
+    align-content: center;
+    grid-template-columns: 50px 1fr;
+    grid-template-areas:
+    "icons foldername" ;
+}
+.foldername{
+    grid-area: foldername;
+}
+.icons{
+    grid-area: icons;
+    margin: 0;
+    padding-left: 20px;
+    transform: rotate(90deg);
+    
+}
+.folders > div{
+    grid-area: foldername;
+    display: grid;
+    border: solid 0.1px black;
+    grid-auto-rows: 45px;
+    align-items: center;
+    padding-left: 25px;
+}
+.meet{
+    grid-area: meet;
+    border: solid 1px black;
+    display: grid;
+    grid-template-rows: 30px 30px 1fr;
+    grid-template-areas:
+    "meet1"
+    "meet2"
+    "meet3";
+}
+.meet1,.meet2,.meet3{
+    margin: 0
+    ;
+    display: grid;
+    border: solid 1px black;
+    
+}
+.chat{
+    grid-area: chat;
+    border: solid 1px black;
+    overflow-x: scroll ;
+    grid-template-columns: repeat(6, 40px);
+}
+.friends{
+    display: grid; 
+    border: solid 1px black; 
+    height: 50px;  
+    padding-left: 10px;
+}
+.chat > p{
+    margin: 0;
+    border: solid 1px white;
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.actions{
+    grid-area: actions;
+    border: solid 1px black;
+    display: grid;
+    grid-template-columns: repeat(3, 40px);
+    align-content: center;
+    justify-content: center;
+    
+}
+.actions > div{ 
+    border: solid 1px black; 
+    height: 40px;
+}
+.phoneimg{
+    display: grid;
+    height: 30px;
+    width: 30px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+.chaticon{
+    display: grid;
+    height: 30px;
+    width: 40px;
+    padding-top: 5px;
+}
+.personicon{
+    display: inline-block;
+    height: 20px;
+    width: 30px;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+.mail{
+    grid-area: mail;
+    /* background-color: lightcoral; */
+    display: grid;
+    grid-template-rows: 30px 1fr;
+    grid-template-areas: 
+    "options"
+    "inbox";
+}
+.options{
+    display: grid;
+    grid-area: options;
+    border: solid 1px black;
+    grid-template-columns: 30px 30px 30px 1fr 30px 30px 30px;
+    grid-template-areas: 
+    "sq refresh dots . pages arrow1 arrow2";
+}
+.arrow2{
+    grid-area: arrow2;
+    margin: 0;
+    font-size: 20px;
+    padding-top: 7px;
+    text-align: center;
+}
+.arrow1{
+    grid-area: arrow1;
+    margin: 0;
+    font-size: 20px;
+    padding-top: 7px;
+    text-align: right;
+}
+.pages{
+    grid-area: pages;
+    margin: 0;
+    font-size: 8px;
+    padding-top: 10px;
+    
+}
+.dots{
+    font-size: 18px;
+    margin: 0;
+    display: flex;
+    padding-top: 10px;
+    align-items: center;
+    padding-left: 5px;
+
+}
+.refresh{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    padding-bottom: 5px;
+
+}
+.sq{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+}
+.inbox{
+    grid-area: inbox;
+    border: solid 1px black;
+    display: grid;
+    grid-template-rows: repeat(autofit, 25px);
+    overflow-x: scroll;
+}
+.message{
+    height: 30px;
+    border: solid 1px black;
+    display: grid;
+    grid-template-columns: 30px 30px 1fr 40px;
+    grid-template-areas:
+    "mark star email date" ;
+}
+.message >p{
+    margin: 0;
+    grid-area: email;
+    font-size: 13px;
+}
+.message > .mark{
+    grid-area: mark;
+    display: grid;
+    text-align: center;
+    padding-top: 5px;
+}
+.message > .star{
+    grid-area: star;
+    text-align: center;
+    padding-top: 4px;
+    padding-right: 1px;
+
+}
+.message > .date{
+    grid-area: date;
+    text-align: left;
+    font-size: 10px;
+}
+.settings{
+    grid-area: settings;
+    /* background-color: lightsalmon; */
+    display: grid;
+    grid-template-rows: 50px 200px 150px 1fr;
+    grid-template-areas: 
+    "quicksettings"
+    "density"
+    "theme"
+    "type";
+}
+.quicksettings{
+    grid-area: quicksettings;
+    border: solid 1px black;
+    display: grid;
+    grid-template-columns: 1fr 30px;
+    grid-template-areas:
+    "qset ex" ;
+}
+.ex{
+    margin: 0;
+    grid-area: ex;
+    font-size: 35px;
+    text-align: center;
+}
+.qset{
+    grid-area: qset;
+    text-align: center
+}
+.density{
+    grid-area: density;
+    border: solid 1px black;
+}
+.theme{
+    grid-area: theme;
+    border: solid 1px black;
+}
+.type{
+    grid-area: type;
+    border: solid 1px black;
+}
+.nav{
+    grid-area: nav;
+    /* background-color: peachpuff; */
+    border: solid 1px black;
+}
+@media screen and (max-width:800px){
+    .grid{
+        grid-template-columns: 50px 2fr 50px 0px;
+    }
+    .compose{
+        display: none;
+    }
+}
