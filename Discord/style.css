@@ -53,4 +53,10 @@
   background-color: lightgreen;
 }
 
-@media screen and ()
+.profileImg {
+  border-radius: 100%;
+  margin: 10px;
+  background-color: rgba(148, 31, 31, 0.524);
+  height: 40px;
+  width: 40px;
+}
