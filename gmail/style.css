@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, .container {
+  height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-template-areas: 
+  "header header header header"
+  "mail-boxes email-list settings nav-bar";
+  grid-template-columns: 350px 1fr 350px 75px;
+  grid-template-rows: 80px 1fr;
+}
+
+header {
+  grid-area: header;
+  display: grid;
+
+  grid-template-columns: 350px 1fr 425px;
+}
+
+header > .left-header {
+  display: grid;
+
+
+}
+
+
+
+.mail-boxes {
+  grid-area: mail-boxes;
+  background-color: aqua;
+}
+
+.email-list {
+  grid-area: email-list;
+  background-color:azure;
+}
+
+.settings {
+  grid-area: settings;
+  background-color:cadetblue;
+}
+
+.nav-bar {
+  grid-area: nav-bar;
+  background-color:darkkhaki;
+}
+
