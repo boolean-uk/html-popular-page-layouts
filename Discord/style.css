@@ -1,0 +1,28 @@
+.container {
+  display: grid;
+  grid-template:
+    "nav sidebar header" 30px
+    "nav sidebar main"  1fr /
+    40px 200px 1fr;
+  min-height: 100%;
+}
+
+.nav {
+  grid-area: nav;
+  background-color: lightcoral;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: lightblue;
+}
+
+.header {
+  grid-area: header;
+  background-color: lightgoldenrodyellow;
+}
+
+.main {
+  grid-area: main;
+  background-color: lightgreen;
+}
