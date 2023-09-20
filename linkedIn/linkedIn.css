@@ -1,0 +1,95 @@
+.container {
+    display: grid;
+    grid-template: 
+    "side-left     header    side-right" 50px
+    "side-left     main      side-right" 1fr
+    "side-left     main2     side-right" 1fr/
+    20%            1fr       20%;
+    gap: 5px;
+    height: 100%;
+}
+
+.header {
+    text-align: center;
+    grid-area: header;
+    background-color: white;
+    border: 2px solid greenyellow;
+    border-radius: 10px;
+}
+
+.side-left {
+    grid-area: side-left;
+    /* height: 100%;
+    width: 40%; */
+    background-color: wheat;
+}
+
+.main {
+    grid-area: main;
+    height: 250px;
+    border: 2px solid greenyellow;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.main2 {
+    grid-area: main2;
+    height: 250px;
+    border: 2px solid greenyellow;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.side-right {
+    grid-area: side-right;
+    background-color: wheat;
+}
+
+.top {
+    text-align: center;
+    height: 100px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.middle {
+    text-align: center;
+    height: 70px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.bottom {
+    text-align: center;
+    height: 360px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+
+.top2 {
+    text-align: center;
+    height: 170px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.middle2 {
+    text-align: center;
+    height: 170px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.bottom2 {
+    text-align: center;
+    height: 190px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+}
