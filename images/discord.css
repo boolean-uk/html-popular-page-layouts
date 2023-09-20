@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+p{
+  border : dashed 1px black;
+}
+  .container{
+    
+        display: grid;
+        grid-template: 
+        "left main right" 800px/
+        50px 200px 1fr;
+        gap: 10px
+      
+       }
+  
+       .left{
+        grid-area: left;
+        background-color: white;
+        display: grid;
+        grid-template-rows: repeat(10, 20px);
+        gap: 5px;
+       }
+       .main{
+        display: grid;
+        grid-area:main;
+      
+        border : dashed 1px black;
+         grid-template: 
+        "invite" 20px
+        "genral" 100px
+        "class" 1fr
+        "lobby" 1fr
+        "staff" 100px /
+        800px; 
+         gap:20px 
+
+       }
+       .invite{
+        grid-area:invite;
+        background-color:white;
+        border : dashed 1px black;
+       
+       }
+       .genral{
+        grid-area: genral;
+        background-color:white;
+        border : dashed 1px black;
+        display: grid;
+        grid-template-rows:repeat(2,20px) ;
+       }
+       .class{
+        grid-area: class;
+        background-color:white;
+        border : dashed 1px black;
+       }
+       .lobby{
+        grid-area: lobby;
+        background-color:white;
+        border : dashed 1px black;
+       }
+
+       .staff{
+        grid-area:staff
+       
+       }
+       .right{
+        display: grid;
+        grid-area:right;
+        background-color:white;
+        border : dashed 1px black;
+        grid-template: 
+        "class1"3fr
+        "welcome"1fr
+        "message"200px/
+        800px;
+       }
+       .class1{
+        grid-area: class1;
+        background-color:white;
+        border : dashed 1px black;
+       }
+       .welcome{
+        grid-area: welcome;
+        background-color:white;
+        border : dashed 1px black;
+       }
+       .message{
+        grid-area: message;
+        background-color:white;
+        border : dashed 1px black;
+       }

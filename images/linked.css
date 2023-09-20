@@ -1,0 +1,115 @@
+p {
+    border: dashed 1px black;
+  background-color:white;
+  }
+  div {
+    border-radius: solid black 5px;
+
+  }
+  .container{
+    display: grid;
+    grid-template: 
+    "header header header header header " 50px
+    ". left main right ." 500px/
+    1fr 1fr 1fr 1fr 1fr; 
+   justify-items: auto;
+  }
+  .left{
+    display: grid;
+    grid-area: left;
+    background-color: white;
+    grid-template: 
+    "profile" 2fr
+    "visitor" 1fr
+    "recent" 1fr/ 
+    1fr;
+  }
+  .profile{
+    grid-area: profile;
+   
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+  
+  }
+  .visitor{
+    grid-area: visitor;
+    
+    display: grid;
+    grid-template-rows: repeat(4,20px);
+  }
+  .recent{
+    grid-area: recent;
+  display: grid;
+  grid-template-rows: repeat(4,20px);
+  }
+  .header{
+    grid-area:header;
+    display: grid;
+   grid-template: 
+   "logo search home icone icone icone" 50px /
+   50px 500px 200px 50px 100px 100px ;
+    border: dashed 1px black;
+  }
+  .logo{
+    grid-area: logo;
+    margin-left: 20px;
+  }
+  .search{
+    grid-area: search;
+  }
+  .home{
+    grid-area: home;
+  }
+  .logo{
+    grid-area: logo;
+  }
+  .right{
+    display: grid;
+    grid-area: right;
+    grid-template: 
+    "news" 200px
+    "mostviews" 200px
+    "feed" 1fr/
+    1fr;
+  }
+  .news{
+    grid-area: news;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+
+  }
+  .mostviews{
+    grid-area: mostviews;
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+  }
+  .feed{
+    grid-area:feed;
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+  }
+  .main{
+    display: grid;
+    grid-area: main;  
+    grid-template:
+    "feeds" 50px  
+    "post" 500px/
+    1fr;
+  }
+
+
+
+
+  .feeds{
+    grid-area: feeds;
+    display: grid;
+     grid-template-rows: repeat(2,1fr);
+     grid-template-columns: repeat(4,1fr); 
+     border: dashed 1px black;
+  }
+  .post{
+    grid-area:post;
+    display: grid;
+    grid-template-rows:repeat(4,1fr) ;
+    border: dashed 1px black;
+  }

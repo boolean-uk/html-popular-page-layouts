@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+p {
+  border: dashed 1px black;
+  background-color: beige;
+}
+div {
+  border: dashed 1px black;
+  background-color: beige;
+}
+.container {
+  display: grid;
+
+  grid-template:
+    "serch serch serch" 50px
+    "left main right" 1fr /
+    300px 1fr 1fr;
+  height: 100vh;
+  gap: 10px;
+}
+.serch {
+  grid-area: serch;
+  display: grid;
+  grid-template:
+  "logo search setting" 300px/
+  200px 1fr 200px ;
+}
+.logo{
+  grid-area: logo;
+}
+.search{
+  grid-area: search;
+}
+.setting{
+  grid-area: setting;
+}
+.left {
+  display: grid;
+  grid-area: left;
+  grid-template:
+    "inbox" 1fr
+    "meet" 200px
+    "chat" 1fr /
+    300px;
+}
+.inbox {
+  grid-area: inbox;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+}
+.meet {
+  grid-area: meet;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+.chat {
+  grid-area: chat;
+
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+.main {
+  grid-area: main;
+  display: grid;
+  grid-template-rows: repeat(20, 1fr);
+}
+.right {
+  display: grid;
+  grid-area: right;
+
+  grid-template:
+    "allsetting" 1fr
+    "density" 2fr
+    "theme" 1fr
+    "type" 1fr /
+    1fr;
+}
+.allsetting {
+  grid-area: allsetting;
+}
+.density {
+  grid-area: density;
+}
+.theme {
+  grid-area: theme;
+}
+.type {
+  grid-area: type;
+}
