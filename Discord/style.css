@@ -1,3 +1,7 @@
+* {
+  font-family: sans-serif;
+}
+
 .container {
   display: grid;
   grid-template:
@@ -15,6 +19,7 @@
 .logo {
   grid-area: logo;
   background-color: lightblue;
+  padding: 10px
 }
 .sidebar {
   grid-area: sidebar;
@@ -31,11 +36,27 @@
 .invitation {
   grid-area: invitation;
   background-color: blanchedalmond;
+  padding: 10px
 }
 
 .channels {
   grid-area: channels;
   background-color: lightgrey;
+  padding: 10px
+}
+
+ul {
+  list-style-type: none;
+  padding:10px;
+}
+
+.channels > ul.group {
+  font-weight: bold;
+}
+
+ul > ul > li {
+  padding-left: 10px;
+  font-weight: normal;
 }
 
 .status {
