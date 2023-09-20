@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+/* 1. Grid in this */
+/* 2. Grid template */
+/* "header      header      header"  (height) 150px
+"left-bar        main       right-bar"        800px /
+
+width
+300px           1fr             400px
+*/
+
+.container {
+    display: grid;
+    grid-template: 
+    "header     header      header"         150px
+    "left-bar   main        right-bar"      800px /
+    300px       1fr             400px
+    ; 
+}
+
+/* Header */
+/* Grid-area: header */
+
+.header {
+    grid-area: header;
+    background-color: lightblue;
+    border: 1px solid black
+}
+
+
+/* Left-bar */
+/* Grid-area: left-bar */
+
+.left-bar {
+    grid-area: left-bar;
+    background-color: lightpink;
+    border: 1px solid orangered
+}
+
+
+/* Main */
+/* Grid-area: main */
+
+.main {
+    grid-area: main;
+    background-color: lightslategray;
+    border: 1px solid darkorchid
+}
+
+/* Right-bar */
+/* Grid-area: right-bar */
+
+.right-bar {
+    grid-area: right-bar;
+    background-color: lightseagreen;
+    border: 1px solid darkslategray
+}
