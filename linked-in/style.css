@@ -1,0 +1,164 @@
+.mainContainer {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr ;
+    grid-template-rows: 75px 100vh;  
+    grid-template-areas:
+    "header header header"
+    "leftMenu main rightMenu"
+    ;
+    gap: 20px;
+}
+
+.header {
+    padding: 5px;
+    grid-area: header;
+    background-color: rgba(255, 0, 0, 0.461);
+    border: dashed 1px black;
+    
+    display: grid;
+    grid-template-columns: 300px 1fr 100px;
+    grid-template-rows: 65px ;
+    grid-template-areas: 
+    "logosearch navigation nav2"
+    ;
+    gap: 5px;
+}
+.leftMenu {
+    grid-area: leftMenu;
+    background-color: rgba(0, 0, 255, 0.555);
+    border: dashed 1px black;
+    display: grid;
+    gap: 5px;
+}
+.main {
+    grid-area: main;
+    background-color: rgba(0, 128, 0, 0.607);
+    border: dashed 1px black;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    gap: 40px;
+
+}
+.rightMenu {
+    grid-area: rightMenu;
+    background-color: rgba(255, 255, 0, 0.498);
+    border: dashed 1px black;
+    display: grid;
+    gap: 5px;
+}
+.logosearch {
+    grid-area: logosearch;
+    background-color: rgba(0, 0, 255, 0.534);
+    border: dashed 1px black;
+}
+.navigation {
+    grid-area: navigation;
+    background-color: rgba(0, 128, 0, 0.546);
+    border: dashed 1px black;
+    display: grid;
+    grid-template-columns:  50px 50px 50px 50px 50px 50px;
+    gap: 5px;
+    padding: 5px;
+    justify-content: right;
+}
+.nav2 {
+    grid-area: nav2;
+    background-color: rgba(255, 255, 0, 0.553);
+    border: dashed 1px black;
+}
+.navbuttons {
+    border: dashed 1px black; 
+    width: 50px;
+    height: 50px;         
+}
+
+.leftMenu .top {
+    border: dashed 1px black;
+    height: 300px;
+}
+.leftMenu .middle {
+    border: dashed 1px black;
+    height: 200px;
+}
+.leftMenu .bottom {
+    border: dashed 1px black;
+    height: 300px;
+}
+.rightMenu .top {
+    border: dashed 1px black;
+    height: 300px;
+}
+.rightMenu .middle {
+    border: dashed 1px black;
+    height: 200px;
+}
+.rightMenu .bottom {
+    border: dashed 1px black;
+    height: 300px ;
+}
+.main .top {
+    border: dashed 1px black;
+    height: 100px ;
+}
+.main .middle {
+    border: dashed 1px black;
+    height: 500px;
+}
+
+@media screen and (max-width: 850px) {
+
+    .mainContainer {
+        grid-template-columns: 1fr 2fr ;
+        grid-template-rows: 75px 100vh;  
+        grid-template-areas:
+        "header header"
+        "leftMenu main"
+        ;
+    }
+    
+    .rightMenu {
+        display: none;
+    }
+    .header {
+        grid-template-columns: 300px 1fr;
+        grid-template-rows: 65px ;
+        grid-template-areas: 
+        "logosearch navigation"
+        ;
+    }
+    .nav2 {
+        display: none;
+    }
+}
+
+@media screen  and (max-width: 700px) {
+    
+    .mainContainer {
+        grid-template-columns: 1fr ;
+        grid-template-rows: 75px 100vh;  
+        grid-template-areas:
+        "header"
+        "main"
+        ;
+    }
+    
+    .rightMenu {
+        display: none;
+    }
+    .header {
+        grid-template-columns: 1fr;
+        grid-template-rows: 65px ;
+        grid-template-areas: 
+        "navigation"
+        ;
+    }
+    .nav2 {
+        display: none;
+    }
+    .leftMenu {
+        display: none;
+    }
+    .logosearch {
+        display: none;
+    }
+}

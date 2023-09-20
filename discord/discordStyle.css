@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.mainContainer {
+    height: 100vh;
+    display: grid;
+    grid-template:
+    "leftMenu serverDropdown header" 50px
+    "leftMenu channels textArea" 1fr /
+    80px 240px 1fr;
+}
+
+.leftMenu, .serverDropdown, .header,
+.channels, .textArea, .readingArea, .typingArea {
+    border: dashed 1px black;
+}
+
+.leftMenu {
+    grid-area: leftMenu;
+    background-color: rgba(255, 0, 0, 0.346);
+}
+
+.serverDropdown {
+    grid-area: serverDropdown;
+    background-color: lightgrey;
+
+}
+
+.header {
+    grid-area: header;
+    background-color: grey;
+
+}
+
+.channels {
+    grid-area: channels;
+    background-color: rgba(0, 128, 0, 0.312);
+
+}
+
+.textArea {
+    display: grid;
+    grid-template-rows: 1fr 45px;
+    grid-area: textArea;
+    background-color: rgba(0, 0, 255, 0.27);
+
+}
+
+.readingArea {
+    height: 1fr;
+}
+
+.typingArea {
+    height: 45px;
+}
+
+@media screen and (max-width: 750px) {
+    .mainContainer {
+        grid-template:
+        "serverDropdown header" 50px
+        "channels textArea" 1fr /
+        240px 1fr;
+    }
+
+    .leftMenu {
+        display: none
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .mainContainer {
+        grid-template:
+        "header" 50px
+        "textArea" 1fr /
+        1fr;
+    }
+
+    .leftMenu {
+        display: none
+    }
+
+    .serverDropdown {
+        display: none;
+    }
+
+    .channels {
+        display: none;
+    }
+    
+}
