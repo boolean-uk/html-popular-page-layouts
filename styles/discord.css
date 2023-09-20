@@ -84,6 +84,31 @@
 /* content */
 .content {
     grid-area: content;
-    border: 1px solid #000;
     display: grid;
+    grid-auto-rows: 48px 1fr 68px;
+}
+
+.content__header {
+    background-color: #313338;
+    border-bottom: 2px solid #1f2023;
+    color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content__content {
+    background-color: #313338;
+    color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content__input {
+    background-color: #383a40;
+    color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
