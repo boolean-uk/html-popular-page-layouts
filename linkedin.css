@@ -17,6 +17,14 @@
     border: 5px solid black;
 }
 
+.profile {
+    display: block;
+    height: 20px;
+    width: 90px;
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+
 .main{
     grid-area: main;
     border: 5px solid red;
