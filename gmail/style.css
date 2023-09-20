@@ -21,7 +21,7 @@
         "logo          search-bar   other-links  other-links" 50px
         "left-sidebar     main       settings    related-apps" 1fr
         "social           main       settings    related-apps" 100px/
-            100px          1fr         150px         50px;
+            150px          1fr         150px         50px;
     }
 }
 
@@ -31,7 +31,7 @@
         "logo          search-bar   other-links" 50px
         "left-sidebar     main       settings" 1fr
         "social           main       settings" 100px/
-            100px          1fr         150px;
+            100px          1fr         100px;
     }
     .related-apps {
         display: none;
@@ -61,8 +61,29 @@
 
 .left-sidebar {
     grid-area: left-sidebar;
-    background-color: pink;
-    border: solid 5px rgb(248, 156, 171);
+    background-color: rgb(32, 15, 129);
+    border: solid 5px rgb(27, 7, 109);
+    padding: 10px;
+
+    grid-template-rows: auto;
+}
+
+.compose {
+    color: rgb(240, 233, 233);
+    display: inline-block;
+    border: solid 1px black;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.folders {
+    color: white;
+    min-width: 60px;
+    border: solid 2px rgb(212, 203, 203);
+    border-radius: 3px;
+    margin: 10px;
     padding: 10px;
 }
 
@@ -71,6 +92,7 @@
     background-color: orange;
     border: solid 5px rgb(211, 138, 3);
     padding: 5px;
+    gap: 10px;
 
     display: grid;
     grid-template-rows: auto;
@@ -78,12 +100,8 @@
 
 
 .emails {
-    display: grid;
-    grid-template-rows: auto;
     border: solid 1px black;
-
     padding: 5px;
-    margin: 2px;
 }
 
 
