@@ -1,0 +1,106 @@
+.grid {
+    display: grid;
+    grid-template-areas: 
+    "leftbar  server  chat";
+    grid-template-columns: 80px 180px 75vw;
+}
+
+
+
+.leftbar{
+    display: grid;
+    grid-template-areas:
+    "DM"
+    "allservers"
+    "download";
+    grid-template-rows: 80px 1fr 80px;
+    background-color: darkslateblue;
+
+}
+
+.DM {
+    border: solid 3px white;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.allservers >p {
+    border: solid 3px white;
+    border-radius: 50%;
+    text-align: center;
+    padding: 15px;
+}
+
+
+.download {
+    border: solid 3px white;
+    border-radius: 50%;
+    text-align: center;
+    padding: 15px;
+}
+
+
+.server {
+    display: grid;
+    grid-template-areas: 
+    "ID"
+    "profile"
+    "rooms"
+    "status";
+grid-template-rows: 40px 1fr 3fr 40px;
+
+
+}
+
+.ID {
+    grid-area: ID;
+    background-color: darkorchid;
+}
+
+.profile {
+    grid-area: profile;
+    background-color: darkgreen;
+}
+
+.rooms {
+    grid-area: rooms;
+    background-color: deepskyblue;
+}
+
+.status {
+    grid-area: status;
+    background-color: greenyellow;
+}
+
+.chat {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "speech"
+    "message"
+    "input";
+grid-template-rows: 40px 3fr 1fr 50px;
+
+}
+
+.header {
+    grid-area: header;
+    background-color: aqua;
+
+}
+
+.speech { 
+    grid-area: speech;
+    background-color: burlywood;
+}
+
+.message {
+    grid-area: message;
+    background-color: darkblue;
+}
+
+.input {
+    grid-area: input;
+background-color:gold;
+}

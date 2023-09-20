@@ -1,0 +1,77 @@
+.grid {
+    display: grid;
+    grid-template-columns: 120px 150px 2fr 220px 120px ;
+    grid-template-rows: 50px 100vh;
+    column-gap: 25px;
+    row-gap: 25px;
+    grid-template-areas:
+    "header header header header header"
+    ". leftbar main rightbar .";
+}
+.nav{
+    grid-area: header;
+    background-color: aqua;
+}
+.leftbar{
+    grid-area: leftbar;
+    row-gap: 10px;
+    display: grid;
+    grid-template-rows: 2fr 1fr 2fr;
+    grid-template-areas: 
+    "name"
+    "company"
+    "recent";
+}
+.rightbar{
+    grid-area: rightbar;
+    row-gap: 10px;
+    display: grid;
+    grid-template-rows: 2fr 1fr 2fr;
+    grid-template-areas: 
+    "news"
+    "mostviewed"
+    "recomendations";
+
+}
+.main{
+    grid-area: main;
+    row-gap: 25px;
+    display: grid;
+    grid-template-rows: 100px;
+    grid-template-areas: 
+    "create"
+    "feed";
+
+}
+.name{
+    grid-area: name;
+    background-color: darkcyan;
+}
+.company{
+    grid-area: company;
+    background-color: crimson;
+}
+.recent{
+    grid-area: recent;
+    background-color: darkorange;
+}
+.news{
+    grid-area: news;
+    background-color: darkslategray;
+}
+.mostviewed{
+    grid-area: mostviewed;
+    background-color: deepskyblue;
+}
+.recomendations{
+    grid-area: recomendations;
+    background-color: plum;
+}
+.create{
+    grid-area: create;
+    background-color: indigo;
+}
+.feed{
+    grid-area: feed;
+    background-color: hotpink;
+}
