@@ -1,0 +1,67 @@
+body {
+    height: 100vh;
+    margin: auto;
+      display: grid;
+      grid-template: 
+      "header header header     header  header " 1fr
+      ". left-menu1 search  right-menu1 ." 1fr
+      ". left-menu2 main1   right-menu2 ." 10fr
+      ". left-menu3 main2   right-menu3 ." 1fr 
+      ". left-menu3      footer right-menu3 . " 1fr/
+      2fr 2fr 10fr         2fr     2fr;
+  }
+  header {
+    grid-area: header;
+    background-color: blue; 
+  }
+  
+  .left-menu1{
+    grid-area: left-menu1;
+    background-color: burlywood;
+  }
+  
+  .left-menu2{
+    grid-area: left-menu2;
+    background-color: burlywood;
+  }
+  
+  .left-menu3{
+    grid-area: left-menu3;
+    background-color: burlywood;
+  }
+  
+  .search {
+    grid-area: search;
+    background-color: pink;
+  }
+  
+  .main1{
+    grid-area: main1;
+    background-color: yellow;
+  }
+  
+  .main2 {
+    grid-area: main2;
+    background-color: yellow;
+  }
+  
+  
+  .right-menu1{
+    grid-area: right-menu1;
+    background-color: green;
+  }
+  
+  .right-menu2{
+    grid-area: right-menu2;
+    background-color: green;
+  }
+  
+  .right-menu3{
+    grid-area: right-menu3;
+    background-color: green;
+  }
+  
+  footer {
+    grid-area: footer;
+  background-color: purple;
+  }
