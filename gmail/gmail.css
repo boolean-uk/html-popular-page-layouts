@@ -1,0 +1,80 @@
+img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+
+}
+
+.header {
+    display: flex;
+    background-color: rgb(57, 55, 55);
+    height: 50px;
+}
+
+
+.search {
+    width: 200px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template: 
+    "left-bar   main   right-bar    super-right" 1fr/
+    20%         1fr    20%           10%;
+    border-bottom: 1px solid rgba(189, 185, 174, 0.955);
+    background-color: rgb(238, 232, 221);
+}
+
+.compose {
+    margin: 10px;
+    height: 30px;
+    border-radius: 10px;
+    border-color: rgba(189, 185, 174, 0.955);
+}
+
+.left-side-container {
+    border: 1px solid rgba(189, 185, 174, 0.955);
+    border-radius: 10px;
+    margin: 0;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.left-bar p {
+    padding-left: 10px;
+    margin-top: 0;
+}
+
+.main {
+    text-align: center;
+    border-right: 1px solid rgba(189, 185, 174, 0.955);
+    border-left: 1px solid rgba(189, 185, 174, 0.955);
+    height: 100%;
+}
+
+.main p {
+    border-bottom: 1px solid rgba(189, 185, 174, 0.955);
+}
+
+
+.right-bar h4 {
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+
+.right-bar-button {
+    margin-left: 10px;
+    margin-top: 5px;
+    border-radius: 7px;
+    border: 1px solid rgba(189, 185, 174, 0.955);
+}
+
+ul li {
+    list-style-type: circle;
+    list-style: 50px;
+}
+
