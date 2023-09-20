@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: grid;
+    grid-template: 
+    "left midd right" 700px /
+    300px 870px 300px;
+    margin: 5px;
+}
+
+
+.left{
+    grid-area: left;
+    background-color: rgb(228, 226, 198);
+    display: grid;
+    grid-template:
+    "left-one"   100px
+    "left-two"   40px
+   "left-three" 520px /
+    250px  ;
+    padding: 10px 0px 10px 40px;
+    gap: 10px;
+    
+}
+.left-one{
+    grid-area: left-one;
+    background-color: white;
+}
+.left-two{
+    grid-area: left-two;
+    background-color: white;
+}
+.left-three{
+    grid-area: left-three;
+    background-color: white;
+}
+.midd{
+    grid-area: midd;
+    background-color: rgb(119, 233, 195);
+    display: grid;
+    grid-template:
+    "midd-one"  50px
+    "midd-two"  310px
+    "midd-three" 300px /
+    830px ;
+    padding: 10px 0px 10px 20px;
+    gap: 10px;
+    
+}
+.midd-one{
+    grid-area: midd-one;
+    background-color: white;
+}
+.midd-two{
+    grid-area: midd-two;
+    background-color: white;
+}
+.midd-three{
+    grid-area: midd-three;
+    background-color: white;
+}
+.right{
+    grid-area: right;
+    background-color: rgb(186, 179, 179);
+    display: grid;
+    grid-template:
+    "right-one"   220px
+    "right-two"   220px
+   "right-three" 220px /
+    250px  ;
+    padding: 10px 40px 10px 10px;
+    gap: 10px;
+}
+.right-one{
+    grid-area: right-one;
+    background-color: white;
+}
+.right-two{
+    grid-area: right-two;
+    background-color: white;
+}
+.right-three{
+    grid-area: right-three;
+    background-color: white;
+}
