@@ -1,8 +1,8 @@
 body{
     display: grid;
-    grid-template: "logos header   header" 1fr
-                   "logos home     contents" 25fr
-                   "logos home   footer" 5fr /
+    grid-template: "logo header   header" 1fr
+                   "logo main     content" 25fr
+                   "logo main   footer" 5fr /
                    3fr    5fr      10fr;
   margin: auto;
   height: 100vh;
@@ -12,23 +12,23 @@ body{
       background-color: blue;
   }
 
-  .logos{
-      grid-area: logos;
-      background-color: grey;
+  .logo{
+      grid-area: logo;
+      background-color: purple;
 
   }
 
-  .home{
-      grid-area: home;
-      background-color: rgb(117, 117, 201);
+  .main{
+      grid-area: main;
+      background-color: pink;
   }
 
-  .contents{
-      grid-area: contents;
-      background-color: green;
+  .content{
+      grid-area: content;
+      background-color: yellow;
   }
 
   footer{
       grid-area: footer;
-      background-color: rgb(153, 141, 46);
+      background-color: red;
   }
