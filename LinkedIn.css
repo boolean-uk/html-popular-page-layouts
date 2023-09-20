@@ -1,0 +1,47 @@
+/* LinkedIn.css */
+body {
+    display: grid;
+    grid-template-columns: 200px 3fr 1fr;
+    grid-template-rows: 60px auto;
+    gap: 1rem;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    background-color: #0077B5;
+    padding: 10px;
+    color: white;
+}
+
+.logo, .search, .icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile {
+    background-color: #E1E9EE;
+    padding: 10px;
+}
+
+.content {
+    background-color: white;
+    padding: 10px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.post {
+    background-color: #F3F6F8;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.widgets {
+    background-color: #E1E9EE;
+    padding: 10px;
+}
