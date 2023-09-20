@@ -1,0 +1,126 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+.full-page {
+    display: grid;
+    grid-template: 
+    "header    header    header         header" 60px
+    "left-menu main-mail quick-settings apps-bar" 1fr/
+       1fr      3fr        1fr           .3fr;
+}
+
+.header {
+    grid-area: header;
+    border: solid 1px rgba(128, 128, 128, 0.201);
+}
+.header .logo {
+    margin-left: 40px;
+    padding: 20px;
+    color: grey;
+    font-weight: bold;
+}
+
+.left-menu {
+    grid-area: left-menu;
+    margin-left: 40px;  
+    margin-top: 50px;
+}
+
+.left-menu div {
+    margin-bottom: 20px;
+}
+
+.main-mail {
+    grid-area: main-mail;
+}
+
+.main-mail div {
+    border-bottom: solid 1px rgba(128, 128, 128, 0.291);
+    padding: 15px;
+}
+
+.quick-settings {
+    grid-area: quick-settings;
+    height: 100vh;
+}
+
+.quick-grid {
+    display: grid;
+    grid-template: 
+    "quick-setting" 50px
+    "density" 100px
+    "theme" 100px
+    "inbox-type" 100px/
+    1fr                  ;
+
+    border: solid 1px rgba(128, 128, 128, 0.18);
+}
+
+.quick-setting {
+    grid-area: quick-setting;
+    border-bottom: solid 1px rgba(128, 128, 128, 0.18);
+    font-size: 15px;
+    padding: 10px;
+}
+
+.density {
+    grid-area: density;
+    border-bottom: solid 1px rgba(128, 128, 128, 0.18);
+    color: grey;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.theme {
+    grid-area: theme;
+    border-bottom: solid 1px rgba(128, 128, 128, 0.18);
+    color: grey;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.inbox-type {
+    grid-area: inbox-type;
+    color: grey;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.apps-grid {
+    grid-area: apps-bar;
+    display: grid;
+    grid-template:
+    "app-one" 50px
+    "app-two" 50px
+    "app-three"50px/
+    1fr               ;
+}
+
+.app-one {
+    grid-area: app-one;
+    border-bottom: solid 1px rgba(128, 128, 128, 0.18);
+    text-align: center;
+    color: rgba(0, 0, 255, 0.614);
+    padding: 13px;
+}
+
+.app-two {
+    grid-area: app-two;
+    border-bottom: solid 1px rgba(128, 128, 128, 0.18);
+    text-align: center;
+    color: rgba(255, 128, 0, 0.614);
+    padding: 13px;
+}
+
+.app-three {
+    grid-area: app-three;
+    border-bottom: solid 1px rgba(128, 128, 128, 0.18);
+    text-align: center;
+    color: rgba(0, 170, 255, 0.872);
+    padding: 13px;
+}
+
+
