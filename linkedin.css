@@ -6,7 +6,7 @@
 .full-page {
     display: grid;
     grid-template:
-        "header       header     header     header       header" 70px
+        "header       header     header     header       header" 50px
         "left-empty   left-menu  main       right-menu   right-empty" 1fr /
         1fr           1fr        2fr        1.3fr         1fr;
 }
@@ -17,9 +17,6 @@
     border: solid 1px rgba(128, 128, 128, 0.206);
 
 }
-
-
-
 
 .left-menu,
 .main,
@@ -104,7 +101,7 @@
     height: 200px;
 }
 
-.right-menu {
+.right-grid {
     display: grid;
     grid-template:
         "right-one"
