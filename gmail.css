@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.containter {
+    display: grid;
+    grid-template:
+
+    "header     header         header        header" 100px
+    "left-menu  main-content   right-menu    right-extra" 1fr /
+    200px       500px           200px         100px;
+}
+
+
+.header {
+    grid-area: header;
+    background-color:lightgray ;
+}
+
+.left-menu{
+    display: grid;
+    grid-area: left-menu;
+    grid-template: 
+
+    "compose" 1fr
+    "meet" 300px
+    "chat" 1fr/
+    200px;
+
+}
+
+
+.main-content {
+    grid-area: main-content;
+
+}
+
+.right-menu {
+    display: grid;
+    grid-area: right-menu;
+    grid-template: 
+
+    "quick-settings" 200px
+    "density" 400px
+    "theme" 250px
+    "index-type" 1fr/
+    200px;
+}
+
+
+.right-extra {
+grid-area: right-extra;
+}
