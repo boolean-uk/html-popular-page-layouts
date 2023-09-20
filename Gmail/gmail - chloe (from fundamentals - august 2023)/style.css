@@ -33,17 +33,15 @@
     display: grid;
     grid-template-rows: 0.1fr 1fr 1fr 1fr 1fr;
     vertical-align: center;
-    padding: 2px;
+    padding: 0 2px 0 2px;
   }
   .inboxes {
     display: grid;
     grid-template-rows: repeat(6, 1fr);
-    padding-bottom: 5px;
   }
   .labels {
     display: grid;
     grid-template-rows: repeat(6, 1fr);
-    padding-bottom: 5px;
   }
   .meet {
     display: grid;
@@ -56,6 +54,7 @@
   .chat-shortcuts {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 8px;
   }
   
   .main {
@@ -85,6 +84,10 @@
     place-items: center;
     padding: 1px;
   }
+  button {
+    padding: 0;
+    margin: 0;
+  }
   
   /*responsive*/
   
@@ -108,32 +111,13 @@
     }
   }
   
-  @media screen and (max-width: 200px) {
-    .container {
-      display: grid;
-      grid-template:
-        "header     header    header" 50px
-        "left-menu  main      right-menu" 1fr/
-        80px 1fr 80px;
-  
-      width: auto;
-      height: 100vh;
-      header {
-        grid-area: header;
-        background-color: #ff00ff30;
-      }
-      .settings {
-        visibility: hidden;
-      }
-    }
-  }
-  
   @media screen and (max-width: 500px) {
     .container {
+      height: 100vh;
       display: grid;
       grid-template:
-        "header      header" 3fr
-        "left-menu   main" 40fr
+        "header      header" 50px
+        "left-menu   main" 1fr
         "right-menu  right-menu" 80px /
         80px 1fr;
   
@@ -148,4 +132,26 @@
       }
     }
   }
+  
+  @media screen and (max-width: 200px) {
+    .container {
+      display: grid;
+      grid-template:
+        "header     header    header" 50px
+        "left-menu  main      right-menu" 1fr/
+        100px       1fr       80px;
+  
+      width: auto;
+      padding-bottom: 10px;
+      header {
+        grid-area: header;
+        background-color: #ff00ff30;
+      }
+      .settings {
+        visibility: hidden;
+      }
+    }
+  }
+  
+
   
