@@ -1,0 +1,217 @@
+div{
+    border: solid 2px grey;
+    border-radius: 10px;
+    background-color: rgba(246, 245, 239, 0.859);
+    font-family: sans-serif;
+    
+    
+}
+.mydiv {
+    display: grid;
+    grid-template:
+    "top-bar   top-bar     top-bar    top-bar     top-bar" 100px
+    "   .      left-menu    main     right-menu     ." 400px
+    "   .      left-menu    main     right-menu     ." 400px/
+       200px     1fr         3fr       1.2fr        200px;
+    gap: 15px;
+}
+.top-bar {
+    grid-area: top-bar;
+    background-color: white;
+    font-size: 10px;
+    gap: 20px;
+    display: grid;
+    border: 2px black solid;
+    grid-template-columns: 100px 1fr 1fr;   
+}
+
+.top-bar .logo {
+    background-color: white;
+    display: grid;
+    border: dashed 2px black;
+    place-items: center;
+    width: 100px;
+    height: 90px;
+    margin-left: 5px;
+}
+.top-bar .search-bar {
+    background-color: rgb(240, 239, 239);
+    display: grid;
+    border: dashed 2px black;
+    margin-left:50px;
+    height: 90px;
+}
+.top-bar .options {
+    background-color: white;
+    border: dashed 2px black;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 5px;
+    height: 50px;
+    margin-top: 15px;
+}
+
+.left-menu{
+    grid-area: left-menu;
+    background-color: rgba(246, 245, 239, 0.859);
+    border: grey solid 2px;
+    padding: 5px;
+    display: grid;
+    grid-template-rows: 2fr 1fr 2fr;
+    gap: 15px;
+
+}
+.left-menu .top-left, .mid-left, .bottom-left {
+    background-color: white;
+    display: grid;
+    border: grey dashed 3px;
+    margin: 2px;
+} 
+
+.left-menu .top-left {
+    background-color: palegreen;
+    display: grid;
+    grid-template-rows: 3fr 1fr 1fr 1fr;
+    gap: 5px;
+    border: 3px solid black;
+}
+
+.left-menu .mid-left {
+    background-color: sandybrown;
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    gap: 5px;
+}
+
+.left-menu .bottom-left {
+    background-color: lightblue;
+    display: grid;
+
+}
+
+
+
+
+
+
+.main {
+    grid-area: main;
+    background-color: rgba(246, 245, 239, 0.859);
+    display: grid;
+    border: solid grey 2px;
+    grid-template-rows: 1fr 5fr 2fr;
+    gap: 5px;
+}
+.main > .header, .top-main, .bottom-main {
+   border: grey 2px dashed;
+   background-color: white;
+   margin: 2px;
+}
+.main .header {
+    display: grid;
+    grid-template-rows: 1.5fr 1fr;
+    gap: 5px;
+    background-color: blueviolet;
+
+}
+
+
+
+.right-menu {
+    grid-area: right-menu;
+    background-color: rgb(236, 229, 219);
+    display: grid;
+}
+.right-menu >.news, .viewed , .feed {
+   background-color: rgba(237, 184, 201, 0.645);
+   border: dashed grey 2px;
+   margin: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*.top-bar {
+    grid-area: top-bar;
+    background-color: white;
+}
+.top-bar > h3 {
+    background-color: rgb(95, 143, 238);
+    color: white;
+    display: inline-flex;
+    font-size: 30px;
+    text-align: center;
+    margin: 5px 0px 0px 10px ;
+    border-radius: 5px;
+    padding: 0px 5px 0px 5px;
+}
+
+.top-bar > p {
+    display: inline;
+    background-color: rgb(235, 243, 243);
+    border-radius: 4px;
+    font-size: 15px;
+    margin: 0px 0px 0px 10px;
+    padding: 10px 100px 0px 20px;
+    text-align: left;
+    display: inline-flex;
+}
+
+.top-bar >p >img {
+    margin: 0px 15px 5px 0px;
+}
+
+.header {
+    grid-area: header;
+    background-color: white
+    
+}
+.header p {
+    display: inline-flex;
+    border-radius: 20px;
+    border: solid grey 1px;
+    margin: 0px 0px 0px 50px ;
+    margin-top: 0px;
+    padding: 5px 100px 5px 10px;
+    font-size: 15px;
+}
+.header  ul {
+    display: inline-flex;
+    list-style-type: none;
+    margin: 10px 10px 0px 0px;
+    padding: 0px 0px 0px 10px ;
+}
+
+
+
+
+.left-menu{
+    grid-area: left-menu;
+    background-color: white;
+}
+
+
+
+.main {
+    grid-area: main;
+    background-color: white;
+}
+
+
+
+
+
+
+.right-menu {
+    grid-area: right-menu;
+    background-color: white;
+}*/
+

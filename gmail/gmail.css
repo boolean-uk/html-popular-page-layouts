@@ -1,0 +1,210 @@
+div{
+    font-family: sans-serif;
+    background-color: rgb(236, 229, 219);
+    
+}
+.mydiv {
+    display: grid;
+    grid-template:
+    "top-bar     top-bar   top-bar      top-bar" 50px
+    "left-menu    main     right-menu   shortcuts" 500px
+    "left-menu    main     right-menu   shortcuts" 200px/
+       200px      1fr        200px          50px;
+    gap: 10px;
+    background-color: white;
+}
+
+.top-bar {
+    grid-area: top-bar;
+    border: 2px black solid;
+    display: grid;
+    grid-template-columns: 200px 1fr 270px;
+    gap: 5px;
+    background-color: white;
+
+}
+
+.top-bar .logo {
+    display: grid;
+    grid-template-columns: 50px 50px 80px;
+    border: 2px black solid;
+    gap: 5px;
+    margin: 2px;
+    background-color: white;
+}
+.top-bar .logo .menuicon {
+    border: 2px dashed black;
+    margin: 5px;
+}
+.top-bar .logo .mailicon {
+    border: 2px dashed black;
+    margin: 5px;
+}
+.top-bar .logo .gmail {
+    border: 2px dashed black;
+    margin: 5px;
+}
+.top-bar .search {
+    border: 2px black solid;
+    display: grid;
+    margin: 2px;
+    background-color: rgb(225, 225, 225);
+    
+}
+.top-bar .buttons {
+    border: 2px solid black;
+    margin: 2px;
+    display: grid;
+    grid-template-columns: 110px 70px;
+   padding-left: 80px ;
+   background-color: white;
+}
+.top-bar .buttons .but{
+    display: grid;
+    border: 2px solid black;
+    margin: 2px;
+}
+.top-bar .buttons .profile {
+    display: grid;
+    border: 2px solid black;
+    margin: 2px;
+}
+
+
+.left-menu {
+    grid-area: left-menu;
+    border: 2px black solid;
+    display: grid;
+    grid-template-rows: 3fr 1fr 2fr;
+    background-color: white;
+    gap: 5px;
+    padding: 4px;
+    
+}
+.left-menu .top-left{
+    display: grid;
+    border: 2px black solid;
+    gap: 5px;
+    grid-template-rows: 50px 1fr;
+    padding: 5px;
+}
+.left-menu .top-left .compose{
+    display: grid;
+    border: 2px black dashed;
+}
+.left-menu .top-left .general{
+    display: grid;
+    border: 2px black dashed;
+}
+
+.left-menu .mid-left{
+    display: grid;
+    border: 2px black solid;
+
+}
+.left-menu .bottom-left{
+    display: grid;
+    border: 2px black solid;
+    grid-template-rows: 1fr 20px;
+    gap: 5px;
+    padding: 5px;
+}
+.left-menu .bottom-left .chat{
+    display: grid;
+    border: 2px black dashed;
+}
+
+.left-menu .bottom-left .contact{
+    display: grid;
+    border: 2px black dashed;
+}
+
+
+.main {
+    grid-area: main;
+    border: 2px black solid;
+    grid-template-rows: 30px 1fr;
+    background-color: white;
+    gap: 5px;
+    display: grid;
+    padding: 5px;
+}
+
+.main .header{
+    border: 2px black solid;
+    display: grid;
+    grid-template-columns: 70px 70px;
+    gap: 30px;
+    padding: 3px;
+    justify-content: space-between;
+}
+
+.main .header .options{
+    border: 2px black solid;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.main .header .pages{
+    display: grid;
+    border: 2px black solid;
+    grid-template-columns: 1fr;
+}
+
+.main .mails {
+    background-color: white;
+    border: 2px black solid;
+    overflow-y: auto;
+    scroll-behavior: auto;
+    display: grid;
+    grid-template-rows: auto;
+    gap: 2px;
+}
+.main .mails .some-text{
+    border: 1px dashed black;
+    height: 30px;
+}
+
+
+.right-menu {
+    grid-area: right-menu;
+    border: 2px black solid;
+    display: grid;
+    grid-template-rows: 20px 2fr 1fr 2fr ;
+    background-color: white;
+    gap: 5px;
+    padding: 5px;
+}
+.right-menu .quick-settings {
+    border: dashed 1px black;
+}
+.right-menu .density {
+    border: dashed 1px black;
+}
+.right-menu .theme {
+    border: dashed 1px black;
+}
+.right-menu .inbox-type {
+    border: dashed 1px black;
+}
+
+
+.shortcuts {
+    grid-area: shortcuts;
+    border: 2px black solid;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    gap: 5px;
+    padding: 5px;
+    background-color: white;
+}
+
+.shortcuts .first-part{
+    display: grid;
+    border: 1px black dashed;
+}
+
+.shortcuts .second-part{
+    display: grid;
+    border: 1px black dashed;
+}
