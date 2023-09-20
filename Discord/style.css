@@ -3,7 +3,7 @@
   grid-template:
     "nav sidebar header" 40px
     "nav sidebar main"  1fr /
-    60px 200px 1fr;
+    60px 230px 1fr;
   min-height: 100%;
 }
 
@@ -14,25 +14,26 @@
 
 .sidebar {
   grid-area: sidebar;
+  display: grid;
   background-color: lightblue;
   grid-template: 
-  "invitation" 100px
+  "invitation" 150px
   "channels"  1fr
-  "status" 30px /
+  "status" 60px /
   1fr;
 }
 
-.sidebar > .invitation {
+.invitation {
   grid-area: invitation;
   background-color: blanchedalmond;
 }
 
-.sidebar > .channels {
+.channels {
   grid-area: channels;
   background-color: lightgrey;
 }
 
-.sidebar > .status {
+.status {
   grid-area: status;
   background-color: lightpink;
 }
