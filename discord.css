@@ -11,6 +11,12 @@ body {
 /* Main Section */
 
 .container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10;
     display: grid;
     grid-template: 
     "servers chat core" 1fr/
@@ -41,12 +47,6 @@ body {
     min-width: 200px;
 }
 
-.core {
-    display: grid;
-    grid-template: repeat(15, 1fr) / 1fr;
-    background-color: #36393e;
-    grid-area: core;
-}
 
 .chat h2 {
     text-align: center;
@@ -55,6 +55,13 @@ body {
 }
 
 /* Core section */
+.core {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #36393e;
+    grid-area: core;
+}
 
 .core h2 {
     padding-left: 1rem;
@@ -95,7 +102,7 @@ body {
     align-items: center;
     grid-area: 15 / 1 / 16 / 1;
     font-size: 1.2rem;
-    padding: 0 1rem;
+    padding: 0.5rem 1rem;
     color: white;
 }
 
@@ -124,7 +131,7 @@ body {
     .container {
     display: grid;
     grid-template: 
-    "servers core core" 80rem/
+    "servers core core" 1fr/
     6rem 1fr 3fr
     ;
     }
