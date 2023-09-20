@@ -1,0 +1,41 @@
+.linkedin {
+    background-color:grey;
+    display: grid;
+    grid-template:
+    "header     header    header"      50px
+    "left-menu  main      right-menu"  1fr /
+     200px      1fr         300px;
+     gap: 10px;
+     
+  }
+  
+  .main {
+    grid-area: main;
+    background-color:white;
+    min-height: 600px;
+    grid-template:
+    "popular" 1fr
+    "shorts"  1fr
+    "third"   1fr /
+    1fr;
+  }
+  .left-menu {
+    grid-area:left-menu;
+    background-color: antiquewhite;;
+    min-height:600px;
+    grid-template:
+    "one" 1fr
+    "two" 1fr
+    "three" 1fr /
+    1fr
+  }
+  .right-menu {
+    grid-area:right-menu;
+    background-color: antiquewhite;
+    min-height: 600px;
+    grid-template:
+    "rightone" 1fr
+    "righttwo" 1fr
+    "rightthree"1fr /
+    1fr
+  }
