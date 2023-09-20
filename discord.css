@@ -1,0 +1,309 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html,
+body,
+.page {
+  height: 100vh;
+}
+
+.grid {
+  display: grid;
+}
+
+.page {
+  grid-template:
+  'server-bar main' 1fr /
+  80px 1fr;
+}
+
+.page > .server-bar {
+  grid-area: server-bar;
+  grid-template: 
+  'dm-button' 75px
+  'servers' 500px
+  'download-button' 75px /
+  1fr;
+  background-color: #e3e5e8;
+}
+
+.page > .server-bar > .dm-button {
+  grid-area: dm-button;
+}
+
+.line {
+  display: grid;
+  place-items: center;
+}
+
+hr {
+  color: #d1d3d7;
+  width: 50%;
+}
+
+.page > .server-bar > .servers {
+  grid-area: servers;
+  overflow-y: scroll;
+
+}
+.page > .server-bar > .servers::-webkit-scrollbar {
+  display: none;
+}
+
+.server-button {
+  width: 80px;
+  height: 70px;
+  display: grid;
+  place-items: center;
+}
+.server-picture {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: white
+}
+
+.page > .server-bar > .download-button {
+  grid-area: download-button;
+}
+
+.page > .main {
+  grid-area: main;
+  grid-template: 
+  'title-bar header' 50px
+  'channel-list main-content' 1fr /
+  265px 1fr;
+
+}
+
+.page > .main > .title-bar {
+  grid-area: title-bar;
+  
+  background-color: #f2f3f5;
+  border-bottom: 2px solid #d1d3d7;
+  place-items: center;
+}
+
+.page > .main > .title-bar > .title-bar-clickable {
+  width: 100%;
+  height: 50px;
+  display: inline-block;
+  grid-template: 
+  'title button' 1fr /
+  1fr 1fr;
+  border: none;
+  border-bottom: 2px solid #d1d3d7;  
+}
+
+.page > .main > .title-bar > .title-bar-clickable:hover {
+  background-color: #e3e5e8;
+}
+
+.page > .main > .title-bar > .title-bar-clickable > .title {
+  grid-area: title;
+  font-size: 1rem;
+  display: inline;
+  margin-right: 90px;
+}
+
+.page > .main > .title-bar > .title-bar-clickable > .dropdown {
+  width: 100%;
+  height: 100%;
+  grid-area: button;
+  display: inline;
+  justify-items: right;
+  padding: 5px;
+}
+
+.page > .main > .header {
+  grid-area: header;
+  grid-template: 
+  'icon channel-name menu' 50px /
+  50px 1fr 400px;
+  border-bottom: 2px solid #d1d3d7;
+}
+
+.page > .main > .header > .icon {
+  grid-area: icon;
+  place-items: center;
+
+}
+
+.page > .main > .header > .channel-name {
+  grid-area: channel-name;
+  align-items: center;
+}
+
+.page > .main > .header > .menu {
+  grid-area: menu;
+  align-items: center;
+  grid-template: 
+  'notifications pins toggle-members search-bar inbox help' 50px /
+  20px 20px 20px 175px 20px 20px;
+  gap: 20px;
+}
+
+.page > .main > .header > .menu > .notifications,
+.page > .main > .header > .menu > .pins,
+.page > .main > .header > .menu > .member-toggle,
+.page > .main > .header > .menu > .inbox,
+.page > .main > .header > .menu > .help {
+  place-items: center;
+}
+
+.page > .main > .header > .menu > .search-bar > input {
+  height: 25px;
+  border: none;
+  background-color: #e3e5e8;
+  color: #7f8894;
+  border-radius: 5px;
+}
+
+.page > .main > .channel-list {
+  grid-area: channel-list;
+  grid-template: 
+  'invite-people' 225px
+  'channels' 1fr
+  'profile' 60px /
+  1fr;
+  background-color: #f2f3f5;
+}
+
+.page > .main > .channel-list > .invite-people {
+  grid-area: invite-people;
+  border-bottom: 2px solid #d1d3d7;
+  gap: 1px;
+  place-items: center;
+}
+
+.page > .main > .channel-list > .invite-people > img {
+  width: 100%;
+}
+
+.page > .main > .channel-list > .invite-people > p {
+  max-width: 150px;
+  text-align: center;
+  font-size: .8rem;
+}
+
+.page > .main > .channel-list > .invite-people > button {
+  width: 50%;
+  height: 45px;
+  background-color: #7689d4;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
+.page > .main > .channel-list > .invite-people > button:hover {
+  background-color: #4658a2;
+}
+.page > .main > .channel-list > .channels {
+  grid-area: channels;
+  overflow-y: scroll;
+}
+
+.page > .main > .channel-list > .channels::-webkit-scrollbar {
+  display: none;
+}
+.page > .main > .channel-list > .channels > .category {
+  font-size: .8rem;
+  margin: 15px;
+}
+
+.page > .main > .channel-list > .channels > .category > .channel > p {
+  font-size: 1rem;
+  margin: 5px;
+  border: 1px solid rgba(138, 138, 138, 0.687);
+}
+
+.page > .main > .channel-list > .profile {
+  grid-area: profile;
+  display: grid;
+  grid-template: 
+  'profile-picture username mute deafen settings' auto /
+  55px 1fr 40px 40px 40px;
+  background-color: #ebedef;
+}
+
+.page > .main > .channel-list > .profile > .profile-picture {
+  grid-area: profile-picture;
+  display: grid;
+  place-items: center;
+  margin: 5px;
+}
+
+.page > .main > .channel-list > .profile > .profile-picture > div {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+}
+.page > .main > .channel-list > .profile > .username {
+  grid-area: username;
+  font-size: .9rem;
+  align-items: center;
+}
+
+.page > .main > .channel-list > .profile > .username > div {
+  margin-left: 5px;
+}
+.page > .main > .channel-list > .profile > .mute {
+  grid-area: mute;
+  display: grid;
+  place-items: center;
+}
+
+.page > .main > .channel-list > .profile > .deafen {
+  grid-area: deafen;
+  display: grid;
+  place-items: center;
+}
+
+.page > .main > .channel-list > .profile > .settings {
+  grid-area: settings;
+  display: grid;
+  place-items: center;
+}
+.page > .main > .main-content {
+  grid-area: main-content;
+  background-color: white;
+  display: grid;
+  grid-template: 
+  'messages' 1fr
+  'chat-box' 100px /
+  1fr
+}
+
+.page > .main > .main-content > .chat-box {
+  display: grid;
+  place-items: center;
+}
+.page > .main > .main-content > .chat-box > input {
+  width: 70vw;
+  height: 50px;
+  border: none;
+  border-radius: 15px;
+  background-color: #ebedef;
+  padding-left: 25px;
+}
+
+.page > .main > .main-content > .messages {
+  height: 87vh;
+  overflow-y: scroll;
+  align-content: end;
+}
+
+.page > .main > .main-content > .messages::-webkit-scrollbar {
+  display: none;  
+}
+.page > .main > .main-content > .messages > .message {
+  min-height: 4rem;
+  border: 2px dotted red;
+
+}
+
