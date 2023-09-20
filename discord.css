@@ -26,8 +26,18 @@
     grid-area: channels;
     background-color: #2f3136;
     border-right: 1px solid #202225;
-    grid-template-rows: repeat(7, 50px);
+    /*grid-template-rows: repeat(7, 50px);*/
+    display: grid;
+    grid-template:
+    "one" 50px
+    "two" 50px
+    "three" 50px
+    "four" 50px
+    "five" 50px
+    "six" 50px
+    "seven" 30px /
 }
+
 .settings{
     grid-area: settings;
     background-color: brown;
@@ -44,4 +54,32 @@
     grid-area: messages;
     background-color: purple;
     border-right: 1px solid #202225;
+}
+
+.one {
+    background-color: brown;
+}
+
+.two {
+    background-color: bisque;
+}
+
+.three {
+    background-color: indigo
+}
+
+.four {
+    background-color: aquamarine;
+}
+
+.five {
+    background-color: black;
+}
+
+.six {
+    background-color: blue;
+}
+
+.seven {
+    background-color: aqua;
 }
