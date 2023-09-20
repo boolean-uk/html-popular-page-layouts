@@ -48,6 +48,18 @@
     background-color: orange;
     border: solid 5px rgb(211, 138, 3);
     padding: 5px;
+
+    display: grid;
+    grid-template-rows: auto;
+}
+
+.emails {
+    display: grid;
+    grid-template-rows: auto;
+    border: solid 1px black;
+
+    padding: 5px;
+    margin: 2px;
 }
 
 
