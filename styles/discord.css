@@ -98,11 +98,11 @@
 }
 
 .content__content {
+    overflow-y: auto;
     background-color: #313338;
     color: grey;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
 }
 
 .content__input {
@@ -111,4 +111,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template:
+            'sidebar channelSidebar content' /
+            0 0 1fr;
+    }
 }
