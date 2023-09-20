@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: grid;
+    grid-template: 
+    "logo search icons" 4rem /
+    1fr 2fr 1fr
+    ;
+    text-align: center;
+    border-bottom: 1px solid rgb(128, 126, 126);
+}
+
+.search, .logo, .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    color:     #c71610;
+}
+
+/* Main section */
+main {
+    display: grid;
+    grid-template: 
+    "folders mail settings apps" 75rem /
+    20rem 1fr 20rem 5rem
+    ;
+    text-align: center;
+    padding: 1rem;
+    gap: 0.5px;
+}
+
+.mail, .folders, .mail, .settings, .apps {
+    border: 1px solid rgb(128, 126, 126);
+    border-radius: 4px;
+}
+
+.folders {
+    grid-area: folders;
+}
+
+.mail {
+    display: grid;
+    grid-template: 2rem repeat(10, 1.2rem) / 1fr ;
+    grid-area: mail;
+}
+
+.mail h2 {
+    border-bottom: 1px solid rgb(128, 126, 126);
+}
+
+.advent {
+    border: 1px solid rgb(128, 126, 126);
+    height: 1.2rem;
+}
+
+.advent > p {
+    font-weight: bold;
+    text-align: left;
+}
+
+.advent > p > span {
+    font-weight: 400;
+}
+
+.settings {
+    grid-area: settings;
+}
+
+.apps {
+    grid-area: apps;
+}
+
+@media screen and (max-width:1400px) {
+    main {
+        display: grid;
+        grid-template: 
+        "folders mail mail mail" 75rem /
+        20rem 1fr 
+        ;
+    }
+
+    .mail {
+        grid-area: mail;
+    }
+
+    .settings {
+        display: none;
+    }
+
+    .apps {
+        display: none;
+    }
+}

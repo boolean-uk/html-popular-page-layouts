@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    color: blue;
+    text-align: center;
+}
+
+/* Container for layout*/
+main {
+    padding: 1rem 10rem;
+    display: grid;
+    grid-template: repeat(8, 10rem) / 17.5rem 3fr 17.5rem;
+    background-color: #caccce50;
+}
+
+.left-top, .core-top, .right-top, .left-mid, .core-mid, .right-mid, .left-bot, .right-bot, .core {
+    background-color: white;
+    border: 0.5px solid #86888a90;
+    border-radius: 10px;
+    margin: 0.5rem;
+    text-align: center;
+}
+
+/* Top layout */
+.core {
+    grid-area: 1 / 2 / 1 / 2;
+}
+
+.left-top {
+    grid-area: 1 / 1 / 3 / 1;
+}
+
+.core-top {
+    grid-area: 2 / 2 / 5 / 2;
+}
+
+.right-top{
+    grid-area: 1 / 3 / 3 / 3;
+}
+
+/* Middle Layout */
+.left-mid {
+    grid-area: 3 / 1 / 4 / 1;
+}
+
+.core-mid {
+    grid-area: 5 / 2 / 8 / 2;
+}
+
+.right-mid{
+    grid-area: 3 / 3 / 4 / 3;
+}
+
+/* Bottom Layout */
+.left-bot {
+    grid-area: 4 / 1 / 8 / 1;
+}
+
+.right-bot{
+    grid-area: 4 / 3 / 8 / 3;
+}
