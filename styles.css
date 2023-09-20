@@ -1,0 +1,28 @@
+body {
+    display: grid;
+    grid-template: 
+    ""
+    ""
+    "";
+
+}
+header {
+  grid-area: header;
+  background-color: blue; 
+}
+main {
+  grid-area: main;
+  background-color: pink;
+}
+.left-menu {
+  grid-area: left-menu;
+  background-color: yellow;
+}
+.right-menu {
+  grid-area: right-menu;
+  background-color: green;
+}
+footer {
+  grid-area: footer;
+background-color: purple;
+}
