@@ -24,29 +24,30 @@ body,
 
 .header {
   grid-area: header;
-  background-color: aqua;
+
+  background-color: rgb(70, 70, 70);
 }
 
 .server-menu {
   grid-area: server-menu;
 
-  background-color: blue;
+  background-color: rgb(30, 30, 30);
 }
 
 .channel-menu {
   grid-area: channel-menu;
-
-  background-color: burlywood;
+  
+  background-color: rgb(42, 42, 42);
 }
 
 .chat-area {
   grid-area: chat-area;
-
-  background-color: chartreuse;
+  
+  background-color: rgb(55, 55, 55);
 }
 
 .users {
   grid-area: users;
-
-  background-color: cornflowerblue;
+  
+  background-color: rgb(42, 42, 42);
 }
