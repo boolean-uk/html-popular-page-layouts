@@ -1,0 +1,33 @@
+body{
+    height: 100vh;
+    margin: auto;
+    display: grid;
+    grid-template: "header header header header" 1fr 
+                   "left-menu main right-menu that-menu" 10fr /
+                   5fr 10fr 5fr 1fr;
+}
+
+header {
+    grid-area: header;
+background-color: orange;
+}
+
+.main {
+    grid-area: main;
+background-color: orangered;
+}
+
+.left-menu{
+    grid-area: left-menu;
+background-color: red;
+}
+
+.right-menu {
+    grid-area: right-menu;
+background-color: brown;
+}
+
+.that-menu {
+    grid-area: that-menu;
+background-color: green;
+}

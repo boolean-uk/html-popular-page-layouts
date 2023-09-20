@@ -1,0 +1,34 @@
+body{
+  display: grid;
+  grid-template: "logos header   header" 1fr
+                 "logos home     contents" 25fr
+                 "logos home   footer" 5fr /
+                 2fr    4fr      10fr;
+margin: auto;
+height: 100vh;
+}
+header{
+    grid-area: header;
+    background-color: brown;
+}
+
+.logos{
+    grid-area: logos;
+    background-color: gold;
+
+}
+
+.home{
+    grid-area: home;
+    background-color: rgb(117, 117, 201);
+}
+
+.contents{
+    grid-area: contents;
+    background-color: rebeccapurple;
+}
+
+footer{
+    grid-area: footer;
+    background-color: rgb(153, 141, 46);
+}
