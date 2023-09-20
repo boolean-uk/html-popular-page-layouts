@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template: 
+    "logo        search-bar   other-links  other-links" 50px
+    "left-sidebar   main       settings    related-apps" 1fr
+    "social         main       settings    related-apps" 100px/
+        250px        1fr         300px         100px;
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        grid-template: 
+        "logo          search-bar   other-links  other-links" 50px
+        "left-sidebar     main       settings    related-apps" 1fr
+        "social           main       settings    related-apps" 100px/
+            150px          1fr         150px         50px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        grid-template: 
+        "logo          search-bar   other-links" 50px
+        "left-sidebar     main       settings" 1fr
+        "social           main       settings" 100px/
+            100px          1fr         100px;
+    }
+    .related-apps {
+        display: none;
+    }
+}
+
+.logo {
+    grid-area: logo;
+    background-color: red;
+    border: solid 5px rgb(211, 1, 1);
+    padding: 10px;
+}
+
+.search-bar {
+    grid-area: search-bar;
+    background-color: blue;
+    border: solid 5px rgb(0, 0, 218);
+    padding: 10px;    
+}
+
+.other-links {
+    grid-area: other-links;
+    background-color: greenyellow;
+    border: solid 5px rgb(133, 204, 28);
+    padding: 10px;
+}
+
+.left-sidebar {
+    grid-area: left-sidebar;
+    background-color: rgb(32, 15, 129);
+    border: solid 5px rgb(27, 7, 109);
+    padding: 10px;
+
+    grid-template-rows: auto;
+}
+
+.compose {
+    color: rgb(240, 233, 233);
+    display: inline-block;
+    border: solid 1px black;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.folders {
+    color: white;
+    min-width: 60px;
+    border: solid 2px rgb(212, 203, 203);
+    border-radius: 3px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.main {
+    grid-area: main;
+    background-color: orange;
+    border: solid 5px rgb(211, 138, 3);
+    padding: 5px;
+    gap: 10px;
+
+    display: grid;
+    grid-template-rows: auto;
+}
+
+
+.emails {
+    border: solid 1px black;
+    padding: 5px;
+}
+
+
+.settings {
+    grid-area: settings;
+    background-color: purple;
+    border: solid 5px rgb(63, 0, 63);
+    padding: 10px;
+}
+
+.related-apps {
+    grid-area: related-apps;
+    background-color: darkgreen;
+    border: solid 5px rgb(0, 66, 0);
+}
+
+.social {
+    grid-area: social;
+    background-color: forestgreen;
+    border: solid 5px rgb(21, 107, 21);
+}

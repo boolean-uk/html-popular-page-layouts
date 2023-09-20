@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 2px 5px blue, 2px 1px 5px red;
+}
+
+
+/* CONTAINER */
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template: 
+    "left-icons header header" 50px
+    "left-icons left-menu main" 1fr /
+    70px 200px 1fr;
+
+}
+
+
+/* HEADER */
+.header {
+    grid-area: header;
+
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+
+.server {
+    background-color: lightcoral;
+    padding: 10px;
+}
+
+.search {
+    background-color: red;
+    padding: 15px;
+    text-align: right;
+}
+
+
+/* LEFT ICONS */
+.left-icons {
+    grid-area: left-icons;
+    background-color: blue;
+
+    display: grid;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px;
+    gap: 10px;
+    padding: 10px;
+}
+
+.icon {
+    border: solid 1px black;
+    border-radius: 60px;
+}
+
+/* LEFT MENU */
+.left-menu {
+    grid-area: left-menu;
+    
+    display: grid;
+    grid-template-rows: 200px 1fr 40px;
+}
+
+.friends {
+    background-color: lightgreen;
+    padding: 10px;
+}
+
+.channels {
+    background-color: green;
+    padding: 10px;
+}
+
+.profile {
+    background-color: darkgreen;
+    padding: 10px;
+}
+
+/* MAIN SECTION */
+.main {
+    grid-area: main;
+
+    display: grid;
+    grid-template-rows: 1fr 50px;
+}
+
+.messages {
+    background-color: lightsalmon;
+    padding: 10px;
+}
+
+.type-bar {
+    background-color: orange;
+    padding: 10px;
+}
