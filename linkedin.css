@@ -3,97 +3,144 @@
     padding: 0px;
 }
 
-.full-page{
+.full-page {
     display: grid;
-    grid-template: 
-    "header  header     header     header       header"     40px
-    ".       left-menu  main       right-menu   .     "     1fr /
-     1fr     1fr        2fr        1.3fr        1fr;
+    grid-template:
+        "header       header     header     header       header" 70px
+        "left-empty   left-menu  main       right-menu   right-empty" 1fr /
+        1fr           1fr        2fr        1.3fr         1fr;
 }
 
 .header {
     grid-area: header;
-    background-color: red;
+    background-color: rgb(255, 255, 255);
+    border: solid 1px rgba(128, 128, 128, 0.206);
+
+}
+
+
+
+
+.left-menu,
+.main,
+.right-menu,
+.right-empty,
+.left-empty {
+    padding-top: 10px;
+    background-color: rgb(232, 231, 220);
+    height: 100vh;
+}
+
+.left-empty {
+    grid-area: left-empty;
 }
 
 .left-menu {
     grid-area: left-menu;
-    background-color: blue;
-    height: 100vh;
 }
 
 .main {
     grid-area: main;
-    background-color: green;
 }
 
 .right-menu {
     grid-area: right-menu;
-    background-color: yellow;
 }
+
+.right-empty {
+    grid-area: right-empty;
+}
+
 
 .left-grid {
     display: grid;
-    grid-template: 
-    "left-one"
-    "left-two" 
-    "left-three";
+    grid-template:
+        "left-one"
+        "left-two"
+        "left-three";
 }
 
 .left-one {
     grid-area: left-one;
-    background-color: aqua;
     margin: 5px;
+    height: 200px;
 }
 
 .left-two {
     grid-area: left-two;
-    background-color: rgb(255, 0, 191);
     margin: 5px;
+    height: 120px;
 }
 
 .left-three {
     grid-area: left-three;
-    background-color: rgb(255, 102, 0);
     margin: 5px;
+    height: 250px;
 }
 
 .main-grid {
     display: grid;
     grid-template:
-    "main-one" 
-    "main-two"
-    "main-three";
+        "main-one"
+        "main-two"
+        "main-three";
 }
 
 .main-one {
     grid-area: main-one;
-    background-color: blanchedalmond;
     margin: 5px;
+    height: 70px;
 }
 
 .main-two {
     grid-area: main-two;
-    background-color: rgb(37, 174, 115);
     margin: 5px;
+    height: 450px;
 }
 
 .main-three {
     grid-area: main-three;
-    background-color: rgb(110, 74, 19);
     margin: 5px;
+    height: 200px;
 }
 
 .right-menu {
     display: grid;
     grid-template:
-    "right-one"
-    "right-two"
-    "right-three";
+        "right-one"
+        "right-two"
+        "right-three";
 }
 
 .right-one {
     grid-area: right-one;
-    background-color: rgb(126, 116, 116);
     margin: 5px;
+    height: 180px;
+}
+
+.right-two {
+    grid-area: right-two;
+    margin: 5px;
+    height: 140px;
+}
+
+.right-three {
+    grid-area: right-three;
+    margin: 5px;
+    height: 230px;
+}
+
+.left-one,
+.left-two,
+.left-three,
+.main-one,
+.main-two,
+.main-three,
+.right-one,
+.right-two,
+.right-three {
+    border: solid 1px rgba(128, 128, 128, 0.553);
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 4px
 }
