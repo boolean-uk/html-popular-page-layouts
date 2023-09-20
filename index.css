@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+   grid-template: 
+    "header  icon  main" 720px /
+     50px       250px   1170px;
+     margin: 5px;
+    
+     
+}
+.header{
+    grid-area: header;
+    background-color: rgb(150, 130, 239);
+}
+
+.icon{
+    grid-area: icon;
+    background-color: rgb(233, 156, 156);
+     display: grid;
+    grid-template: 
+    "icon-1" 45px
+    "icon-2"  168px
+    "icon-3"  115px
+    "icon-4"  115px
+    "icon-5"   115px
+    "icon-6"   115px
+    "icon-7"   45px /
+    250px;
+    padding: 0;
+}
+.icon-1{
+    grid-area: icon-1;
+    background-color: aqua;
+}
+.icon-2{
+    grid-area: icon-2;
+    background-color: rgb(62, 123, 123);
+}
+.icon-3{
+    grid-area: icon-3;
+    background-color: aqua;
+}
+.icon-4{
+    grid-area: icon-4;
+    background-color: rgb(131, 162, 80);
+}
+.icon-5{
+    grid-area: icon-5;
+    background-color: rgb(68, 15, 58);
+}
+.icon-6{
+    grid-area: icon-6;
+    background-color: rgb(106, 95, 45);
+}
+.icon-7{
+    grid-area: icon-7;
+    background-color: rgb(172, 135, 87);
+}
+
+.main{
+    grid-area:main;
+    background-color: rgb(163, 233, 163);
+
+    display: grid;
+    grid-template:
+    "main-1" 45px
+    "main-2" 630px
+    "main-3" 45px/
+     1170px;
+}
+.main-1{
+    grid-area: main-1;
+    background-color: rgb(164, 61, 14);
+}
+.main-2{
+    grid-area: main-2;
+    background-color: rgb(15, 90, 30);
+}
+.main-3{
+    grid-area: main-3;
+    background-color: rgb(107, 45, 138);
+}
