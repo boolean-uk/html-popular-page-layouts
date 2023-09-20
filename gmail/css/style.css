@@ -1,0 +1,89 @@
+div
+{
+    border: 2px dotted;
+    
+}
+
+.container
+{
+    padding: 3px;
+    display: grid;
+    gap: 3px
+}
+
+.main-container
+{
+    grid-template: 
+    "top top top top" 70px
+    "left center centerRight right"  1fr/
+    1fr 4fr 1fr 50px;
+    height: 900px;
+}
+
+.top-menu
+{
+    background-color:aquamarine;
+    grid-area: top;
+    grid-template-columns: 1fr 4fr 1fr;
+}
+
+.left-menu
+{
+    background-color: aqua;
+    grid-area: left;
+    display: grid;
+    grid-template-rows: 60px 4fr 1fr 2fr;
+}
+
+.main-area
+{
+    background-color: coral;
+    grid-area: center;
+}
+
+.center-right-menu
+{
+    background-color: rgb(51, 193, 51);
+    grid-area: centerRight;
+}
+
+.right-menu
+{
+    background-color: darkgrey;
+    grid-area: right;
+}
+
+.icon 
+{
+    grid-template-columns: 50px 1fr;
+}
+
+.profile
+{
+    grid-template-columns: 50px 50px 50px 1fr;
+}
+
+.main-area
+{
+    grid-template-rows: 50px 1fr;
+}
+
+.mailList
+{
+    grid-auto-rows: 75px;
+}
+
+.mail 
+{
+    height: 50px;
+}
+
+.center-right-menu
+{
+    grid-template-rows: 100px 2fr 1fr 2fr;
+}
+
+.right-menu
+{
+    grid-template-rows: 40px 40px 40px 50px;
+}

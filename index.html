@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+
+    <style>
+      /* Don't touch this START */
+
+      .container {
+        padding: 8px;
+        border: 2px dotted lightblue;
+      }
+
+      .box {
+        min-width: 40px;
+        min-height: 40px;
+        padding: 4px;
+        border: 2px dotted lightcoral;
+      }
+
+      .inner-box {
+        min-width: 40px;
+        min-height: 40px;
+        border: 2px dotted lightgreen;
+      }
+
+      /* Don't touch this END */
+
+      /* Write CSS Here */
+      .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));;
+        gap: 5px;
+      }
+
+      .two-column-grid__expand-two {
+        grid-template-columns: 120px 1fr;
+      }
+
+      .logo {
+        border: 2px dotted green;
+      }
+
+      .three-column-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+
+      .three-column-grid__expand-two {
+        grid-template-columns: 50px 1fr 50px;
+      }
+
+      .five-column-grid {
+        grid-template-columns: repeat(5, 1fr);
+      }
+
+      .center-grid {
+        place-items: center;
+      }
+
+      .centered {
+        width: 350px;
+      }
+
+      /* Grid within Grid Section */
+      /* Practice re-using classes */
+
+      .two-column-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .two-column-grid > .box
+      {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+        gap: 5px;
+      }
+
+      div:nth-of-type(7) > .container
+      {
+        grid-template-columns: 60px 1fr 175px;
+      }
+      div:nth-of-type(7) > .container>.box
+      {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+        gap: 5px;
+      }
+
+      
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2>Two Column Grid (Icon Pattern)</h2>
+      <div class="container two-column-grid__expand-two">
+        <div class="logo"></div>
+        <div class="box expand"></div>
+      </div>
+    </div>
+    <div>
+      <h2>Three Column Grid</h2>
+      <div class="container three-column-grid">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+    </div>
+    <div>
+      <h2>Three Column Grid with Expansion</h2>
+      <div class="container three-column-grid__expand-two">
+        <div class="box"></div>
+        <div class="box expand"></div>
+        <div class="box"></div>
+      </div>
+    </div>
+    <div>
+      <h2>Five Column Grid</h2>
+      <div class="container five-column-grid">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+    </div>
+    <div>
+      <h2>Center Grid</h2>
+      <div class="container center-grid">
+        <div class="box centered"></div>
+      </div>
+    </div>
+    <div>
+      <h2>Grid within Grid #1</h2>
+      <div class="container two-column-grid">
+        <div class="box">
+          <div class="inner-box"></div>
+          <div class="inner-box"></div>
+          <div class="inner-box"></div>
+        </div>
+        <div class="box">
+          <div class="inner-box"></div>
+          <div class="inner-box"></div>
+          <div class="inner-box"></div>
+          <div class="inner-box"></div>
+          <div class="inner-box"></div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h2>Grid within Grid #2 (Expansion)</h2>
+      <div class="container">
+        <div class="box">
+          <div class="inner-box"></div>
+        </div>
+        <div class="box expand">
+          <div class="inner-box width-sm"></div>
+        </div>
+        <div class="box">
+          <div class="inner-box"></div>
+          <div class="inner-box"></div>
+          <div class="inner-box"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
