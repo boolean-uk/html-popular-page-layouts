@@ -1,0 +1,60 @@
+.grid {
+  display: grid;
+  grid-template:
+    "header    header   header" 5fr
+    "left      main     right" 750px /
+    0.35fr 1fr 2fr;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.header {
+  display: grid;
+  background-color: aquamarine;
+  grid-area: header;
+  grid-template-columns: 0.1fr 0.5fr 1fr;
+  grid-template-areas: "logo Boolean-UK Class-1";
+}
+
+.left-side-bar {
+  display: grid;
+  background-color: khaki;
+}
+
+.middle-bar {
+  display: grid;
+  background-color: darkviolet;
+  /*grid-area: middle-bar;
+  grid-template-rows: auto;
+  grid-template-areas: "Invite-people General";*/
+}
+
+.right-side-bar {
+  display: grid;
+  background-color: rgb(202, 85, 211);
+}
+
+.logo {
+  grid-area: logo;
+  border: 1px dashed black;
+}
+
+.Boolean-UK {
+  grid-area: Boolean-UK;
+  border: 1px dashed black;
+}
+
+.Class-1 {
+  grid-area: Class-1;
+  border: 1px dashed black;
+}
+
+.Invite-people {
+  grid-area: Invite-people;
+  border: 1px dashed black;
+}
+
+.General {
+  grid-area: General;
+  border: 1px dashed black;
+}
