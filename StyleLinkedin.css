@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.grid {
+  display: grid;
+  grid-template:
+    "header header header" 50px
+    "left feed right" 100vh /
+    200px 500px 300px;
+  grid-gap: 20px;
+  justify-content: center;
+}
+
+.header {
+  grid-area: header;
+  background-color: red;
+}
+
+.left-bar {
+  display: grid;
+  grid-area: left;
+  /* background-color: antiquewhite; */
+
+  grid-template-rows: 200px 200px;
+  grid-template-areas:
+    "profile"
+    "recent";
+  grid-gap: 20px;
+}
+
+.profile {
+  grid-area: profile;
+  background-color: blueviolet;
+}
+
+.recent {
+  grid-area: recent;
+  background-color: brown;
+}
+
+.feed {
+  overflow-y: scroll;
+  display: grid;
+  grid-area: feed;
+  /* background-color: blue; */
+
+  grid-template-rows: 200px;
+  grid-template-areas: "post";
+  row-gap: 30px;
+}
+
+.start-post {
+  grid-area: post;
+  background-color: indianred;
+}
+
+p {
+  background-color: crimson;
+}
+.right-bar {
+  display: grid;
+  grid-area: right;
+
+  grid-template-rows: 200px 200px;
+  grid-template-areas:
+    "news"
+    "adv";
+  grid-gap: 20px;
+}
+
+.linkedin-news {
+  grid-area: news;
+  background-color: black;
+  color: white;
+}
+
+.adv {
+  grid-area: adv;
+  background-color: yellow;
+}
