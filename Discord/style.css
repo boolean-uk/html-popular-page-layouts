@@ -1,7 +1,7 @@
 .container {
   display: grid;
   grid-template:
-    "nav sidebar header" 40px
+    "nav sidebar header" 40px 
     "nav sidebar main"  1fr /
     60px 230px 1fr;
   min-height: 100%;
@@ -12,11 +12,16 @@
   background-color: lightcoral;
 }
 
+.logo {
+  grid-area: logo;
+  background-color: lightblue;
+}
 .sidebar {
   grid-area: sidebar;
   display: grid;
   background-color: lightblue;
   grid-template: 
+  "logo" 40px
   "invitation" 150px
   "channels"  1fr
   "status" 60px /
@@ -47,3 +52,5 @@
   grid-area: main;
   background-color: lightgreen;
 }
+
+@media screen and ()
