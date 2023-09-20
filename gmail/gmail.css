@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(196, 196, 196);
+}
+
+.container {
+    display: grid;
+    grid-template: 
+        "header        header  header     header"           100px
+        "top           main    right-bar  right-nav-bar"    1fr
+        "middle        main    right-bar  right-nav-bar"    1fr
+        "bottom        main    right-bar  right-nav-bar"    1fr
+        "left-footer   main    right-bar  right-nav-bar"    1fr /
+        20vw           50vw    20vw       10vw; 
+        
+}
+
+.header {
+    grid-area: header;
+    background-color: rgb(92, 92, 92);
+}
+
+.left-bar > .top {
+    grid-area: top;
+    background-color: rgb(92, 92, 92);
+    height: 40vh;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.left-bar > .middle {
+    grid-area: middle;
+    background-color: rgb(92, 92, 92);
+    height: 20vh;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.left-bar > .bottom {
+    grid-area: bottom;
+    background-color: rgb(92, 92, 92);
+    height: 25vh;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.left-footer {
+    grid-area: left-footer;
+    background-color: rgb(92, 92, 92);
+    height: 10vh;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.main {
+    grid-area: main;
+    background-color: rgb(92, 92, 92);
+    height: 95vh;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.right-bar > .top {
+    grid-area: right-bar;
+    background-color: rgb(92, 92, 92);
+    height: 30vh;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.right-bar > .middle {
+    grid-area: right-bar;
+    background-color: rgb(92, 92, 92);
+    height: 30vh;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.right-bar > .bottom {
+    grid-area: right-bar;
+    background-color: rgb(92, 92, 92);
+    height: 35vh;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.right-nav-bar {
+    grid-area: right-nav-bar;
+    background-color: rgb(92, 92, 92);
+    height: 95vh;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+
+
