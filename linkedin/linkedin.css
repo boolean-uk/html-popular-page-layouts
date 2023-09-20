@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(196, 196, 196);
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 200px;
+    background-color: rgb(170, 170, 170);
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 300px;
+    height: calc(100vh - 200px);
+    background-color: rgb(184, 184, 184);
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.left > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 200px;
+    height: 100%;
+    padding: 20px;
+    margin: 5px;
+    background-color: rgb(214, 214, 214);
+    border-radius: 20px;
+    border: 2px solid gray;
+}
+
+.center {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+    height: calc(100vh - 200px);
+    background-color: rgb(184, 184, 184);
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.center > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+    height: 100%;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(214, 214, 214);
+    border: 2px solid gray;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 370px;
+    height: calc(100vh - 200px);
+    background-color: rgb(184, 184, 184);
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.right > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 300px;
+    height: 100%;
+    padding: 20px;
+    margin: 10px;
+    background-color: rgb(214, 214, 214);
+    border-radius: 20px;
+    border: 2px solid gray;
+}

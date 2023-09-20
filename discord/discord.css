@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template: 
+    "side-navbar channel-bar main-board"  100vh
+    "side-navbar channel-bar main-board"  1fr/ 
+          150px       300px       1fr;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.side-navbar {
+    grid-area: side-navbar;
+    background-color: #2f3136;
+}
+
+.side-navbar > div {
+    grid-area: side-navbar;
+    background-color: rgb(66, 66, 66);
+    margin: 20px;
+    margin-bottom: 50px;
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+}
+
+.channel-bar {
+    grid-area: channel-bar;
+    background-color: #686868;
+}
+
+.header {
+    grid-area: channel-bar;
+    background-color: rgb(66, 66, 66);
+    height: 100px;
+    border-bottom: 2px solid black;
+}
+
+.channels {
+    grid-area: channel-bar;
+    background-color: rgb(29, 29, 29);
+    height: calc(100% - 200px);
+}
+
+.mic-bar {
+    grid-area: channel-bar;
+    background-color: rgb(66, 66, 66);
+    height: 100px;
+}
+
+.main-board {
+    grid-area: main-board;
+    background-color: #2f3136;
+}
+
+.header2 {
+    grid-area: main-board;
+    background-color: rgb(107, 107, 107);
+    height: 100px;
+    border-bottom: 2px solid black;
+}
+
+.main {
+    grid-area: main-board;
+    background-color: rgb(66, 66, 66);
+    height: calc(100% - 200px);
+}
+
+.chat-bar {
+    grid-area: main-board;
+    background-color: rgb(143, 143, 143);
+    margin: 20px;
+    height: 50px;
+    border-radius: 20px;
+}
+
+
+
