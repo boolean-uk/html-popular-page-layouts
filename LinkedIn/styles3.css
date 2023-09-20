@@ -1,12 +1,14 @@
 body {
+  height: 100vh;
+  margin: auto;
     display: grid;
     grid-template: 
-    "header     header  header " 1fr
-    "left-menu1 search  right-menu1" 1fr
-    "left-menu2 main1   right-menu2" 1fr
-    "left-menu3 main2   right-menu3" 1fr 
-    "footer     footer  footer" 1fr/
-    1fr         1fr     1fr;
+    "header header header     header  header " 1fr
+    ". left-menu1 search  right-menu1 ." 1fr
+    ". left-menu2 main1   right-menu2 ." 10fr
+    ". left-menu3 main2   right-menu3 ." 1fr 
+    ". left-menu3      footer right-menu3 . " 1fr/
+    2fr 2fr 10fr         2fr     2fr;
 }
 header {
   grid-area: header;
