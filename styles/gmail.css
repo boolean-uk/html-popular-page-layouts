@@ -47,7 +47,7 @@
     border: solid 2px black;
 }
 
-.main-content > div {
+.main-content>div {
     border: solid 2px black;
     text-align: center;
 }
@@ -84,4 +84,26 @@
     grid-area: right-extra;
     border-top: solid 2px black;
     border-bottom: solid 4px black;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template:
+            "header     header         header        header" 100px
+            "left-menu  main-content   right-menu    right-extra" 1fr/
+            0 1fr 0 0;
+    }
+
+    .right-menu,
+    .quick-settings,
+    .compose,
+    .meet,
+    .chat,
+    .density,
+    .theme,
+    .index-type,
+    .right-extra {
+        display: none;
+    }
 }
