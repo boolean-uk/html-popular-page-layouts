@@ -1,10 +1,28 @@
 .container{
     border: 1px solid blue;
+    display: grid;
+    grid-template:
+    "nav    nav    nav" 100px
+    "aside  main right-side" 400px
+    "aside  main right-side" 400px /
+     100px  200px  100px; 
 }
 .nav{
+    grid-area: nav;
     border: 5px solid lightgreen;
 }
 
 .aside{
+    grid-area: aside;
     border: 5px solid black;
+}
+
+.main{
+    grid-area: main;
+    border: 5px solid red;
+}
+
+.right-side{
+    grid-area: right-side;
+    border: 5px solid yellow;
 }
