@@ -22,12 +22,13 @@
 }
 
 .left-side{
-    background-color: cornsilk;
+    background-color: rgb(205, 81, 81);
 }
 
 .content{
-    background-color: darkcyan;
+    background-color: cornsilk;
+   
 }
 .right-side{
-    background-color: cornsilk;
+    background-color: rgb(205, 81, 81);
 }
