@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h3 {
+  text-transform: uppercase;
+  text-align: center;
+}
+.nav {
+  display: grid;
+  grid-template:
+    "gmail search icons icons" 30px
+    "folders mail setting apps" calc(100vh - 30px) /
+    150px 1fr 200px 100px;
+}
+.one {
+  display: grid;
+  align-items: center;
+  height: 30px;
+  border: 1px solid #000;
+  grid-area: gmail;
+  background: lightblue;
+}
+.two {
+  display: grid;
+  align-items: center;
+
+  height: 30px;
+  grid-area: search;
+  background: lightcoral;
+}
+.three {
+  display: grid;
+  align-items: center;
+
+  height: 30px;
+  grid-area: icons;
+  background: lightgoldenrodyellow;
+}
+.four {
+  display: grid;
+  align-items: center;
+
+  grid-area: folders;
+  background: lightseagreen;
+}
+.five {
+  display: grid;
+  align-items: center;
+
+  grid-area: mail;
+  background: red;
+}
+.six {
+  display: grid;
+  align-items: center;
+
+  grid-area: setting;
+  background: blue;
+}
+.seven {
+  display: grid;
+  align-items: center;
+
+  grid-area: apps;
+  background: pink;
+}

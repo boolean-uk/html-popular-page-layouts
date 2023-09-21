@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  box-sizing: inherit;
+  margin: 0;
+}
+/* --------------------Root - Colors---------------------- */
+:root {
+  --clr-bg1: rgb(32, 34, 36);
+  --clr-bg2: rgb(46, 48, 54);
+  --clr-bg3: rgb(40, 42, 46);
+  --clr-bg4: rgb(54, 56, 62);
+  --clr-bg5: rgb(46, 48, 54);
+  --clr-text: rgba(240, 244, 255, 0.5);
+}
+/* --------------------Root - Colors---------------------- */
+
+input {
+  background: none;
+  border: none;
+  border-radius: 0.25rem;
+  color: #f0f4ff;
+  outline: none;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 5rem 20rem 1fr 20rem;
+  height: 100vh;
+}
+.nav {
+  background: var(--clr-bg1);
+}
+.header {
+  background: var(--clr-bg2);
+}
+.header-channel {
+  color: var(--clr-text);
+  padding: 1rem;
+}
+.channel-item {
+  margin-bottom: 2rem;
+}
+.channel-title {
+  width: 100%;
+  min-height: 3rem;
+  min-width: 3rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  padding-left: 1.25rem;
+}
+
+.main {
+  background: var(--clr-bg4);
+}
+
+.footer {
+  background: var(--clr-bg5);
+}
+
+.header-container,
+.main-container {
+  display: grid;
+  grid-template-rows: 5rem 1fr 5rem;
+  height: 100%;
+}
+
+.header-server {
+  padding: 0 1rem;
+}
+.header-title {
+  margin-top: 2rem;
+  border-bottom: 2px solid black;
+}
+.server-title {
+  padding: 1.87rem 0rem;
+  border-bottom: 2px solid black;
+}
