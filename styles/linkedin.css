@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+
+    background-color: green;
+    grid-gap: 10px;
+    display: grid;
+    grid-template:
+
+        "header    header       header" 50px
+        "left-tab  main-menu    right-tab" 1fr/
+        250px 1fr 250px;
+}
+
+
+.header {
+    grid-area: header;
+    background-color: lightgray;
+    margin-bottom: -5px
+}
+
+.left-tab {
+    min-height: 800px;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 20px;
+    display: grid;
+    background-color: lightgray;
+    grid-area: left-tab;
+    grid-template:
+
+        "profile" 250px
+        "visitor" 150px
+        "recent" 1fr/
+        200px;
+}
+
+.left-tab>div {
+    background-color: orange;
+    margin: 10px 0px 0px 20px;
+    border-radius: 5px;
+}
+
+.main-menu {
+    min-height: 800px;
+    text-align: center;
+    border-radius: 5px;
+    display: grid;
+    background-color: lightgray;
+    grid-area: main-menu;
+    grid-template:
+
+        "start-post" 150px
+        "main-content" 1fr
+        "main-content1" 1fr/
+        1fr;
+}
+
+.main-menu>div {
+    margin: 10px;
+    background-color: red;
+    border-radius: 5px;
+}
+
+.right-tab {
+    min-height: 800px;
+    border-radius: 5px;
+    display: grid;
+    background-color: lightgray;
+    grid-area: right-tab;
+    grid-template:
+
+        "news" 1fr
+        "most-viewed" 1fr
+        "add" 1fr/
+        250px;
+}
+
+.right-tab>div {
+    margin: 10px;
+    background-color: blue;
+    border-radius: 5px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template:
+            "header    header       header" 50px
+            "left-tab  main-menu    right-tab" 1fr/
+            0 1fr 0;
+    }
+
+    .right-tab {
+        display: none;
+    }
+}
