@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+/* 1. Grid in this */
+/* 2. Grid template */
+/* "header      header      header"  (height) 150px
+"left-bar        main       right-bar"        800px /
+
+width
+300px           1fr             400px
+*/
+
+.container {
+    display: grid;
+    grid-template: 
+    "header     header      header"         150px
+    "left-bar   main        right-bar"      800px /
+    300px       1fr             400px
+    ; 
+}
+
+/* Header */
+/* Grid-area: header */
+
+.header {
+    grid-area: header;
+    background-color: lightblue;
+    border: 1px solid black;
+
+    /* create a grid */
+    /* grid template
+    
+    "logo       search-bar"               50px*/
+
+    display: grid;
+    grid-template: 
+    "logo        search-bar"         50px /
+    70px           300px  ;
+}
+
+/* Reference grid area in logo and search-bar */
+
+/* Logo */
+
+.logo {
+    grid-area: logo;
+    border: 1px dashed black ;
+    background-color: yellow;
+    margin-top: 10px ;
+    margin-left: 20px;
+    
+}
+
+
+/* Search-bar */
+.search-bar {
+    grid-area: search-bar;
+    border: 1px dashed black ;
+    background-color: hotpink;
+    margin-left: 60px;
+    margin-top: 10px ; 
+
+}
+
+/* Left-bar */
+/* Grid-area: left-bar */
+
+.left-bar {
+    grid-area: left-bar;
+    background-color: lightpink;
+    border: 1px solid orangered;
+
+    /* display: grid */
+    /* grid-template area */
+    /* "username"           50px
+        "views"             30px
+        "premium"           20px
+        "my-items           20px /
+         40px                    */
+
+    display: grid;
+    grid-template: 
+        "username"  150px
+        "views"     60px
+        "premium"   50px
+        "my-items"  50px /
+        290px;
+
+}
+
+/* Username */
+
+.username {
+grid-area: username;
+background-color: darkgoldenrod;
+border: 1px solid orangered;
+margin-left: 5px;
+margin-top: 5px;
+}
+
+
+/* Views */
+.views {
+grid-area: views;
+background-color: darkred;
+border: 1px solid orangered;
+margin-left: 5px;
+}
+
+/* Premium */
+
+.premium {
+grid-area: premium;
+background-color: darkorchid;
+border: 1px solid orangered;
+margin-left: 5px;
+}
+
+/* My-items */
+
+.my-items {
+grid-area: my-items;
+background-color: darkturquoise;
+border: 1px solid orangered;
+margin-left: 5px;
+}
+
+/* Main */
+/* Grid-area: main */
+
+.main {
+    grid-area: main;
+    background-color: lightslategray;
+    border: 1px solid darkorchid
+}
+
+/* Right-bar */
+/* Grid-area: right-bar */
+
+.right-bar {
+    grid-area: right-bar;
+    background-color: lightseagreen;
+    border: 1px solid darkslategray
+}

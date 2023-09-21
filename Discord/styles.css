@@ -1,0 +1,385 @@
+body {
+    background-color: lightblue;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* container */
+/* display: grid */
+/* grid-template */
+/* "icon-bar    menu-bar    header-and-main" 800px/
+    60px        120px           1fr
+     */
+
+.container {
+    display: grid;
+    grid-template: 
+    "icon-bar   menu-bar header-and-main" 1500px/
+        100px        350px    1fr ;
+
+     }
+
+ /* icon-bar */
+
+.icon-bar {
+    grid-area: icon-bar;
+    background-color: rgba(245, 245, 245, 0.536);
+    border: 1px solid black;
+
+
+
+    display: grid;
+    grid-template: 
+    "icon-bar-1"
+    "icon-bar-2"
+    "icon-bar-3"
+    "icon-bar-4"
+    "icon-bar-5"
+    "icon-bar-6"
+    "icon-bar-7" ;  
+
+    /* Use grid template rows to be more flexible
+    or align content? */
+
+    align-content:start;
+    
+    
+   
+}
+
+.icon-bar-1 {
+grid-area: icon-bar-1;
+background-color: lightseagreen;
+border: 1px dashed black;
+margin: 15px;
+
+/* added width and height properties to adjust size of icon */
+place-self: center;
+border-radius: 50%;
+height: 60px;
+width: 60px;
+
+
+}
+
+
+.icon-bar-2 {
+grid-area: icon-bar-2;
+background-color: lightseagreen;
+border: 1px dashed black;
+
+/* Adjustment of icon */
+place-self: center;
+border-radius: 50%;
+height: 60px;
+width: 60px;
+margin-top: 30px;
+
+}
+
+.icon-bar-3 {
+    grid-area: icon-bar-3;
+    background-color: lightseagreen;
+    border: 1px dashed black;
+   
+
+ /* Adjustment of icon */
+place-self: center;
+border-radius: 50%;
+height: 60px;
+width: 60px;
+    }
+    
+ .icon-bar-3 {
+        grid-area: icon-bar-3;
+        background-color:lightseagreen;
+        border: 1px dashed black;
+       
+/* Adjustment of icon */
+place-self: center;
+border-radius: 50%;
+height: 60px;
+width: 60px;
+margin-top: 15px;
+        }
+
+.icon-bar-4 {
+            grid-area: icon-bar-4;
+            background-color: lightseagreen;
+            border: 1px dashed black;
+           
+            /* Adjustment of icon */
+            place-self: center;
+            border-radius: 50%;
+            height: 60px;
+            width: 60px;
+            margin-top: 15px;
+            }
+
+.icon-bar-5 {
+                grid-area: icon-bar-5;
+                background-color: lightseagreen;
+                border: 1px dashed black;
+        
+
+            /* Adjustment of icon */
+            place-self: center;
+            border-radius: 50%;
+            height: 60px;
+            width: 60px;
+            margin-top: 15px;
+                }
+
+.icon-bar-6 {
+                    grid-area: icon-bar-6;
+                    background-color: lightseagreen;
+                    border: 1px dashed black;
+                  
+            /* Adjustment of icon */
+            place-self: center;
+            border-radius: 50%;
+            height: 60px;
+            width: 60px;
+            margin-top: 15px;
+                    }
+
+.icon-bar-7 {
+grid-area: icon-bar-7;
+background-color: lightseagreen;
+border: 1px dashed black;
+
+
+            /* Adjustment of icon */
+            place-self: center;
+            border-radius: 50%;
+            height: 60px;
+            width: 60px;
+            margin-top: 35px;
+                        }
+                        
+            
+
+/* menu-bar */
+
+.menu-bar {
+    grid-area: menu-bar;
+    background-color: rgba(245, 245, 245, 0.536);
+    border: 1px solid black;
+
+    display: grid;
+    grid-template: 
+    "boolean-uk"
+    "invite-people"
+    "general"
+    "classes"
+    "lobby"
+    "staff" 
+    "audio-mute"
+    ;
+
+    /* define the height of the rows */
+    grid-template-rows: 70px 200px 150px 300px 200px 100px 60px;
+    gap: 10px;
+    padding: 10px;
+}
+
+
+.boolean-uk {
+    grid-area: boolean-uk;
+    border: 1px dashed black;
+}
+
+.invite-people {
+    grid-area: invite-people;
+    border: 1px dashed black;
+}
+
+/* General */
+.general {
+    grid-area: general;
+    border: 1px dashed black;
+
+    display: grid;
+    grid-template: 
+    "general-1"
+    "general-2";
+
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
+
+}
+
+.general-1 {
+grid-area: general-1 ;
+border: 1px dashed black;
+}
+
+.general-2 {
+    grid-area: general-2 ;
+    border: 1px dashed black;
+    }
+
+    /* Classes */
+.classes {
+    grid-area: classes;
+    border: 1px dashed black;
+
+    display: grid;
+    grid-template: 
+    "class1"
+    "class2"
+    "class3"
+    "class4"
+    "class5"
+    "class6";
+
+    grid-template-rows: repeat(6, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.class1 {
+    grid-area: class1;
+    border: 1px dashed black;
+}
+
+.class2 {
+    grid-area: class2;
+    border: 1px dashed black;
+}
+
+.class3 {
+    grid-area: class3;
+    border: 1px dashed black;
+}
+
+.class3 {
+    grid-area: class3;
+    border: 1px dashed black;
+}
+
+.class4 {
+    grid-area: class4;
+    border: 1px dashed black;
+}
+
+.class5 {
+    grid-area: class5;
+    border: 1px dashed black;
+}
+
+.class6 {
+    grid-area: class6;
+    border: 1px dashed black;
+}
+
+
+/* lobby */
+
+.lobby {
+    grid-area: lobby;
+    border: 1px dashed black;
+
+    display: grid;
+    grid-template: 
+    "random"
+    "gaming"
+    "watching"
+    ;
+
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.random {
+    grid-area: random;
+    border: 1px dashed black;
+}
+
+.gaming {
+    grid-area: gaming;
+    border: 1px dashed black;
+}
+
+.watching {
+    grid-area: watching;
+    border: 1px dashed black;
+}
+
+/* staff */
+.staff {
+    grid-area: staff;
+    border: 1px dashed black;
+
+    display: grid;
+    grid-template: 
+    "teacher1"
+    "teacher2";
+
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.teacher1 {
+    grid-area: teacher1;
+    border: 1px dashed black;
+}
+
+.teacher2 {
+    grid-area: teacher2;
+    border: 1px dashed black;
+}
+
+.audio-mute {
+    /* display: grid; */
+    grid-area: audio-mute;
+    border: 1px dashed black;
+
+ 
+}
+
+
+/* header-and-main */
+.header-and-main {
+    grid-area: header-and-main;
+    background-color: rgba(245, 245, 245, 0.536);
+    border: 1px solid black;
+
+    display: grid;
+    grid-template: 
+    "top-header"
+    "welcomeToClass"
+    "hey-everyone"
+    "message-class"
+;
+grid-template-rows: 
+70px 1fr 60px 40px;
+gap: 10px;
+    padding: 10px;
+}
+
+.top-header {
+    grid-area: top-header;
+    border: 1px dashed black;
+}
+
+.welcomeToClass {
+    grid-area: welcomeToClass;
+    border: 1px dashed black;
+}
+
+.hey-everyone {
+    grid-area: hey-everyone;
+    border: 1px dashed black;
+}
+
+.message-class {
+    grid-area: message-class;
+    border: 1px dashed black;
+}
