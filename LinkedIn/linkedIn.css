@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --max-width: 1170px;
+}
+.color {
+  background: rgb(244, 241, 241);
+}
+.top-header {
+  padding: 0.5rem 0rem 0.2rem;
+  display: grid;
+  grid-template-columns: 50px 500px 1fr;
+  max-width: 1170px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.right-icons {
+  display: flex;
+  justify-content: space-between;
+}
+.objects {
+  width: 40px;
+  height: 40px;
+  background: red;
+}
+img {
+  margin-top: 0.2rem;
+  width: 40px;
+  height: 40px;
+}
+.search {
+  position: relative;
+}
+#search {
+  position: relative;
+  height: 40px;
+  width: 400px;
+  background: lightgray;
+  border: none;
+  border-radius: 10px;
+}
+.search input::placeholder {
+  padding-left: 1.5rem;
+}
+.search i {
+  position: absolute;
+  left: 3%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+/* ----------------Bottom-Grid------------------ */
+.center {
+  max-width: var(--max-width);
+}
+.grid-layout {
+  display: grid;
+  grid-template-columns: 300px 1fr 300px;
+  margin: 1rem auto;
+  column-gap: 2rem;
+}
+.left-section {
+  height: 800px;
+  width: 100%;
+}
+.left-panel-1 {
+  border-radius: 20px;
+  height: 300px;
+  border: 2px solid yellow;
+}
+.left-panel-2 {
+  margin-top: 1rem;
+  border-radius: 20px;
+  height: 200px;
+  border: 2px solid blue;
+}
+.left-panel-3 {
+  margin-top: 1rem;
+  border-radius: 20px;
+  height: 260px;
+  border: 2px solid blue;
+}
+
+/* ----------------Center-Grid------------------ */
+.middle-part {
+  height: 800px;
+  width: 100%;
+}
+.middle-panel-1 {
+  border-radius: 20px;
+  height: 150px;
+  border: 2px solid yellow;
+  margin-bottom: 1.8rem;
+}
+.middle-panel-2 {
+  border-radius: 20px;
+  height: 300px;
+  border: 2px solid blue;
+  margin-bottom: 1rem;
+}
+.middle-panel-3 {
+  border-radius: 20px;
+  height: 300px;
+  border: 2px solid purple;
+}
+
+/* ----------------Left-Grid------------------ */
+.right-part {
+  height: 800px;
+  width: 100%;
+}
+.right-panel-1 {
+  border-radius: 20px;
+  height: 300px;
+  border: 2px solid yellow;
+  margin-bottom: 0.5rem;
+}
+.right-panel-2 {
+  border-radius: 20px;
+  height: 200px;
+  border: 2px solid yellow;
+  margin-bottom: 0.5rem;
+}
+.right-panel-3 {
+  border-radius: 20px;
+  height: 250px;
+  border: 2px solid yellow;
+}
