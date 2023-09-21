@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr;
+}
+
+.header{
+    background-color: darkgrey;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+.left-side{
+    background-color: cornsilk;
+}
+
+.content{
+    background-color: darkcyan;
+}
+.right-side{
+    background-color: cornsilk;
+}
