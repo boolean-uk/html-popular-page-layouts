@@ -197,24 +197,142 @@ border: 1px dashed black;
     border: 1px dashed black;
 }
 
-
+/* General */
 .general {
     grid-area: general;
     border: 1px dashed black;
+
+    display: grid;
+    grid-template: 
+    "general-1"
+    "general-2";
+
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
+
 }
 
+.general-1 {
+grid-area: general-1 ;
+border: 1px dashed black;
+}
+
+.general-2 {
+    grid-area: general-2 ;
+    border: 1px dashed black;
+    }
+
+    /* Classes */
 .classes {
     grid-area: classes;
     border: 1px dashed black;
+
+    display: grid;
+    grid-template: 
+    "class1"
+    "class2"
+    "class3"
+    "class4"
+    "class5"
+    "class6";
+
+    grid-template-rows: repeat(6, 1fr);
+    gap: 10px;
+    padding: 10px;
 }
+
+.class1 {
+    grid-area: class1;
+    border: 1px dashed black;
+}
+
+.class2 {
+    grid-area: class2;
+    border: 1px dashed black;
+}
+
+.class3 {
+    grid-area: class3;
+    border: 1px dashed black;
+}
+
+.class3 {
+    grid-area: class3;
+    border: 1px dashed black;
+}
+
+.class4 {
+    grid-area: class4;
+    border: 1px dashed black;
+}
+
+.class5 {
+    grid-area: class5;
+    border: 1px dashed black;
+}
+
+.class6 {
+    grid-area: class6;
+    border: 1px dashed black;
+}
+
+
+/* lobby */
 
 .lobby {
     grid-area: lobby;
     border: 1px dashed black;
+
+    display: grid;
+    grid-template: 
+    "random"
+    "gaming"
+    "watching"
+    ;
+
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
 }
 
+.random {
+    grid-area: random;
+    border: 1px dashed black;
+}
+
+.gaming {
+    grid-area: gaming;
+    border: 1px dashed black;
+}
+
+.watching {
+    grid-area: watching;
+    border: 1px dashed black;
+}
+
+/* staff */
 .staff {
     grid-area: staff;
+    border: 1px dashed black;
+
+    display: grid;
+    grid-template: 
+    "teacher1"
+    "teacher2";
+
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.teacher1 {
+    grid-area: teacher1;
+    border: 1px dashed black;
+}
+
+.teacher2 {
+    grid-area: teacher2;
     border: 1px dashed black;
 }
 
