@@ -40,15 +40,14 @@ header{
 
 header .icon {
     margin-left: 20px;
-    
-
 }
 
 .icon img{
    border-radius: 10px;
 }
-header .home:hover{
+header .icon:hover{
     border-bottom: 1px solid black;
+    cursor: pointer;
 }
 
 /* The end of styling header */
