@@ -1,0 +1,49 @@
+* {
+    margin: 0px
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 250px 2fr 1fr 1fr;
+    grid-template-rows: 70px 1fr 100px 100px;
+    grid-template-areas:
+    "logo search icons icons"
+    "left-bar main-content settings right-bar"
+    "left-bar main-content settings right-bar"
+}
+
+.logo {
+    grid-area: logo;
+    background-color: green;
+}
+
+.search {
+    grid-area: search;
+    background-color: brown;
+}
+
+.icons {
+    grid-area: icons;
+    background-color: orange;
+}
+
+.settings {
+    grid-area: settings;
+    background-color: pink;
+}
+
+.left-bar {
+    grid-area: left-bar;
+    background-color: blue;
+}
+
+.right-bar {
+    grid-area: right-bar;
+    background-color: red;
+}
+
+.main-content {
+    grid-area: main-content;
+    background-color: gray;
+}

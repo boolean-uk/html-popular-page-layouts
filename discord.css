@@ -1,0 +1,58 @@
+* {
+    margin: 0px
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 100px 250px 1fr;
+    grid-template-rows: 50px 1fr 50px;
+    grid-template-areas:
+    "left-container server-header chat"
+    "left-container main-content right-container"
+    "left-container username chat-footer"
+}
+
+.server-header {
+    grid-area: server-header;
+    background-color: greenyellow;
+}
+
+.chat {
+    grid-area: chat;
+    background-color: green;
+}
+
+.left-container {
+    grid-area: left-container;
+    background-color: brown;
+}
+
+.right-container {
+    grid-area: right-container;
+    background-color: orange;
+}
+
+.main-content {
+    display: grid;
+    grid-area: main-content;
+    background-color: pink;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.menu {
+    justify-items: center;
+    border: solid;
+    border-width: 1px;
+}
+
+.chat-footer {
+    grid-area: chat-footer;
+    background-color: gray;
+}
+
+.username {
+    grid-area: username;
+    background-color: purple;
+}
