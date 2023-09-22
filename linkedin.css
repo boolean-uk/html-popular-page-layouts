@@ -5,7 +5,7 @@ body {
 .container{
     display: grid;
     grid-template:
-    "nav    nav    nav  nav nav" 50px
+    "nav    nav    nav  nav nav"
     ".      aside  main right-side   ." 400px
     ".      aside  main right-side   ." 400px /
      50px   150px  1fr  150px  50px; 
@@ -14,10 +14,20 @@ body {
 }
 .nav {
     grid-area: nav;
+    display: grid;
+    grid-template: 
+    "icon searchbar button1 button2 button3";
     background-color: #fff;
-    grid-template: repeat(4, 1fr);
-    grid-template-columns: 50px 150px ;
 }
+
+.button1 {
+    grid-area: button1;
+}
+
+.button2{
+    grid-area: button2;
+}
+
 
 .aside{
     grid-area: aside;
