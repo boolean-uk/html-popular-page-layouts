@@ -16,6 +16,10 @@ body,
   background-color: var(--bg-color);
 }
 
+body {
+  overflow: hidden;
+}
+
 .container {
   display: grid;
   grid-template-areas:
@@ -374,7 +378,9 @@ footer {
     grid-template-columns: 1fr 50px 50px;
   }
 
-  header > .right-header, .email-list-header > span, .magnifying-glass{
+  header > .right-header,
+  .email-list-header > span,
+  .magnifying-glass {
     display: none;
   }
 
