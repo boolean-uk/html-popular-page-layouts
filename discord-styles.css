@@ -1,0 +1,70 @@
+* {
+  padding:0;
+  margin:0;
+}
+
+.grid {
+  height: 100vh;
+  display:grid;
+  grid-template-columns: 10vw 20vw 70vw;
+  grid-template-rows: 30px;
+  grid-template-areas: 
+  "channel-rooms channels messaging"
+  ;
+  box-sizing: border-box;
+  justify-content:center;
+}
+
+.messaging {
+  box-sizing: border-box;
+  grid-area: messaging;
+  background-color: blue;
+  height: 100vh;
+  display:grid;
+  grid-template-columns: auto;
+  grid-template-rows: 20px;
+  grid-template-areas:
+  "enter-message";
+  align-items: end;
+}
+
+.enter-message {
+  box-sizing: border-box;
+  background-color: rebeccapurple;
+  color: white;
+  height: 100px;
+}
+
+.channel-rooms {
+  box-sizing: border-box;
+  grid-area: channel-rooms;
+  background-color: red;
+  height: 100vh;
+
+}
+.channels {
+  box-sizing: border-box;
+  grid-area: channels;
+  background-color: green;
+  height: 100vh;
+
+}
+
+@media screen and (max-width: 1200px) {
+  .grid {
+    grid-template-columns: 100vw;
+    grid-template-areas: 
+    "messaging"
+    ;
+    box-sizing: border-box;
+    justify-content:center;
+  }
+
+  .channel-rooms {
+    display: none;
+  }
+  
+  .channels {
+    display: none;
+  }
+}
