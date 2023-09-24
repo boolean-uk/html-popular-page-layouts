@@ -1,0 +1,39 @@
+*{
+  margin: 5px;
+  padding: 2px;
+}
+
+.container{
+  background-color:grey;
+  display: grid;
+  max-width: 900px;
+  grid-template:
+  "header     header    header"      50px
+  "left-menu  main      right-menu"  1fr 
+  "left-menu  main      right-menu"  1fr/
+  150px  300px 100px;
+  gap: 2px;
+
+  }
+.header {
+  grid-area: header;
+  background-color: red;
+  height: auto;
+
+}
+.mainmenu {
+  grid-area: main;
+  background-color:white;
+  min-height: 600px;
+
+}
+.leftmenu {
+  grid-area:left-menu;
+  background-color: blueviolet;
+  min-height:600px;
+}
+.rightmenu {
+  grid-area:right-menu;
+  background-color: green;
+  min-height: 600px;
+}
