@@ -1,0 +1,53 @@
+body{
+    margin: 30px;
+    font-family: sans-serif;
+}
+
+.container{
+    background: antiquewhite;
+    max-width: 900px;
+    margin: 0 auto ;
+    height: 1vh;
+    display: grid;
+    grid-template:
+    "header     header          header          header "           50px
+    "leftbar    mainbar         rightbar       sidebar"           300px 
+    "leftbar    mainbar         rightbar      sidebar "           300px 
+    "leftbar    mainbar         rightbar      sidebar"           300px
+    "leftbar    mainbar         rightbar      sidebar "           300px/
+    1fr       10fr             3fr         0.5fr;
+    gap: 5px;
+    justify-items: stretch;
+    align-items: stretch;
+}
+.header{
+    text-align: center;
+    grid-area: header;
+    background-color: red;
+}
+
+.leftbar{
+    text-align: center;
+    grid-area: leftbar;
+    background-color:aqua ;
+
+}
+.mainbar{
+    text-align: center;
+    grid-area: mainbar;
+    background-color: green;
+
+}
+.rightbar{
+    text-align: center;
+    grid-area: rightbar;
+    background-color:blue ;
+}
+
+.sidebar{
+    text-align: center;
+    grid-area: sidebar ;
+    background-color: yellow;
+}
+
+
