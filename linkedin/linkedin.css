@@ -1,0 +1,89 @@
+html body {
+    background-color: whitesmoke
+    
+}
+
+
+.container {
+    display: grid ;
+    grid-template: 
+
+
+    "header                header                     header                        header                          header" 50px
+    "empty1               leftside                    main                        rightside                        empty2" minmax(700px, 1fr) /
+    250px                   180px                      1fr                           220px                           250px;
+
+    gap: 20px;
+}
+
+
+/* ALL STAYLES AND DESIGNING FOR HEADER */
+
+.header {
+    grid-area: header;
+    background-color: white;
+}
+
+
+/* ALL LEFT BAR STYLING AND CSS  */
+
+.leftside {
+    display: grid;
+    grid-area: leftside;
+    background-color: white;
+    /* border: solid 1px darkgray; */
+
+    grid-template: 
+    "first" 250px
+    "second" 150px
+    "third" 1fr /
+    1fr;
+
+    gap: 10px;
+}
+.leftside > div {
+    border: solid 1px darkgray;
+}
+
+
+/* 
+ALL MAIN STYLING AND DESIGNING */
+
+.mainbar {
+    display: grid;
+    grid-area: main;
+    background-color: white;
+
+    grid-template: 
+    "first" 150px
+    "second" 1fr
+    "third" 50px /
+    1fr;
+
+    gap: 10px; 
+}
+
+.mainbar > div {
+    border: solid 1px darkgray;
+}
+
+/* 
+ALL RIGHT BAR DESIGN AND STYLING  */
+.rightbar {
+    display: grid;
+    background-color: white;
+    grid-area: rightside;
+
+    grid-template: 
+    "firstright" 250px
+    "secondright" 180px
+    "thirdright" 1fr /
+    1fr;
+
+    gap: 10px;
+}
+
+
+.rightbar > div {
+    border: solid 1px darkgray;
+}
