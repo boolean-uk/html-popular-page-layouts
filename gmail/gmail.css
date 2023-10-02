@@ -1,0 +1,95 @@
+* {
+    /* margin: 20px; */
+    font-size: sans-serif;
+}
+
+.container {
+    display: grid;
+    margin: 0;
+    height: 100vh;
+
+
+
+    grid-template: 
+    "header                header                 header             header" 50px
+    "leftside               main                 rightbar              side"  1fr /
+    250px                    1fr                   250px            auto;
+
+
+}
+
+
+
+.headerbar {
+    /* display: inline-block; */
+    grid-area: header;
+    border: solid 3px grey;
+}
+
+.headerbar > div {
+    margin-left: 10px;
+    padding: 13px;
+    display: inline-block;
+    background-color: darkgray;
+}
+
+.headerbar > div:nth-of-type(2) {
+    text-align: center;
+    width: 1220px;
+    margin-left: 100px;
+}
+
+    
+
+.headerbar > div:nth-of-type(2) > div:nth-of-type(2) {
+    background-color: red;
+}
+
+
+
+.leftbar {
+    display: grid;
+    grid-area: leftside;
+    border: solid 3px grey;
+
+    grid-template-columns: auto;
+}
+
+.leftbar > div {
+    text-align: center;
+    border: solid 1px gray;
+}
+
+.mainbar {
+    display: grid;
+    grid-area: main;
+    border: solid 3px grey;
+}
+
+.mainbar > div {
+    text-align: center;
+    border: solid 1px gray;
+}
+
+
+.rightbar {
+    grid-area: rightbar;
+    border: solid 3px grey;
+    background-color: darkgrey;
+}
+
+.sidebar {
+    grid-area: side;
+    border: solid 3px grey;
+}
+
+footer {
+    grid-area: footer;
+    border: solid 3px grey;
+}
+
+button {
+    background-color: darkgray;
+    margin: 15px 20px 15px 20px;
+    
+}
