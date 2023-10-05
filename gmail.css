@@ -1,0 +1,38 @@
+body {
+  display: grid;
+  grid-template-areas:
+    "gmail search icons icons"
+    "folders mail settings apps";
+  grid-template-columns: 1fr 5fr 3fr 3fr;
+  grid-template-rows: 1fr 30fr;
+  height: 800px;
+}
+.gmail {
+  grid-area: gmail;
+  background-color: lightblue;
+}
+.folders {
+  grid-area: folders;
+  background-color: red;
+}
+.search {
+  grid-area: search;
+  background-color: darkcyan;
+}
+
+.mail {
+  grid-area: mail;
+  background-color: darkred;
+}
+.icons {
+  grid-area: icons;
+  background-color: rgb(113, 210, 196);
+}
+.settings {
+  grid-area: settings;
+  background-color: pink;
+}
+.apps {
+  grid-area: apps;
+  background-color: red;
+}

@@ -1,0 +1,29 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+  height: 800px;
+  gap: 10px;
+}
+.left {
+  display: grid;
+  grid-template-rows: 5fr 1fr 1fr;
+  background-color: peachpuff;
+  gap: 10px;
+}
+.mid {
+  display: grid;
+  grid-template-rows: 1fr 4fr 4fr;
+  background-color: lightgreen;
+  gap: 10px;
+}
+.right {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  background-color: lightgray;
+  gap: 10px;
+}
+.inside {
+  background-color: white;
+  border-radius: 5px;
+  border: 1px gray solid;
+}

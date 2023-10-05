@@ -1,0 +1,50 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr 3fr 20fr;
+  grid-template-areas: "left mid right";
+  height: 800px;
+}
+.left {
+  grid-area: left;
+  background-color: palevioletred;
+}
+.mid {
+  grid-area: mid;
+  display: grid;
+  grid-template-rows: 1fr 4fr 3fr 3fr 2fr 2fr 1fr;
+}
+.section1 {
+  background-color: lime;
+}
+.section2 {
+  background-color: peachpuff;
+}
+.section3 {
+  background-color: lightblue;
+}
+.section4 {
+  background-color: lightcoral;
+}
+.section5 {
+  background-color: cyan;
+}
+.section6 {
+  background-color: darkcyan;
+}
+.section7 {
+  background-color: greenyellow;
+}
+.right {
+  display: grid;
+  grid-area: right;
+  grid-template-rows: 1fr 30fr 1fr;
+}
+.top {
+  background-color: brown;
+}
+.midd {
+  background-color: darkgreen;
+}
+.bottom {
+  background-color: blueviolet;
+}
