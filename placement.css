@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+  }
+  
+  .container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template:
+      "header     header      header" 50px
+      "left-menu  main     right-menu" 1fr
+      "footer     footer      footer" 50px/
+       auto       minmax(200, 1fr) 200px;
+
+       gap: 15px;
+  }
+  
+  .header {
+    grid-area: header;
+    background-color: #ffcc0070;
+  }
+  
+  .left-menu {
+    grid-area: left-menu;
+    background-color: #ff000070;
+  }
+  
+  .main {
+    display: grid;
+    grid-area: main;
+    background-color: #00ff0070;
+  }
+
+  .main {
+    place-content: center;
+  }
+  
+  .right-menu {
+    grid-area: right-menu;
+    background-color: #ff00ff70;
+  }
+  
+  .footer {
+    grid-area: footer;
+    background-color: #00aaff70;
+  }

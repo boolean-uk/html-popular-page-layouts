@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    display: grid;
+    height: 100%;
+    width: 100%;
+grid-template: 
+
+    "header     header         header        header" 100px
+    "left-menu  main-content   right-menu    right-extra" 1fr/
+    200px       1fr           200px         150px;
+}
+
+.left-menu{
+    border: solid 2px black;
+    display: grid;
+    grid-area: left-menu;
+    grid-template: 
+
+    "compose" 1fr
+    "meet" 300px
+    "meet" 150px
+    "chat" 1fr/
+    200px;
+}
+
+.compose {
+    border-bottom: solid 2px black;
+}
+
+
+.meet {
+    border-bottom: solid 2px black;
+}
+
+.chat {
+    border-bottom: solid 2px black;
+}
+
+.main-content {
+    grid-area: main-content;
+    border: solid 2px black;
+}
+
+.main-content > div {
+    border: solid 2px black;
+    text-align: center;
+}
+
+.right-menu {
+    border: solid 2px black;
+    display: grid;
+    grid-area: right-menu;
+    grid-template: 
+
+    "quick-settings" 200px
+    "density" 400px
+    "theme" 250px
+    "density" 300px
+    "theme" 150px
+    "index-type" 1fr/
+    200px;
+}
+
+.quick-settings {
+    border-bottom: solid 2px black;
+}
+
+.density {
+    border-bottom: solid 2px black;
+}
+
+.theme {
+    border-bottom: solid 2px black;
+}
+
+.index-type {
+    border-bottom: solid 2px black;
+}
+
+.right-extra {
+grid-area: right-extra;
+border-top: solid 2px black;
+border-bottom: solid 4px black;
+}
