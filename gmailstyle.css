@@ -1,0 +1,125 @@
+body {
+font-family: Arial, Helvetica, sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid {
+    margin: auto;
+    min-height: 100vh;
+    width: 95%;
+    display: grid;
+    grid-template:
+    "nav   nav     nav      nav"   50px
+    "left  emails  right    quickaccess"   1fr/
+    200px  1fr     240px    40px;
+}
+
+@media screen and (max-width: 1200px) {
+    .grid {
+        margin: auto;
+        min-height: 100vh;
+        width: 95%;
+        display: grid;
+        grid-template:
+        "nav    nav     nav"    50px
+        "left   emails   quickaccess"  1fr/
+        200px   1fr     40px;
+    }
+    .right-menu div{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .grid {
+        margin: auto;
+        min-height: 100vh;
+        width: 95%;
+        display: grid;
+        grid-template:
+        "nav    nav     nav"    50px
+        "left   emails   quickaccess"  1fr/
+        50px   1fr     40px;
+    }
+}
+
+.nav-bar {
+    grid-area: nav;
+    border: solid 2px black;
+}
+
+.left-menu {
+    display: grid;
+    grid-area: left;
+    grid-template-areas: 
+    "compose"
+    "folders"
+    "meet"
+    "chat";
+    grid-template-rows: 50px 3fr 1fr 2fr;
+}
+
+.main {
+    grid-area: emails;
+    border: solid 2px black;
+}
+
+.right-menu {
+    display: grid;
+    grid-area: right;
+    grid-template-areas:
+    "settings"
+    "theme"
+    "type";
+    grid-template-rows: 2fr 1fr 2fr;
+}
+
+.quick-settings {
+    grid-area: settings;
+    border: solid 2px black;
+}
+
+.theme {
+    grid-area: theme;
+    border: solid 2px black;
+}
+
+.inbox-type {
+    grid-area: type;
+    border: solid 2px black;
+}
+
+.compose {
+    grid-area: compose;
+    border: solid 2px black;
+}
+
+.folders {
+    grid-area: folders;
+    border: solid 2px black;
+}
+
+.meet {
+    grid-area: meet;
+    border: solid 2px black;
+}
+
+.chat {
+    grid-area: chat;
+    border: solid 2px black;
+}
+
+.quick-access {
+    grid-area: quickaccess;
+    border: solid 2px black;
+}
+
+.quick-access p {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}

@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid {
+    margin: auto;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+    "server-list    server-menu     chat-window";
+    grid-template-columns: 60px 200px   1fr;
+}
+
+.server-list {
+    grid-area: server-list;
+    display: grid;
+    grid-template-areas:
+    "home"
+    "servers";
+    grid-template-rows: 60px    1fr;
+}
+
+.server-menu {
+    grid-area: server-menu;
+    display: grid;
+    grid-template-areas:
+    "header"
+    "details";
+    grid-template-rows: 40px    1fr;
+}
+
+.chat-window {
+    grid-area: chat-window;
+    display: grid;
+    grid-template-areas: 
+    "chat-header"
+    "chat-body"
+    "chat-box";
+    grid-template-rows: 40px    1fr 60px;
+}
+
+.home-button {
+    grid-area: home;
+    border: solid 2px black;
+}
+
+.server-buttons {
+    grid-area: servers;
+    border: solid 2px black;
+}
+
+.server-header {
+    grid-area: header;
+    border: solid 2px black;
+}
+
+.server-details {
+    grid-area: details;
+    border: solid 2px black;
+}
+
+.chat-header {
+    grid-area: chat-header;
+    border: solid 2px black;
+}
+
+.chat-body {
+    grid-area: chat-body;
+    border: solid 2px black;
+}
+
+.chat-box {
+    grid-area: chat-box;
+    border: solid 2px black;
+}
