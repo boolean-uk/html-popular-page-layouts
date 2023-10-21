@@ -1,0 +1,152 @@
+.header {
+    background-color: #FFFFFF;
+    grid-area: header;
+}
+
+.left-side {
+    background-color: pink;
+    grid-area: left;
+}
+
+.main {
+    background-color: lightblue;
+    grid-area: main;
+}
+
+.right-side {
+    background-color: lightsalmon;
+    grid-area: right;
+}
+
+.grid {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+    grid-template:
+        "header header header header header" 50px
+        ".left main right." 100vh/
+        200px 1fr 2fr 1fr 200px
+}
+
+@media screen and (max-width: 800px) {
+    .grid {
+      grid-template-columns: 1fr 1fr 2fr;
+      grid-template-rows: 50px 100vh;
+      grid-template-areas:
+      "header header header"
+      ".left main ";
+    }
+
+    .right-side {
+      display: none;
+    }
+  }
+
+
+  @media screen and (max-width: 600px) {
+    .grid {
+      grid-template-columns: 2fr;
+      grid-template-rows: 50px 100vh;
+      grid-template-areas:
+      "header"
+      "main ";
+    }
+
+    .right-side {
+      display: none;
+    }
+
+    .left-side {
+        display: none;
+      }
+  }
+
+.leftcard1{
+    background-color: white;
+    border-radius: 8px;
+    height: 60px;
+    margin: 5px;
+    place-items:center;
+}
+
+.leftcard2{
+    background-color: white;
+    border-radius: 8px;
+    height: 60px;
+    margin: 5px;
+    place-items:center;
+}
+
+.leftcard3{
+    background-color: white;
+    border-radius: 8px;
+    height: 60px;
+    margin: 5px;
+    place-items:center;
+}
+
+.maincard1{
+    background-color: white;
+    border-radius: 8px;
+    height:30px;
+    margin: 5px;
+    place-items:center;
+}
+
+.maincard2{
+    background-color: white;
+    border-radius: 8px;
+    height:250px;
+    margin: 5px;
+    place-items:center;
+}
+
+.rightcard1{
+    background-color: white;
+    border-radius: 8px;
+    height:150px;
+    margin: 5px;
+    place-items:center;
+}
+
+.rightcard2{
+    background-color: white;
+    border-radius: 8px;
+    height:150px;
+    margin: 5px;
+    place-items:center;
+}
+
+.rightcard3{
+    background-color: white;
+    border-radius: 8px;
+    height:150px;
+    margin: 5px;
+    place-items:center;
+}
+
+img{
+    height: 45px;
+    margin-left: 220px;
+    border-radius: 20%;
+}
+
+* {
+   
+    margin: 0;
+    background-color: #F3F2EF;
+ 
+}
+
+input {
+ position: absolute;
+
+ justify-items: center;
+ align-items: center;
+ margin-top: 4px;
+ margin-left: 20px;
+ width: 200px;
+
+ height: 30px;
+ 
+}
