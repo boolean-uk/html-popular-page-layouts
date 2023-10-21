@@ -1,0 +1,39 @@
+.container {
+  display: grid;
+  grid-template:
+  "header     header      header"      50px
+  "left-bar  main        right-bar"  1fr
+  "left-bar  main        right-bar"    100px /
+  250px       1fr         300px;
+}
+
+.main {
+  grid-area: main;
+  background-color: lightseagreen;
+  min-height: 600px;
+}
+
+.header{
+  grid-area: header;
+  background-color: aliceblue;
+}
+
+.left-bar{
+grid-area: left-bar;
+background-color: antiquewhite;
+}
+
+
+.profile,
+.boolean,
+.recent{
+  display: block;
+  padding: 10px;
+  border: solid 2px black;
+  margin-bottom: 20px;
+}
+
+.right-bar{
+  grid-area: right-bar;
+  background-color: burlywood;
+  }

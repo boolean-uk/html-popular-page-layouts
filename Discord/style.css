@@ -1,0 +1,83 @@
+* {
+  font-family: sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template:
+    "nav sidebar header" 40px 
+    "nav sidebar main"  1fr /
+    60px 230px 1fr;
+  min-height: 100%;
+}
+
+.nav {
+  grid-area: nav;
+  background-color: lightcoral;
+}
+
+.logo {
+  grid-area: logo;
+  background-color: lightblue;
+  padding: 10px
+}
+.sidebar {
+  grid-area: sidebar;
+  display: grid;
+  background-color: lightblue;
+  grid-template: 
+  "logo" 40px
+  "invitation" 150px
+  "channels"  1fr
+  "status" 60px /
+  1fr;
+}
+
+.invitation {
+  grid-area: invitation;
+  background-color: blanchedalmond;
+  padding: 10px
+}
+
+.channels {
+  grid-area: channels;
+  background-color: lightgrey;
+  padding: 10px
+}
+
+ul {
+  list-style-type: none;
+  padding:10px;
+}
+
+.channels > ul.group {
+  font-weight: bold;
+}
+
+ul > ul > li {
+  padding-left: 10px;
+  font-weight: normal;
+}
+
+.status {
+  grid-area: status;
+  background-color: lightpink;
+}
+
+.header {
+  grid-area: header;
+  background-color: lightgoldenrodyellow;
+}
+
+.main {
+  grid-area: main;
+  background-color: lightgreen;
+}
+
+.profileImg {
+  border-radius: 100%;
+  margin: 10px;
+  background-color: rgba(148, 31, 31, 0.524);
+  height: 40px;
+  width: 40px;
+}
