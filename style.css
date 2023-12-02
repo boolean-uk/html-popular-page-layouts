@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template: 
+    "leftMenu serverDropdown header" 50px
+    "leftMenu channels textSpace" 1fr /
+    80px        240px       1fr;
+}
+
+.leftMenu, .serverDropdown, .header,
+.channels, .textSpace, .contentArea, .textInput {
+    border: dashed 1px black;
+}
+
+.leftMenu {
+grid-area: leftMenu;
+background-color: rgba(231, 29, 29, 0.356);
+}
+
+.serverDropdown {
+    grid-area: serverDropdown;
+    background-color: rgb(230, 226, 226);
+}
+
+.header{
+    grid-area: header;
+    background-color: rgb(116, 113, 113);
+}
+
+.channels {
+    grid-area: channels;
+    background-color: rgba(7, 226, 7, 0.312);
+}
+
+.textSpace {
+    display: grid;
+    grid-template-rows: 1fr 45px;
+    grid-area: textSpace;
+    background-color: rgba(32, 32, 138, 0.27);
+}
+
+.contentArea {
+    height: 1fr;
+}
+
+.textInput {
+    height: 45px;
+}
+
+@media screen and (max-width: 750px) {
+    .container {
+        grid-template: 
+        "serverDropdown header" 50px
+        "channels textSpace" 1fr / 
+        240px 1fr;
+    }
+
+    .leftMenu {
+        display: none;
+    }
+
+}
+
+    @media screen and (max-width: 600px) {
+        .container {
+            grid-template: 
+            "header" 50px
+            "channels textSpace" 1fr / 
+            1fr;
+        }
+    
+        .leftMenu {
+            display: none;
+        }
+    
+        .serverDropdown {
+            display: none;
+        }
+        .channels {
+            display: none;
+        }
+}
