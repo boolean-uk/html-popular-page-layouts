@@ -1,0 +1,112 @@
+*{
+    padding:0;
+    margin: 0;
+}
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template: 
+    "header header header header header header" 0.5fr
+    "left-SB from subject date right right-SB" 5fr 
+    "footer footer footer footer footer footer".5fr/
+      1fr 0.5fr 3fr 1fr 2fr 0.5fr;
+}
+.header {
+    grid-area: header;
+    background-color: aqua;
+}
+.left-SB {
+    grid-area: left-SB;
+    background-color: rgb(161, 242, 242);
+}
+.from {
+    grid-area: from;
+    background-color: rgb(7, 116, 116);
+}
+
+.subject {
+    grid-area: subject;
+    background-color: rgb(161, 186, 163);
+}
+.date {
+    grid-area: date;
+    background-color: rgb(47, 118, 53);
+}
+.right {
+    grid-area: right;
+    background-color: rgb(124, 212, 132);
+}
+.right-SB {
+    grid-area: right-SB;
+    background-color: silver;
+}
+.footer {
+    grid-area: footer;
+    background-color: rgb(233, 233, 139);
+}
+body {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+@media screen and (max-width: 840px) {
+    .container{
+        height: 100vh;
+        display: grid;
+        grid-template: 
+        "header header header header header" 0.5fr
+    "left-SB subject date right right-SB" 5fr
+    "footer footer footer footer footer" 0.5fr/
+    1fr 3fr 1fr 2fr 0.5fr
+
+    }
+    .from {
+        grid-area: from;
+        background-color: rgb(7, 116, 116);
+        display: none;
+    }
+
+}
+@media screen and (max-width: 800px) {
+    .container{
+        height: 100vh;
+        display: grid;
+        grid-template: 
+        "header header header header" 0.5fr
+    "left-SB subject date right-SB" 5fr
+    "footer footer footer footer"0.5fr /
+    1fr 2fr 1fr 0.5fr
+    }
+    .right {
+        grid-area: right;
+        background-color: rgb(124, 212, 132);
+        display: none;
+    }
+}
+@media screen and (max-width: 775px) {
+    .container{
+        height: 100vh;
+        display: grid;
+        grid-template: 
+        "header header header" 0.5fr
+    "left-SB subject date" 7fr
+    "footer footer footer " 0.5fr /
+    1fr 3fr 1fr 
+
+    }
+    .right-SB {
+        grid-area: right-SB;
+        background-color: silver;
+        display: none;
+    }
+    .from {
+        grid-area: from;
+        background-color: rgb(7, 116, 116);
+        display: none;
+    }
+    .right {
+        grid-area: right;
+        background-color: rgb(124, 212, 132);
+        display: none;
+    }
+}

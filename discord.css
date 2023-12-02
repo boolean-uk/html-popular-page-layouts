@@ -1,0 +1,32 @@
+*{
+    padding:0;
+    margin: 0;
+}
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template: 
+    "left-Side-Bar header header" 0.5fr
+    "left-Side-Bar menu main" 5fr /
+      .5fr 1fr 3fr ;
+}
+.header {
+    grid-area: header;
+    background-color: aqua;
+}
+.left-Side-Bar {
+    grid-area: left-Side-Bar;
+    background-color: rgb(3, 120, 120);
+}
+.menu {
+    grid-area: menu;
+    background-color: rgb(169, 241, 217);
+}
+.main {
+    grid-area: main;
+    background-color: rgb(6, 177, 177);
+}
+body {
+    text-transform: uppercase;
+    text-align: center;
+}
