@@ -1,0 +1,200 @@
+body{
+    margin:0;
+}
+
+.container {
+    display:grid;
+    grid-template:
+    "topbar   topbar  topbar     topbar" 50px
+    "left-menu  main right-menu shortcuts" 300px
+    "left-menu  main right-menu shortcuts" 300px /
+    200px       1fr      250px   50px
+}
+/* topbar */
+.topbar {
+    grid-area: topbar;
+    border: 1px solid black;
+    background-color: rgb(202, 202, 245);
+    display:grid;
+    grid-template-columns: 200px 1fr 300px;
+    gap: 10px;
+}
+
+.topbar .logo{
+    border: 1px dashed black;
+    margin: 5px;
+    display:grid;
+    grid-template-columns: 50px 1fr;
+    gap: 5px;
+}
+.topbar .logo .menu-symbol{
+    border: 1px dashed black;
+    margin: 5px;
+}
+.topbar .logo .gmail-symbol{
+    border: 1px dashed black;
+    margin: 5px;
+}
+
+.topbar .search-bar{
+    border: 1px dashed black;
+    margin: 5px;
+    display:grid;
+    grid-template-columns: 1fr;
+}
+.topbar .search-bar .s-bar{
+    border: 1px dashed black;
+    margin: 5px;
+    border-radius: 15px;
+}
+.topbar .icons{
+    border: 1px dashed black;
+    margin: 5px;
+    display:grid;
+    grid-template-columns: 50px 50px 50px 1fr;
+    gap: 5px;
+    padding-left:30px;
+}
+.topbar .icons .Qmark{
+    border: 1px dashed black;
+    margin: 5px;
+    border-radius: 50%;
+}
+.topbar .icons .settings{
+    border: 1px dashed black;
+    margin: 5px;
+    border-radius: 50%;
+}
+.topbar .icons .options{
+    border: 1px dashed black;
+    margin: 5px;
+}
+.topbar .icons .profile{
+    border: 1px dashed black;
+    margin: 5px;
+}
+/* leftmenu */
+.left-menu {
+    grid-area:left-menu ;
+    border: 1px solid black;
+    background-color: rgb(203, 241, 221);
+    display:grid;
+    grid-template-rows: 50px 1fr 100px 150px;
+    
+}
+.left-menu .compose,
+.left-menu .Inbox,
+.left-menu .Meet,
+.left-menu .chat{
+    border: 1px dashed black;
+    margin: 5px;
+}
+
+/* main */
+.main {
+    grid-area: main;
+    border: 1px solid black;
+    background-color: rgb(234, 238, 197);
+    display:grid;
+    grid-template-rows: 40px 40px 40px 40px;
+    grid-gap:3px
+}
+/* main mails */
+.main .mail1{
+    border: 1px dashed black;
+    display:grid;
+    grid-template-columns: 20px 20px 1fr 20px;
+    grid-gap:1px
+
+}
+/* main inside mails grid */
+.main .mail1 .mail1-1,
+.main .mail1 .mail1-2,
+.main .mail1 .mail1-3,
+.main .mail1 .mail1-4 {
+    border: 1px dashed black;
+    margin: 3px;
+}
+
+/* mail 2 */
+.main .mail2{
+    border: 1px dashed black;
+    display:grid;
+    grid-template-columns: 20px 20px 1fr 20px;
+
+}
+.main .mail2 .mail2-1,
+.main .mail2 .mail2-2,
+.main .mail2 .mail2-3,
+.main .mail2 .mail2-4{
+    border: 1px dashed black;
+    margin: 3px;
+
+}
+ 
+/* mail 3 */
+.main .mail3{
+    border: 1px dashed black;
+    display:grid;
+    grid-template-columns: 20px 20px 1fr 20px;
+
+}
+.main .mail3 .mail3-1,
+.main .mail3 .mail3-2,
+.main .mail3 .mail3-3,
+.main .mail3 .mail3-4 {
+    border: 1px dashed black;
+    margin: 3px;
+}
+
+/* mail 4 */
+.main .mail4{
+    border: 1px dashed black;
+    display:grid;
+    grid-template-columns: 20px 20px 1fr 20px;
+
+}
+.main .mail4 .mail4-1,
+.main .mail4 .mail4-2,
+.main .mail4 .mail4-3,
+.main .mail4 .mail4-4 {
+    border: 1px dashed black;
+    margin: 3px;
+}
+
+/* rigth menu */
+.right-menu {
+    grid-area: right-menu;
+    border: 1px solid black;
+    background-color: rgb(235, 212, 230);
+    display:grid;
+    grid-template-rows: 80px 1fr 230px 150px;
+}
+
+.right-menu .quick-settings,
+.right-menu .Density,
+.right-menu .Theme,
+.right-menu .Inbox-type {
+    border: 1px dashed black;
+    margin: 5px;
+}
+
+/* shortcuts */
+.shortcuts {
+    grid-area: shortcuts;
+    border: 1px solid black;
+    background-color: rgb(230, 209, 209);
+    display:grid;
+    grid-template-rows: 50px 50px 50px 50px;
+    grid-gap: 20px
+}
+
+.shortcuts .calender,
+.shortcuts .note,
+.shortcuts .pen,
+.shortcuts .add-symbol  {
+    border: 1px dashed black;
+    margin: 5px;
+
+}
+ 
