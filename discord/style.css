@@ -14,27 +14,27 @@
 
 .leftMenu, .serverDropdown, .header,
 .channels, .textSpace, .contentArea, .textInput {
-    border: dashed 1px black;
+    border: solid 1px rgb(48, 47, 47);
 }
 
 .leftMenu {
 grid-area: leftMenu;
-background-color: rgba(231, 29, 29, 0.356);
+background-color: rgba(83, 72, 235, 0.267);
 }
 
 .serverDropdown {
     grid-area: serverDropdown;
-    background-color: rgb(230, 226, 226);
+    background-color: rgb(216, 233, 229);
 }
 
 .header{
     grid-area: header;
-    background-color: rgb(116, 113, 113);
+    background-color: rgb(219, 105, 219);
 }
 
 .channels {
     grid-area: channels;
-    background-color: rgba(7, 226, 7, 0.312);
+    background-color: rgba(200, 7, 226, 0.312);
 }
 
 .textSpace {
@@ -50,6 +50,7 @@ background-color: rgba(231, 29, 29, 0.356);
 
 .textInput {
     height: 45px;
+    background-color:rgba(93, 44, 99, 0.312) ;
 }
 
 @media screen and (max-width: 750px) {
