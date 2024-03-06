@@ -1,0 +1,56 @@
+* {
+    margin: 0px;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+
+    grid-template-columns: 350px 1fr 350px 150px;
+    grid-template-rows: 50px 1fr;
+    grid-template-areas: 
+        'gmail search icons icons'
+        'folders mail settings apps';
+}
+
+.gmail {
+    background-color: #00FFFF;
+
+    grid-area: gmail;
+}
+
+.search {
+    background-color: #008080;
+
+    grid-area: search;
+}
+
+.icons {
+    background-color: #7FFFD4;
+
+    grid-area: icons;
+}
+
+.folders {
+    background-color: #DC143C;
+
+    grid-area: folders;
+}
+
+.mail {
+    background-color: #800000;
+
+    grid-area: mail;
+}
+
+.settings {
+    background-color: #DB7093;
+
+    grid-area: settings;
+}
+
+.apps  {
+    background-color: #B22222;
+
+    grid-area: apps;
+}
