@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/******************** BIG CONTAINER ********************/
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 50px 150px minmax(200px, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "icons channels-list channel";
+}
+
+.icons {
+  background-color: #ff00ff;
+  grid-area: icons;
+}
+
+.channels-list {
+  grid-area: channels-list;
+  /* GRID CONTAINER */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 40px 150px repeat(4, 1fr) 40px;
+  grid-template-areas:
+    "channels-list-card1"
+    "channels-list-card2"
+    "channels-list-card3"
+    "channels-list-card4"
+    "channels-list-card5"
+    "channels-list-card6"
+    "channels-list-card7";
+}
+
+.channel {
+  grid-area: channel;
+  /* GRID CONTAINER */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 40px 1fr 40px;
+  grid-template-areas:
+    "channel-crad1"
+    "channel-crad2"
+    "channel-crad3";
+}
+
+/********************  CHANNELS LIST ITEMS ********************/
+
+.channels-list-card1 {
+  background-color: #00ff00;
+  grid-area: channels-list-card1;
+}
+
+.channels-list-card2 {
+  background-color: #ffe4c4;
+  grid-area: channels-list-card2;
+}
+
+.channels-list-card3 {
+  background-color: #00ffff;
+  grid-area: channels-list-card3;
+}
+
+.channels-list-card4 {
+  background-color: #deb887;
+  grid-area: channels-list-card4;
+}
+
+.channels-list-card5 {
+  background-color: #20b2aa;
+  grid-area: channels-list-card5;
+}
+
+.channels-list-card6 {
+  background-color: #008080;
+  grid-area: channels-list-card6;
+}
+
+.channels-list-card7 {
+  background-color: #808000;
+  grid-area: channels-list-card7;
+}
+
+/********************  CHANNEL ITEMS ********************/
+
+.channel-crad1 {
+  background-color: #845113;
+  grid-area: channel-crad1;
+}
+
+.channel-crad2 {
+  background-color: #1e6b0a;
+  grid-area: channel-crad2;
+}
+
+.channel-crad3 {
+  background-color: #663399;
+  grid-area: channel-crad3;
+}
