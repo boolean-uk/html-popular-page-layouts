@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 50px 1fr 50px;
+  grid-template-columns: 100px 200px 1fr 200px;
+  grid-template-areas:
+    'sidebar channels top-bar members'
+    'sidebar channels chat-history members'
+    'sidebar channels chatbox members'
+
+  ;
+  background-color: #424549;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #424549;
+  border: black solid 3px;
+}
+
+.channels {
+  grid-area: channels;
+  background-color: white;
+  border: black solid 3px;
+  display: grid;
+  grid-template-rows: 50px 1fr 50px;
+  grid-template-columns: 100%;
+  grid-template-areas:
+    'server-name'
+    'channel-browser'
+    'user-profile'
+  ;
+
+}
+
+.server-name {
+  grid-area: server-name;
+  background-color: #424549;
+  border: solid black 3px;
+}
+
+.channel-browser {
+  grid-area: channel-browser;
+  background-color: #424549;
+  border: solid black 3px;
+}
+
+.user-profile {
+  grid-area: user-profile;
+  background-color: #424549;
+  border: solid black 3px;
+}
+
+.top-bar {
+  grid-area: top-bar;
+  background-color: #424549;
+  border: black solid 3px;
+}
+
+.members {
+  grid-area: members;
+  background-color: #424549;
+  border: black solid 3px;
+}
+
+.chat-history {
+  grid-area: chat-history;
+  background-color: #424549;
+  border: black solid 3px;
+}
+
+.chatbox {
+  grid-area: chatbox;
+  background-color: #424549;
+  border: black solid 3px;
+}
