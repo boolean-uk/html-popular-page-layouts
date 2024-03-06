@@ -1,0 +1,81 @@
+* {
+    margin: 0px;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+
+    grid-template-columns: 50px 250px 1fr;
+    grid-template-rows: 50px 1fr 50px;
+    grid-template-areas: 
+        'servers browse search'
+        'servers browse main'
+        'servers browse messages';
+}
+
+.servers {
+    background-color: #FF00FF;
+
+    grid-area: servers;
+}
+
+.browse {
+    background-color: white;
+
+    grid-area: browse;
+}
+
+.search {
+    background-color: #845113;
+
+    grid-area: search;
+}
+
+.main {
+    background-color: #1E6B0A;
+
+    grid-area: main;
+}
+
+.messages{
+    background-color: #663399;
+
+    grid-area: messages;
+}
+
+/* Second layer grids */
+.browse-container {
+    display: grid;
+    height: 100%;
+
+    grid-template-rows: 50px 1fr 1fr 1fr 1fr 1fr 50px;
+} 
+
+.server-name {
+    background-color: #00FF00;
+}
+
+.content1 {
+    background-color: #FFE4C4;
+}
+
+.content2 {
+    background-color: #00FFFF;
+}
+
+.content3 {
+    background-color: #DEB887;
+}
+
+.content4 {
+    background-color: #20B2AA;
+}
+
+.content5 {
+    background-color: #008080;
+}
+
+.you {
+    background-color: #808000;
+}
