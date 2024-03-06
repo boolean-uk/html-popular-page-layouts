@@ -1,0 +1,123 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas:
+    'header header header'
+    'left-side main right-side';
+}
+
+.header {
+    grid-area: header;
+}
+
+.header-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-areas: 
+    'logo search settings';
+    gap: 5px;
+    background-color: darkgrey;
+}
+
+
+
+
+.left-side {
+    grid-area: left-side;
+}
+
+.left-side-container {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 100px 1fr 150px 150px;
+    grid-template-areas: 
+    'compose'
+    'folders'
+    'meetings'
+    'chat';
+    gap: 5px;
+}
+
+
+.left-side-container .compose {
+    text-align: center;
+}
+
+.left-side-container button {
+    padding: 10px;
+    margin-top:20px;
+}
+
+.left-side-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-indent: 0;
+}
+
+.left-side-container ul li {
+padding: 5px;
+}
+
+.left-side-container .meetings {
+    border: 1px solid;
+}
+
+.left-side-container .chat {
+    border: 1px solid;
+    margin-bottom: 10px;
+}
+
+.main {
+    grid-area: main;
+}
+
+.main-container {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    grid-template-areas: 
+    'nav-menu'
+    'emails';
+    gap: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.main-container .nav-menu {
+    border: 2px dotted;
+}
+
+.main-container .emails-container div {
+    border: 1px solid;
+}
+
+.right-side-container button {
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.right-side {
+    grid-area: right-side;
+}
+
+.right-side-container {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    'quick-settings'
+    'density'
+    'theme'
+    'inbox-type'; 
+    gap: 5px;
+    background-color: grey;
+}
