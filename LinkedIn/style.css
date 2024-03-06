@@ -1,0 +1,86 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    margin-left: 100px;
+    margin-right:100px;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 40px 1fr;
+    grid-template-columns: 2fr 3fr 2fr;
+    grid-template-areas: 
+    'header header header'
+    'left-side feed right-side';
+}
+
+
+.header {
+    grid-area: header;
+    background-color:grey;
+}
+
+.feed {
+    grid-area: feed;
+    background-color: pink;
+}
+
+.feed-container {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 100px 2fr 1fr;
+    grid-template-areas: 
+    'post1'
+    'post2'
+    'post3';
+    gap: 10px;
+    padding: 10px;
+}
+
+.feed-container div {
+    border: 1px dotted;
+}
+
+.left-side {
+    grid-area: left-side;
+    background-color: aqua;
+}
+
+.left-side-container {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    'profile'
+    'myorg'
+    'recent';
+    gap: 10px;
+    padding: 10px;
+}
+
+.left-side-container div {
+    border: 1px dotted;
+}
+
+.right-side {
+    grid-area: right-side;
+    background-color: red;
+}
+
+.right-side-container {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    'news'
+    'most-viewed'
+    'add-to-feed';
+    gap: 10px;
+    padding: 10px;
+}
+
+.right-side-container div {
+    border: 1px dotted;
+}
+
