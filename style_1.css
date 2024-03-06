@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 50px 3fr;
+    grid-template-columns: 70px 1fr 4fr;
+    grid-template-areas: 
+    'icons header header'
+    'icons sidebar main';
+
+}
+
+.header {
+    background-color: rgb(234, 112, 112);
+    grid-area: header;
+}
+.header-container {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 280px 1fr 40px 40px 40px 100px 40px 40px;
+    gap: 20px;
+}
+
+.header-container div{
+    background-color: orange;
+}
+
+.icons {
+    background-color: rgb(137, 197, 137);
+    grid-area: icons;
+}
+
+.icons-container {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 30px 30px 30px 30px 30px;
+    gap: 50px;
+}
+
+.icons-container div {
+    background-color: white;
+    padding: 8px;
+    border-radius: 100%;
+}
+
+.sidebar {
+    background-color: rgb(232, 232, 154);
+    grid-area: sidebar;
+}
+
+.sidebar-container {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 50px 2fr 1fr 2fr 1fr 4fr 50px;
+    gap: 10px;
+}
+
+.sidebar-container div {
+    background-color: white;
+}
+
+.main {
+    background-color: rgb(223, 154, 223);
+    grid-area: main;
+}
+
+.main-container {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 3fr 50px;
+}
+
+.message {
+    background-color: blue;
+}
