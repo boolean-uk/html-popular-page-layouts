@@ -16,17 +16,17 @@
 
 .nav {
     grid-area: nav;
-    background-color: blue;
+    background-color: #ff00ff;
 }
 
 
 .channels {
     grid-area: channels;
-    background-color: brown;
+    background-color: rgb(201, 49, 49);
 }
 
 .server-name {
-    background-color: rgb(30, 105, 64);
+    background-color: #00ff00;
     height: 5%;
 }
 .settings {
@@ -40,7 +40,7 @@
     grid-template-rows: 1fr 195px 195px 195px 195px;
 }
 .channels-container div {
-    border: 1px solid orange;
+    border: 1px solid rgb(221, 149, 15);
 }
 
 .main {
@@ -49,12 +49,13 @@
 }
 
 .main .title {
-    background-color: blue;
+    background-color: #845113;
     height: 5%;
 }
 
 .main .content {
     height: 90%;
+    background-color: #1e6b0a;
 }
 .main .bottom {
     background-color: blueviolet;
