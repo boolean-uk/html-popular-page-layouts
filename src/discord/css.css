@@ -1,0 +1,111 @@
+* {
+	box-sizing: border-box;
+	margin: 0%;
+	padding: 0%;
+}
+
+/* ============ */
+
+body {
+	display: flex;
+	background-color: grey;
+	height: 100svh;
+}
+
+.channels,
+.channel-nav,
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.channels {
+	width: 7vw;
+	background-color: #f999;
+	padding: 1rem 0.5rem;
+
+	height: 100svh;
+	overflow-y: auto;
+}
+
+.channel-nav {
+	width: 18vw;
+	background-color: #9f99;
+}
+main {
+	background-color: #99f9;
+	width: 75vw;
+}
+
+/* Channels */
+.channel {
+	width: 5vw;
+	height: 5vw;
+	border-radius: 50%;
+	margin-top: 0.5rem;
+}
+
+/* Channel-nav */
+.channel-nav {
+	padding: 1rem;
+	position: relative;
+}
+
+.channel-nav__title {
+	padding: 1rem;
+	border: 1px solid black;
+
+	width: 100%;
+}
+
+.some-container {
+	width: 100%;
+	height: 30%;
+	background-color: #ff99;
+
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+}
+
+.sub-channels {
+	width: 100%;
+	border: 1px solid black;
+}
+
+.user-controls {
+	position: absolute;
+	left: 1rem;
+	right: 1rem;
+	bottom: 1rem;
+	border: 1px solid black;
+}
+
+/* Main */
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: stretch;
+	justify-content: stretch;
+	align-items: stretch;
+}
+main nav {
+	padding: 1rem 0.5rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 7svh;
+}
+.chat {
+	background-color: #f9f9;
+	height: calc(88svh - 0.5rem);
+}
+
+.chat__input,
+.chat__input input {
+	width: 100%;
+	padding: 0.5rem;
+}
+.chat__input {
+	height: 5svh;
+}
