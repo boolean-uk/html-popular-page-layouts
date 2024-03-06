@@ -54,3 +54,36 @@
 
     grid-area: apps;
 }
+
+/* Make site responsive */
+@media screen and (max-width: 1300px) {
+    .container {
+        display: grid;
+
+        grid-template-columns: 200px 1fr 200px;
+        grid-template-rows: 50px 1fr;
+        grid-template-areas: 
+            'gmail search icons'
+            'folders mail mail';
+  
+      .apps, .settings {
+        display: none;
+      }
+    }
+  }
+
+  @media screen and (max-width: 680px) {
+    .container {
+        display: grid;
+
+        grid-template-columns: 100px 1fr 100px;
+        grid-template-rows: 50px 1fr;
+        grid-template-areas: 
+            'gmail search icons'
+            'folders mail mail';
+  
+      .apps, .settings {
+        display: none;
+      }
+    }
+  }

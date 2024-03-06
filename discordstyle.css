@@ -79,3 +79,36 @@
 .you {
     background-color: #808000;
 }
+
+/* Make site responsive */
+@media screen and (max-width: 880px) {
+    .container {
+        display: grid;
+
+        grid-template-columns: 50px 150px 1fr;
+        grid-template-rows: 50px 1fr 50px;
+        grid-template-areas: 
+            'servers browse search'
+            'servers browse main'
+            'servers browse messages';
+    }
+
+  }
+
+  @media screen and (max-width: 680px) {
+    .container {
+        display: grid;
+
+        grid-template-columns: 50px 1fr;
+        grid-template-rows: 50px 1fr 50px;
+        grid-template-areas: 
+            'servers search'
+            'servers main'
+            'servers messages';
+
+            .browse {
+                display: none;
+            }
+    }
+
+  }

@@ -92,3 +92,38 @@
     border: 1px solid rgba(128, 128, 128, 0.301);
     border-radius: 10px;
 }
+
+/* Make site responsive */
+@media screen and (max-width: 1300px) {
+    .container {
+        display: grid;
+
+        grid-template-columns: 200px 1fr 200px;
+        grid-template-rows: 50px 1fr;
+        grid-template-areas: 
+            'search search search'
+            'sidebar-left main sidebar-right';
+    }
+
+    .sidebar-left-container, .sidebar-right-container {
+        margin: 0px;
+    }
+
+  }
+
+  @media screen and (max-width: 680px) {
+    .container {
+        display: grid;
+
+        grid-template-columns: 100px 1fr;
+        grid-template-rows: 50px 1fr;
+        grid-template-areas: 
+            'search search search'
+            'sidebar-left main';
+
+            .sidebar-right {
+                display: none;
+            }
+    }
+
+  }
