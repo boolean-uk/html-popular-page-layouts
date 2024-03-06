@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/*********************  CONTAINER AND ITS CHILDREN *********************/
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 50px 1fr 15px;
+  grid-template-areas:
+    "header header header"
+    "left-side main right-side"
+    "footer footer footer";
+}
+
+.header {
+  background-color: #fff;
+  border-bottom: 1px solid lightgray;
+  grid-area: header;
+}
+
+.left-side {
+  background-color: #ffebcd;
+  grid-area: left-side;
+  /* As a grid container */
+  padding: 8px 8px 8px 30px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 150px 50px minmax(100px, 1fr);
+  grid-template-areas:
+    "left-side-card1"
+    "left-side-card2"
+    "left-side-card3";
+  gap: 13px;
+}
+
+.main {
+  background-color: #7fffd4;
+  grid-area: main;
+  /* As a grid container */
+  padding: 8px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px minmax(200px, 1fr) minmax(200px, 1fr);
+  grid-template-areas:
+    " main-card1"
+    " main-card2"
+    " main-card3";
+  gap: 13px;
+}
+
+.right-side {
+  background-color: #dcdcdc;
+  grid-area: right-side;
+  /* As a grid container */
+  padding: 8px 30px 8px 8px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(200px, 1fr) minmax(200px, 1fr) minmax(200px, 1fr);
+  grid-template-areas:
+    "right-side-card1"
+    "right-side-card2"
+    "right-side-card3";
+  gap: 13px;
+}
+
+.footer {
+  background-color: #f3f2ef;
+  grid-area: footer;
+}
+
+/*********************  LIFT-SIDE AND ITS CHILDREN *********************/
+
+.left-side > * {
+  background-color: #fff;
+  border: 1px solid lightgray;
+  border-radius: 7px;
+}
+
+.left-side-card1 {
+  grid-area: left-side-card1;
+}
+
+.left-side-card2 {
+  grid-area: left-side-card2;
+}
+
+.left-side-card3 {
+  grid-area: left-side-card3;
+}
+/*********************  MAIN AND ITS CHILDREN *********************/
+.main > * {
+  background-color: #fff;
+  border: 1px solid lightgray;
+  border-radius: 7px;
+}
+
+.main-card1 {
+  grid-area: main-card1;
+}
+
+.main-card2 {
+  grid-area: main-card2;
+}
+
+.main-card3 {
+  grid-area: main-card3;
+}
+
+/*********************  RIGHT-SIDE AND ITS CHILDREN *********************/
+
+.right-side > * {
+  background-color: #fff;
+  border: 1px solid lightgray;
+  border-radius: 7px;
+}
+
+.right-side-card1 {
+  grid-area: right-side-card1;
+}
+
+.right-side-card2 {
+  grid-area: right-side-card2;
+}
+
+.right-side-card3 {
+  grid-area: right-side-card3;
+}
