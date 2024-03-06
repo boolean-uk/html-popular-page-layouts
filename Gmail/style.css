@@ -1,0 +1,129 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    'header header header'
+    'left-side main right-side';
+}
+
+
+
+.header {
+    grid-area: header;
+    /* border: 2px dotted; */
+}
+
+.header-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 5fr 2fr;
+    grid-template-areas: 
+    'logo search settings'
+    ;
+    background-color: grey;
+    padding: 5px;
+    gap: 5px;
+}
+
+.header-container div {
+    border: 2px dotted;
+   height: 100%;
+    background-color: coral;
+    padding: 5px;
+}
+
+.header-container .logo {
+    grid-area: logo;
+}
+
+.header-container .search-bar {
+    grid-area: search;
+}
+
+.header-container .settings {
+    grid-area: settings;
+} 
+
+
+.left-side {
+    grid-area: left-side;
+    /* border: 2px dotted; */
+}
+
+.left-side-container {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 8fr 2fr 3fr;
+    grid-template-areas:
+    'compose'
+    'folders'
+    'meetings'
+    'chat';
+    background-color: grey;
+    padding: 5px;
+    gap: 5px;
+}
+
+.left-side-container div {
+    border: 2px dotted;
+    height: 100%;
+    background-color: coral;
+    padding: 5px;
+}
+
+.main {
+    grid-area: main;
+    /* border: 2px dotted; */
+}
+
+.main-container {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 40px 1fr;
+    grid-template-areas:
+    'nav-menu'
+    'emails';
+    background-color: grey;
+    padding: 5px;
+    gap: 5px;
+}
+
+.main-container div {
+    border: 2px dotted;
+    height: 100%;
+    background-color: coral;
+    padding: 5px;
+}
+
+.right-side {
+    grid-area: right-side;
+    /* border: 2px dotted; */
+}
+
+.right-side-container {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 50px 1fr 1fr 1fr;
+    grid-template-areas:
+    'quick-settings'
+    'density'
+    'theme'
+    'inbox-type';
+    background-color: grey;
+    padding: 5px;
+    gap: 5px;
+}
+
+.right-side-container div {
+    border: 2px dotted;
+    height: 100%;
+    background-color: coral;
+    padding: 5px;
+}
