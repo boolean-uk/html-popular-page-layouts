@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50px 150px 1fr;
+    grid-template-rows: 50px 1fr 1fr 1fr 1fr 1fr 75px;
+    grid-template-areas: 
+    'sidebar server-name header'
+    'sidebar invite-people chat'
+    'sidebar channel-list1 chat'
+    'sidebar channel-list2 chat'
+    'sidebar channel-list3 chat'
+    'sidebar channel-list4 chat'
+    'sidebar voice-chat send-message'
+}
+
+
+.sidebar {
+    background-color: bisque;
+    grid-area:sidebar;
+}
+
+.server-name {
+    background-color: grey;
+    grid-area:server-name;
+}
+
+.header {
+    background-color: orange;
+    grid-area:header;
+}
+
+.invite-people {
+    background-color: green;
+    grid-area:invite-people
+}
+
+.chat {
+    background-color: blue;
+    grid-area: chat;
+}
+
+.channel-list1 {
+    background-color: chartreuse;
+    grid-area: channel-list1;
+}
+
+.channel-list2 {
+    background-color: rgb(255, 0, 234);
+    grid-area: channel-list2;
+}
+
+.channel-list3 {
+    background-color: rgb(68, 18, 31);
+    grid-area: channel-list3;
+}
+
+.channel-list4 {
+    background-color: rgb(41, 228, 234);
+    grid-area: channel-list4;
+}
+
+.voice-chat {
+    background-color: rgb(13, 164, 116);
+    grid-area: voice-chat;
+}
