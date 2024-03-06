@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 80px 225px 1fr;
+    grid-template-rows: minmax(50px, 10%) minmax(50px,1fr) minmax(50px, 10%);
+    grid-template-areas:
+        'nav sidebar main'
+        'nav sidebar main'
+        'nav sidebar main'
+    ;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* ======================================= Left Navigation Bar ======================================= */
+
+.nav {
+    grid-area: nav;
+}
+
+.nav div {
+    background-color: black;
+}
+
+.nav-container {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: minmax(min-content, 7% ) minmax(min-content,1fr) minmax(100px, 0.5fr);
+    /* grid-template-rows: minmax(7% 8%) 1fr 50% */
+}
+
+.nav-container .pm {
+    border-bottom: 1px solid grey;
+}
+
+.servers {
+    border-bottom: 1px solid grey;
+}
+
+.nav-container .explore {
+    height: 50%;
+}
+
+.nav-container button {
+    margin: 13px;
+    height: 50px;
+    width: 50px;
+    border: 1px solid grey;
+    border-radius: 100%;
+    background-color: #747676;
+}
+
+
+
+/* =======================================  Sidebar ====================================*/
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #383838;
+}
+
+.sidebar-container {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: minmax(min-content, 6%) minmax(min-content, 15%) minmax(min-content, 1fr) minmax(min-content, 6%);
+}
+
+/*  ======================================= Server Name ======================================= */
+
+.sidebar-container .server-name {
+    background-color: #383838;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    padding-left: 15px;
+    padding-top: 5%;
+    border-bottom: 1px solid black;
+}
+
+
+
+/*  ======================================= Invite  ======================================= */
+
+.sidebar-container .invite {
+    background-color: #383838;
+    border-bottom: 1px solid black;
+}
+
+
+.invite img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    height: 50px;
+    width: 50px;
+    border: 1px solid grey;
+    border-radius: 100%;
+    background-color: #747676;
+}
+
+.invite p {
+    text-align: center;
+    color: white;
+    background-color: #383838;
+    margin-top: 10px;
+}
+
+.invite button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    height: 35px;
+    width: 120px;
+    background-color: #4759aa;
+    color: white;
+    border: 0;
+    border-radius: 7px;
+}
+
+
+/*  ======================================= Channels ======================================= */
+
+.channels-list {
+    background-color: #383838;
+    padding-left: 5px;
+    color: white;
+    border-bottom: 1px solid black;
+}
+
+.channels-list div {
+    background-color: #383838;
+}
+
+.channels-list h2 {
+    background-color: #383838;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.channels-list p {
+    background-color: #383838;
+    margin-left: 10px;
+}
+
+/*  ======================================= User / Settings ======================================= */
+
+.sidebar-container .settings {
+    background-color: #383838;
+    color: white;
+}
+
+.settings div {
+    background-color: #383838;
+}
+
+.sidebar-container .settings h2 {
+    background-color: #383838;
+    color: white;
+    padding-left: 20px;
+    padding-top: 8%;
+    font-weight: lighter;
+}
+
+
+
+/*  ======================================= Main Window ======================================= */
+
+
+
+.main {
+    grid-area: main;
+    background-color: #383838;
+}
+
+.main-container {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 6% 1fr 6%;
+}
+
+
+
+.title {
+    background-color: #383838;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.title p {
+    background-color: #383838;
+    text-align: center;
+
+}
+
+.content {
+    background-color: #383838;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.content p {
+    background-color: #383838;
+    text-align: center;
+    /* margin-left: 50%; */
+}
+
+.bottom {
+    border-left: 1px solid black;
+    background-color: #383838;
+}
+
+.bottom p {
+    display: block;
+    margin-top: 2%;
+    margin-bottom: auto;
+    background-color: #383838;
+    text-align: center;
+    color: white;
+    font-size: large;
+    
+}
