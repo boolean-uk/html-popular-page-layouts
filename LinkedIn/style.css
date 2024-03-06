@@ -8,79 +8,94 @@
     margin-right: 100px;
     height: 100vh;
     display: grid;
-    grid-template-rows: 40px 1fr;
+    grid-template-rows: 50px 1fr;
     grid-template-columns: 2fr 3fr 2fr;
     grid-template-areas: 
     'header header header'
     'left-side feed right-side';
 }
 
+.header img {
+    height: 40px;
+    margin-top: 2px;
+}
+
 
 .header {
     grid-area: header;
-    background-color:grey;
+    background-color:white;
+    padding-bottom: 10px;
+    
 }
 
 .feed {
     grid-area: feed;
-    background-color: pink;
+    background-color: paleturquoise;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .feed-container {
     height: 100%;
     display: grid;
-    grid-template-rows: 100px 2fr 1fr;
+    grid-template-rows: 50px 200px;
     grid-template-areas: 
     'post1'
-    'post2'
-    'post3';
-    gap: 10px;
-    padding: 10px;
+    'post2';
+    gap: 4px;
+    padding: 4px;
 }
 
 .feed-container div {
-    border: 1px dotted;
+    background-color: white;
+    border-radius: 5px;
 }
 
 .left-side {
     grid-area: left-side;
-    background-color: aqua;
+    background-color: pink;
 }
 
 .left-side-container {
     height: 100%;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 50px 50px 50px;
     grid-template-areas: 
     'profile'
     'myorg'
     'recent';
-    gap: 10px;
-    padding: 10px;
+    gap: 4px;
+    padding: 4px;
 }
 
 .left-side-container div {
-    border: 1px dotted;
+    border-radius: 0 0 5px 5px;
+    background-color: white;
+}
+
+.left-side-container p {
+    background-color: grey;
 }
 
 .right-side {
     grid-area: right-side;
-    background-color: red;
+    background-color: coral;
 }
 
 .right-side-container {
     height: 100%;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px;;
     grid-template-areas: 
     'news'
     'most-viewed'
     'add-to-feed';
-    gap: 10px;
-    padding: 10px;
+    gap: 4px;
+    padding: 4px;
 }
 
 .right-side-container div {
-    border: 1px dotted;
+    border-radius: 5px;
+    background-color: white;
 }
 
