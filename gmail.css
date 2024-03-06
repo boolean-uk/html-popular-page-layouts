@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+.layout-container {
+    height: 100vh;
+    background-color: grey;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    grid-template-columns: 150px 1fr 250px;
+    grid-template-areas: 
+    'header header header'
+    'left main right';
+    /* gap: 5px; */
+}
+
+header {
+    grid-area: header;
+    background-color: blue;
+    display: grid;
+    grid-template-columns: 150px 1fr 250px;
+}
+
+.logo {
+    background-color: yellow;
+}
+
+.search {
+    background-color: aquamarine;
+}
+
+.icons {
+    background-color: blueviolet;
+}
+
+main {
+    grid-area: main;
+    background-color: white;
+}
+
+.left {
+    grid-area: left;
+    background-color: red;
+}
+
+.right {
+    grid-area: right;
+    background-color: green;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+
+.apps {
+    background-color: blue;
+}
