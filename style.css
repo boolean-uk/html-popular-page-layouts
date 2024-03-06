@@ -21,7 +21,11 @@
 .header-container {
     display: grid;
     grid-template-columns: 200px 1fr 200px;
-    margin-left: 30px;
+    margin: 20px 30px;
+}
+
+.header img {
+    height: 50px;
 }
 
 .main {
@@ -29,9 +33,49 @@
     grid-area: main;
 }
 
+.main-container {
+    display: grid;
+    grid-template-rows: 50px 4fr;
+}
+
+.main-container div {
+    background-color: rgb(202, 113, 202);
+}
+
+.mail-container {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 50px 50px;
+}
+
+.mail-container div {
+    background-color: white;
+    border-bottom: 3px rgb(170, 163, 163) solid;
+    border-radius: 4px;
+}
+
+.select-tool-container {
+    display: grid;
+    grid-template-columns: 30px 30px 30px 30px 30px 30px;
+    gap: 30px;
+    margin: 10px 30px;
+}
+
 .left-sidebar {
     background-color: rgb(245, 224, 124);
     grid-area: left-sidebar;
+}
+
+.compose {
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: rgb(160, 160, 160);
+    border-radius: 30px;
+    background-color: white;
+    margin: 10px 10px;
+
 }
 
 .right-sidebar {
@@ -42,7 +86,7 @@
 .r-sidebar-container {
     display: grid;
     height: 100%;
-    grid-template-rows: 200px 100px minmax(200px, 1fr);
+    grid-template-rows: 70px 200px 100px minmax(200px, 1fr);
     gap: 20px;
 }
 
@@ -58,9 +102,139 @@
 .sidebar-container {
     display: grid;
     height: 100%;
-    grid-template-rows: 200px 100px minmax(200px, 1fr);
-    gap: 20px;
+    grid-template-rows: 60px 300px 100px ;
+    gap: 5px;
 }
 .sidebar-container div {
     background-color: rgb(241, 229, 229);
  }
+
+ .folders {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 30px 30px 30px 30px 30px;
+    gap: 25px;
+ }
+
+.inbox-button {
+    line-height: 2.5;
+    padding: 0 90px;
+    font-size: 1rem;
+    text-align: center;
+    color: rgb(160, 160, 160);
+    border-radius: 30px;
+    background-color: white;
+    margin: 10px 10px;
+ }
+ .inbox-button:active {
+    background-color: rgb(222, 36, 36);
+ }
+
+ .starred-button {
+    line-height: 2.5;
+    padding: 0 83px;
+    font-size: 1rem;
+    text-align: center;
+    color: rgb(160, 160, 160);
+    border-radius: 30px;
+    background-color: white;
+    margin: 10px 10px;
+ }
+ .starred-button:active {
+    background-color: rgb(222, 36, 36);
+ }
+
+ .snoozed-button {
+    line-height: 2.5;
+    padding: 0 79px;
+    font-size: 1rem;
+    text-align: center;
+    color: rgb(160, 160, 160);
+    border-radius: 30px;
+    background-color: white;
+    margin: 10px 10px;
+ }
+ .snoozed-button:active {
+    background-color: rgb(222, 36, 36);
+ }
+
+.important-button {
+    line-height: 2.5;
+    padding: 0 75px;
+    font-size: 1rem;
+    text-align: center;
+    color: rgb(160, 160, 160);
+    border-radius: 30px;
+    background-color: white;
+    margin: 10px 10px;
+ }
+.important-button:active {
+    background-color: rgb(222, 36, 36);
+ }
+
+.sent-button {
+    line-height: 2.5;
+    padding: 0 92px;
+    font-size: 1rem;
+    text-align: center;
+    color: rgb(160, 160, 160);
+    border-radius: 30px;
+    background-color: white;
+    margin: 10px 10px;
+}
+.sent-button:active {
+    background-color: rgb(222, 36, 36);
+}
+
+.meeting {
+    display: grid;
+    grid-template-rows: 20px 20px;
+    gap: 10px;
+}
+
+.start-button {
+    line-height: 1.5;
+    padding: 0 92px;
+    font-size: 1rem;
+    text-align: center;
+    color: rgb(160, 160, 160);
+    border-radius: 30px;
+    background-color: white;
+    margin: 1px 10px;
+}
+
+.join-button {
+    line-height: 1.5;
+    padding: 0 94px;
+    font-size: 1rem;
+    text-align: center;
+    color: rgb(160, 160, 160);
+    border-radius: 30px;
+    background-color: white;
+    margin: 1px 10px;
+}
+
+.chat {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 60px 60px 60px 60px;
+}
+
+.chat div {
+    background-color: white;
+    border-radius: 15px;
+}
+
+.buttons {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 50px 50px 50px 50px;
+    gap: 5px;
+    margin-left: 50px;
+}
+
+.buttons div {
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 15px;
+}
