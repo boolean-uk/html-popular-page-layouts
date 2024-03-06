@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Gmail Layout</title>
+		<link
+			rel="stylesheet"
+			href="./css.css" />
+	</head>
+	<body>
+		<nav class="nav">
+			<span class="nav__menu">
+				<button class="icon">HamburgerIcon</button>
+				<img
+					src=""
+					alt="Gmail Logo" />
+			</span>
+
+			<input
+				class="nav__search-bar"
+				type="text" />
+
+			<span class="nav__links">
+				<button class="icon">Help</button>
+				<button class="icon">Settings</button>
+				<button class="icon">More</button>
+				<button class="nav__user">Profile</button>
+			</span>
+		</nav>
+
+		<main>
+			<section class="quick-access">
+				<button>Compose</button>
+				<div class="quick-access_group">
+					<ul class="quick-access__list">
+						<li>Inbox</li>
+						<li>Snoozed</li>
+						<li>Important</li>
+						<li>Sent</li>
+						<li>Team</li>
+						<li>New RFPS</li>
+						<li>Personal</li>
+					</ul>
+					<button>More</button>
+				</div>
+				<div class="quick-access_group">
+					<span class="quick-access__title">Meet</span>
+					<ul class="quick-access__list">
+						<li>Start a meeting</li>
+						<li>Join a meeting</li>
+					</ul>
+				</div>
+
+				<div class="quick-access_group">
+					<span class="quick-access__title">Chat</span>
+					<ul class="quick-access__list">
+						<li>Nina Xu</li>
+						<li>Tom Dow</li>
+						<li>Jessica Holman</li>
+					</ul>
+				</div>
+
+				<footer class="quick-access__navbar">
+					<button class="icon">contacts</button>
+					<button class="icon">msgs</button>
+					<button class="icon">call</button>
+				</footer>
+			</section>
+
+			<section class="inbox">
+				<nav>
+					<span>
+						<button class="icon">selectAll</button>
+						<button class="icon">refresh</button>
+						<button class="icon">more</button>
+					</span>
+
+					<span>
+						<span class="pagination">pagination</span>
+						<button class="icon">a-left</button>
+						<button class="icon">a-right</button>
+					</span>
+				</nav>
+
+				<ul class="inbox__emails-list">
+					<script>
+						for (let index = 0; index < 20; index++) {
+							document.querySelector(
+								".inbox__emails-list"
+							).innerHTML += `
+					<li class="inbox__email">Some text here</li>`;
+						}
+					</script>
+				</ul>
+			</section>
+
+			<section class="applet">applet</section>
+			<section class="applet-drawer">Applet drawer</section>
+		</main>
+	</body>
+</html>
