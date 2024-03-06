@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 85px 210px 1fr;
+    grid-template-rows: 55px 1fr 55px;
+    grid-template-areas: 
+        'nav channels main'
+        'nav channels main'
+        'nav channels main'
+    ;
+}
+
+.nav {
+    grid-area: nav;
+    background-color: blue;
+}
+
+
+.channels {
+    grid-area: channels;
+    background-color: brown;
+}
+
+.channels-container {
+    display: grid;
+    height: 100%;
+}
+
+.main {
+    grid-area: main;
+    background-color: orange;
+}
