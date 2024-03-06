@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    gap: 20px;
+    grid-template: 
+    "topMenu topMenu topMenu topMenu" 50px
+    "composeMail messageWindow settingsTab icon" 1fr /
+    200px 1fr 250px 50px;
+}
+
+.topMenu {
+    grid-area: topMenu;
+    background-color: rgb(235, 238, 241);
+}
+
+.composeMail {
+    grid-area: composeMail;
+    background-color: rgb(238, 207, 157)
+    ;
+}
+
+.messageWindow {
+    grid-area: messageWindow;
+    background-color: rgb(238, 207, 157);
+}
+
+.settingsTab {
+    grid-area: settingsTab;
+    background-color: rgb(238, 207, 157);
+}
+
+.icon {
+    grid-area: icon;
+    background-color: rgb(238, 207, 157);
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        grid-template:
+            "topMenu" 50px
+            "composeMail " 1fr /
+             1fr ;
+    }
+
+    
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template:
+            "top-menu" 50px
+            "compose-box message-box quick-settings" 1fr /
+             200px 1fr 100px ;
+    }
+
+    .settingsTab {
+    display: none;
+    }
+}
