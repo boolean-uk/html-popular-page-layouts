@@ -37,6 +37,16 @@
 
 }
 
+.channel-browser{
+  display: grid;
+  height: 100%;
+  grid-template-rows:repeat(1, 30px);
+}
+
+.channel-browser div{
+  border: black solid 1px;
+}
+
 .server-name {
   grid-area: server-name;
   background-color: #424549;
