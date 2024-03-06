@@ -1,71 +1,160 @@
 * {
     margin: 0;
     box-sizing: border-box;
+    font-family:'Trebuchet MS';
+    background-color: black;
 }
 
 
 .container {
     height: 100vh;
     display: grid;
-    grid-template-columns: 50px 150px 1fr;
-    grid-template-rows: 50px 1fr 1fr 1fr 1fr 1fr 75px;
+    grid-template-columns: 70px 150px 1fr;
+    grid-template-rows: 50px 170px 1fr 75px;
     grid-template-areas: 
     'sidebar server-name header'
     'sidebar invite-people chat'
     'sidebar channel-list1 chat'
-    'sidebar channel-list2 chat'
-    'sidebar channel-list3 chat'
-    'sidebar channel-list4 chat'
     'sidebar voice-chat send-message'
 }
 
 
 .sidebar {
-    background-color: bisque;
+    background-color: black;
     grid-area:sidebar;
 }
 
-.server-name {
+.sidebar-container div {
     background-color: grey;
-    grid-area:server-name;
+    border-radius: 50%;
+    height: 50px;
+    margin: 10px;
 }
 
+.server-name {
+    background-color: rgb(58, 58, 58);
+    grid-area:server-name;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    color: white;
+}
+
+.server-name strong {
+    background-color: rgb(58, 58, 58);
+}
+
+
 .header {
-    background-color: orange;
+    background-color: rgb(58, 58, 58);
     grid-area:header;
+    margin-left:3px;
+}
+
+.header p {
+    color:black;
+    background-color: rgb(58, 58, 58);
+    text-align: center;
+    font-size: 7px;
 }
 
 .invite-people {
-    background-color: green;
-    grid-area:invite-people
+    background-color: rgb(58, 58, 58);
+    grid-area:invite-people;
+    margin-top: 2px;
+    display: block;
+    text-align: center;
+    margin-bottom: 2px;
 }
 
-.chat {
-    background-color: blue;
-    grid-area: chat;
+.invite-people .circle {
+    background-color: grey;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin: 10px 20px 10px 50px;
+}
+
+.invite-people p {
+    color: white;
+    font-size: 11px;
+    background-color: rgb(58, 58, 58);
+    margin-bottom:20px;
+}
+
+.invite-people span {
+    color: white;
+    font-size: 11px;
+    background-color: rgb(65, 59, 186);
+    font-size: 9px;
+    padding: 10px 20px;
+    border-radius: 3px;
 }
 
 .channel-list1 {
-    background-color: chartreuse;
+    background-color: rgb(58, 58, 58);
     grid-area: channel-list1;
+    /* margin-bottom: 2px; */
 }
 
-.channel-list2 {
-    background-color: rgb(255, 0, 234);
-    grid-area: channel-list2;
+.channel-list1 h3 {
+    color:white;
+    background-color: rgb(58, 58, 58);
+    padding-left: 5px;
+    padding-top: 7px;
+    padding-bottom: 5px;
+
+}
+.channel-list1 p {
+    color:white;
+    background-color: rgb(58, 58, 58);
+    padding-left: 10px;
+    
 }
 
-.channel-list3 {
-    background-color: rgb(68, 18, 31);
-    grid-area: channel-list3;
+.chat {
+    background-color: rgb(58, 58, 58);
+    grid-area: chat;
+    margin-top: 2px;
+    margin-left: 3px;
+    text-align: center;
+    font-size: 7px;
 }
 
-.channel-list4 {
-    background-color: rgb(41, 228, 234);
-    grid-area: channel-list4;
+.chat p {
+    color:black;
+    background-color: rgb(58, 58, 58);
 }
 
 .voice-chat {
     background-color: rgb(13, 164, 116);
     grid-area: voice-chat;
+    background-color: rgb(58, 58, 58);
+    display: flex;
+    align-items: center;
+    margin-top: 2px;
+}
+
+.voice-chat p {
+    background-color: rgb(58, 58, 58);
+    color: white;
+    padding-left: 10px;
+}
+
+.send-message {
+    background-color: rgb(58, 58, 58);
+    grid-area: send-message;
+    margin-top: 2px;
+    margin-left: 3px;
+    text-align: center;
+    font-size: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.send-message p {
+    color:white;
+    font-size:15px;
+    background-color: rgb(58, 58, 58);
 }
