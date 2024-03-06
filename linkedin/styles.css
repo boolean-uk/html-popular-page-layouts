@@ -51,3 +51,27 @@
     border: black solid 5px;
     border-radius: 10px;
 }
+
+  @media screen and (max-width: 700px) {
+    .container {
+      grid-template:
+        "header header" 1fr
+        "left-bar main" 20fr /
+        .5fr 1fr;
+    }
+    .right-bar{
+        display: none;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .container {
+      grid-template:
+        "header" 1fr
+        "main" 20fr /
+        1fr;
+    }
+    .left-bar{
+     display: none;
+    }
+  }

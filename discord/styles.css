@@ -88,3 +88,34 @@
   background-color: #424549;
   border: black solid 3px;
 }
+
+@media screen and (max-width: 800px) {
+  .container{
+    grid-template-columns: 100px 200px 1fr;
+    grid-template-areas:
+      'sidebar channels top-bar'
+      'sidebar channels chat-history'
+      'sidebar channels chatbox'
+  
+    ;
+  }
+  .members{
+    display:none
+  }
+  
+}
+
+@media screen and (max-width: 600px) {
+  .container{
+    grid-template-columns:100px 1fr;
+    grid-template-areas:
+      'channels top-bar'
+      'channels chat-history'
+      'channels chatbox'
+  
+    ;
+  }
+  .sidebar{
+    display: none;
+  }
+}
