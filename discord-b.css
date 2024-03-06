@@ -25,12 +25,38 @@
     background-color: brown;
 }
 
+.server-name {
+    background-color: rgb(30, 105, 64);
+    height: 5%;
+}
+.settings {
+    background-color: bisque;
+    height: 5%;
+}
+
 .channels-container {
     display: grid;
-    height: 100%;
+    height: 90%;
+    grid-template-rows: 1fr 195px 195px 195px 195px;
+}
+.channels-container div {
+    border: 1px solid orange;
 }
 
 .main {
     grid-area: main;
     background-color: orange;
+}
+
+.main .title {
+    background-color: blue;
+    height: 5%;
+}
+
+.main .content {
+    height: 90%;
+}
+.main .bottom {
+    background-color: blueviolet;
+    height: 5%;
 }
