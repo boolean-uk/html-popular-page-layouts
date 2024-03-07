@@ -1,0 +1,77 @@
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 50px 1fr;
+    grid-template-columns: .5fr 1fr .5fr;
+    grid-template-areas:
+        'header header header'
+        'left-bar main right-bar'
+    ;
+}
+.header{
+    grid-area:header;
+    background-color:black;
+}
+.left-bar{
+    display: grid;
+    grid-area:left-bar;
+    background-color:yellow ;
+    grid-template-rows: 200px 100px 1fr;
+    padding: 20px 20px 20px 40px;
+    gap: 30px
+}
+.left-bar div{
+    background-color: white;
+    border: black solid 5px;
+    border-radius: 10px;
+}
+.main{
+    display: grid;
+    grid-area:main;
+    background-color:blue ;
+    grid-template-rows: 100px 1fr .75fr;
+    padding: 20px;
+    gap: 30px
+}
+.main div{
+    background-color: white;
+    border: black solid 5px;
+    border-radius: 10px;
+}
+.right-bar{
+    display: grid;
+    grid-area:right-bar;
+    background-color:red ;
+    grid-template-rows: 1fr 1.25fr .75fr;
+    padding: 20px 40px 20px 20px;
+    gap: 30px
+}
+.right-bar div{
+    background-color: white;
+    border: black solid 5px;
+    border-radius: 10px;
+}
+
+  @media screen and (max-width: 700px) {
+    .container {
+      grid-template:
+        "header header" 1fr
+        "left-bar main" 20fr /
+        .5fr 1fr;
+    }
+    .right-bar{
+        display: none;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .container {
+      grid-template:
+        "header" 1fr
+        "main" 20fr /
+        1fr;
+    }
+    .left-bar{
+     display: none;
+    }
+  }

@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    background-color: #f6f8fc;
+  }
+  
+  .container {
+    text-align: center;
+    display: grid;
+    grid-template:
+      "header header header header" 30px
+      "left-menu main settings right-menu" 1fr /
+      150px 1fr 140px 60px;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f6f8fc;
+    gap:20px
+  }
+  .header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 50px auto minmax(200px,700px) auto auto auto auto;
+    grid-template-rows: auto;
+    background-color: #f6f8fc;
+    align-items:end;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    gap:10px
+  }
+  .header span{
+    text-align: center;
+    padding-left: 5px;
+  }
+  /* .item {
+    border: 1px solid black;
+  } */
+  .item input{
+    width:90%;
+  }
+  .item.search{
+    display: grid;
+    align-items: end;
+    justify-items: center;
+  }
+  .settings {
+    border: 1px solid black;
+    grid-area: settings;
+    background-color: #ffffff;
+    border-radius:20px ;
+  }
+  .main {
+    padding: 20px;
+    border-radius:20px ;
+    grid-area: main;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-rows: repeat(1 1fr);
+  }
+  .main div{
+    border: black solid 1px;
+    text-align: left;
+  }
+  .left-menu {
+    grid-area: left-menu;
+    background-color: #f6f8fc;
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: 60px repeat(auto-fill, 30px);
+    justify-items: start;
+    padding: 20px 0 0 20px;
+  }
+  .left-menu button{
+    width: 100px;
+    height: 50px;
+  }
+  .right-menu {
+    display: grid;
+    grid-template-rows: repeat(auto-fill, 20px);
+    gap: 20px;
+    grid-area: right-menu;
+    background-color: #f6f8fc;
+  }
+
+
+
+  .logo img, .setting-button img, .support img , .apps img, .account img, .menu img, .right-menu img{
+    height:20px;
+  }
+
+  @media screen and (max-width: 920px){
+    .container {
+      grid-template:
+      "header header header" 50px
+      "left-menu main right-menu" 1fr /
+      150px 1fr 60px;
+    }
+    
+    .settings {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .container {
+      grid-template:
+        "header header" 1fr
+        "left-menu main" 20fr /
+        150px 1fr;
+    }
+    .header{
+      grid-template-columns: 50px auto minmax(100px,600px) 50px;
+    }
+    .header .item.extra, .right-menu{
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .container {
+      grid-template:
+        "header header" 1fr
+        "left-menu main" 20fr /
+        75px 1fr;
+        gap:40px
+    }
+    .left-menu{
+      padding: 0 10px 0 10px;
+      margin-right: 10px;
+    }
+    .header{
+      grid-template-columns: 50px auto 1fr;
+    }
+    .header .item.support{
+      display: none;
+    }
+  }
+
