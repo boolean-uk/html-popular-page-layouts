@@ -1,0 +1,47 @@
+* {
+
+  margin: 0;
+}
+
+.container {
+
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 50px 1fr;
+  grid-template-columns: 200px minmax(200px,1fr) 200px 30px;
+  grid-template-areas: 
+    'logo searchBar toolbar toolbar'
+    'folders mail settings apps'
+  ;
+ 
+
+}
+
+.logo {
+  background-color: blue;
+  grid-area: logo;
+}
+.searchBar {
+  background-color: pink;
+  grid-area: searchBar;
+}
+.toolbar {
+  background-color: aqua;
+  grid-area: toolbar;
+}
+.folders {
+  background-color: teal;
+  grid-area: folders;
+}
+.mail{
+  background-color: red;
+  grid-area: mail;
+}
+.settings {
+  background-color: brown;
+  grid-area: settings;
+}
+.apps {
+  background-color: orange;
+  grid-area: apps;
+}
