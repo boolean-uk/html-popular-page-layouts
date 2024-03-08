@@ -1,0 +1,129 @@
+* {
+    margin: 0px;
+}
+
+/* First layer of grids */
+.container {
+    display: grid;
+    height: 100vh;
+
+    grid-template-columns: 400px 1fr 400px;
+    grid-template-rows: 50px 1fr;
+    grid-template-areas: 
+        'search search search'
+        'sidebar-left main sidebar-right';
+}
+
+.search {
+    background-color: white;
+
+    grid-area: search;
+}
+
+.sidebar-left {
+    background-color: blue;
+
+    grid-area: sidebar-left;
+
+    padding: 10px;
+}
+
+.main {
+    background-color: rgb(48, 48, 253);
+
+    grid-area: main;
+
+    padding: 10px;
+}
+
+.sidebar-right {
+    background-color: blue;
+
+    grid-area: sidebar-right;
+
+    padding: 10px;
+}
+
+/* Second layer of grids - Sidebar left */
+.sidebar-left-container {
+    display: grid;
+    height: 100%;
+
+    grid-template-rows: 200px 100px 1fr;
+    gap: 20px;
+
+    margin-left: 50px;
+} 
+
+.sidebar-left-container div {
+    background-color: white;
+    border: 1px solid rgba(128, 128, 128, 0.301);
+    border-radius: 10px;
+}
+
+/* Second layer of grids - Main */
+.main-container {
+    display: grid;
+    height: 100%;
+
+    grid-template-rows: 100px 1fr 300px;
+    gap: 20px;
+} 
+
+.main-container div {
+    background-color: white;
+    border: 1px solid rgba(128, 128, 128, 0.301);
+    border-radius: 10px;
+}
+
+/* Second layer of grids - Sidebar right */
+.sidebar-right-container {
+    display: grid;
+    height: 100%;
+
+    grid-template-rows: 300px 1fr 240px;
+    gap: 20px;
+
+    margin-right: 50px;
+} 
+
+.sidebar-right-container div {
+    background-color: white;
+    border: 1px solid rgba(128, 128, 128, 0.301);
+    border-radius: 10px;
+}
+
+/* Make responsive */
+@media screen and (max-width: 1300px) {
+    .container {
+        display: grid;
+
+        grid-template-columns: 200px 1fr 200px;
+        grid-template-rows: 50px 1fr;
+        grid-template-areas: 
+            'search search search'
+            'sidebar-left main sidebar-right';
+    }
+
+    .sidebar-left-container, .sidebar-right-container {
+        margin: 0px;
+    }
+
+  }
+
+  @media screen and (max-width: 680px) {
+    .container {
+        display: grid;
+
+        grid-template-columns: 100px 1fr;
+        grid-template-rows: 50px 1fr;
+        grid-template-areas: 
+            'search search search'
+            'sidebar-left main';
+
+            .sidebar-right {
+                display: none;
+            }
+    }
+
+  }
