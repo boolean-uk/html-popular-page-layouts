@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-areas: 
+        'header header header'
+        'sidebar-left main sidebar-right'
+    ;
+    grid-template-columns: 200px minmax(400px, 1fr) 300px;
+    grid-template-rows: 60px 1fr;
+    border-bottom: 10px solid rgb(194, 192, 192);
+}
+
+.header {
+    grid-area: header;
+    display: grid;
+}
+
+.sidebar-left {
+    grid-area: sidebar-left;
+    display: grid;
+    background-color: rgb(255, 231, 242);
+    grid-template-rows: 140px 40px 1fr;
+    padding: 10px 10px 10px 30px;
+    row-gap: 15px;
+}
+
+.sidebar-left .row1 {
+    border-radius: 0.3em;
+    background-color: white;
+}
+.sidebar-left .row2 {
+    border-radius: 0.3em;
+    background-color: white;
+}
+.sidebar-left .row3 {
+    border-radius: 0.3em ;
+    background-color: white;
+}
+
+.main {
+    grid-area: main;
+    display: grid;
+    background-color: rgb(101, 216, 236);
+    grid-template-rows: 40px 1.1fr 1fr;
+    padding: 10px;
+    row-gap: 15px;
+}
+
+.main .row1 {
+    border-radius: 0.3em;
+    background-color: white;
+}
+.main .row2 {
+    border-radius: 0.3em;
+    background-color: white;
+}
+.main .row3 {
+    border-radius: 0.3em;
+    background-color: white;
+}
+
+.sidebar-right {
+    grid-area: sidebar-right;
+    display: grid;
+    background-color: rgb(217, 224, 224);
+    grid-template-rows: repeat(auto-fit 1em);
+    padding: 10px 30px 10px 10px;
+    row-gap: 15px;
+}
+
+.sidebar-right .row1 {
+    border-radius: 0.3em;
+    background-color: white;
+}
+.sidebar-right .row2 {
+    border-radius: 0.3em;
+    background-color: white;
+}
+.sidebar-right .row3 {
+    border-radius: 0.3em;
+    background-color: white;
+}
