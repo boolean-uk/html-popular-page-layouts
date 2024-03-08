@@ -1,0 +1,61 @@
+*{
+    margin:0;
+}
+
+.container{
+    display:grid;
+    height:100vh;
+    grid-template:
+    'sidebar main'/78px 15fr
+/* grid-template-columns:85px 1fr ; */
+}
+.sidebar {
+    grid-area:sidebar;
+    background-color: rgb(71, 66, 66);
+    border: 1px solid black;
+    img{
+        height: 75px;
+        width: 75px;
+        
+    }
+  }
+.footer{
+    grid-area:footer;
+    background-color: green;
+}
+.main {
+    grid-area: main;
+    background-color: grey;
+    display: grid;
+    grid-template:
+        'channels content online' 100px
+        'channels content online' 1fr
+        'channels content online' 50px /
+        200px 1fr 200px;
+}
+
+.channels .header{
+    grid-area:header;
+    background-color: rgb(62, 64, 59);
+    border: 1px solid black;
+    font-family: sans-serif;
+}
+.channels .list{
+    grid-area:list;
+    background-color: rgb(76, 80, 83);
+    border: 1px solid black
+}
+.channels{
+    grid-area: channels;
+    background-color:gold;
+    border:1px solid black;
+    display:grid;
+    grid-template:
+    'header'50px
+    'list' 1fr
+}
+.online{
+    grid-area: online;
+    background-color:rgb(76, 80, 83);
+    border:1px solid black
+}
