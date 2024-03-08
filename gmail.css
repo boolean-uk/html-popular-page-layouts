@@ -1,0 +1,56 @@
+*{
+    margin:0;
+}
+
+.container{
+    display:grid;
+    height:100vh;
+    grid-template: 
+    'gmail search-bar account' 100px
+    'navigation inbox apps' 1fr
+    'navigation inbox apps'100px/
+    200px 1fr 100px
+    /* grid-template;
+    'navigation main'/78px 15fr */
+    /* grid-template-columns:85px 1fr ; */
+}
+.navigation {
+    grid-area:navigation;
+    background-color:lightgray;
+    border: 5px solid black;
+    font-family: sans-serif;
+    font-size: 15px
+  }
+.inbox{
+    grid-area: inbox;
+    background-color: white;
+    border: 5px solid black;
+    font-family: sans-serif;
+}
+.search-bar{
+    grid-area:search-bar;
+    background-color: grey;
+    border: 5px solid black;
+    font-family: sans-serif;
+}
+.apps{
+    grid-area: apps;
+    background-color: rgb(225, 212, 238);
+    border: 5px solid black;
+    font-family: sans-serif;
+}
+.gmail{
+    grid-area:gmail;
+    background-color: aliceblue;
+    border: 5px solid black;
+    img{
+        height:75px;
+        width:100px
+    }
+}
+.account{
+    grid-area: account;
+    background-color: beige;
+    border:5px solid black;
+    font-family: sans-serif;
+}
