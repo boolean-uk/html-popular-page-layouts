@@ -39,10 +39,12 @@ body {
   
   aside {
     grid-area: sidebar;
-    background-color: #2B2D31;
+    background-color: hsl(220, 7%, 18%);
+    height: calc(100vh - 50px);
     color: #fff;
-    padding: 20px;
-    overflow-x: scroll;
+    padding: 20px; 
+    box-sizing: border-box;
+    overflow-y: scroll;
     box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
   }
 
