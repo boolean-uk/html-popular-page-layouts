@@ -1,0 +1,89 @@
+
+* {
+    margin: 0;
+}
+
+.container {display: grid;
+    height: 100vh;
+    grid-template:
+        'header header header' 100px
+        'left main right' 1fr
+        'footer footer footer' 100px /
+        300px 1fr 300px;
+        background-color: white;
+    
+}
+header {
+    display: grid;
+    grid-area: header;
+    background-color: blue;
+    grid-template-columns: auto-fill;
+    grid-template-rows: 40px;
+    gap: 10px;
+    padding: 30px;
+}
+header div{
+    
+    background-color: yellow;
+}
+.left {display: grid;
+    grid-area: left;
+    background-color: lightblue;
+    padding: 20px;
+    gap: 30px;
+    grid-template-columns:40px;
+    grid-template-rows: auto-fill ;
+}
+.left div{
+   
+    
+    background-color: hotpink;
+}
+
+.right {
+    display: grid;
+    grid-area: right;
+    background-color: aqua;
+    padding: 20px;
+    gap: 10px;
+    grid-template-columns: auto-fill;
+    grid-template-rows: 50px 10px 50px;
+}
+.right .input{
+    margin-bottom: 10px;
+    display: grid;
+    grid-area: right;
+    background-color: aqua;
+    padding: 20px;
+    gap: 10px;
+    grid-template-columns:20px;
+    grid-template-rows: auto-fill;
+}
+.right div{
+
+    background-color: hotpink;
+}
+.right .input div{
+    
+    background-color: yellow;
+}
+
+main {
+    display: grid;
+    grid-area: main;
+    gap:10px;
+    padding: 20px;
+    grid-template-columns: auto-fill;
+    grid-template-rows: 40px;
+    background-color: red;
+}
+main div{
+    background-color: blue;
+
+}
+
+footer {
+    display: grid;
+    grid-area: footer;
+    background-color: orange;
+}
